@@ -32,9 +32,11 @@ Certain datasets are currently private while others are public. If your blockcha
 ## Public vs Private 
 
 ### Public
+
 - fantom 
 
-### Private 
+### Private
+
 - bsc
 - ronin 
 - arbitrum 
