@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_minter",
+                    "type": "address"
+                }
+            ],
+            "name": "MinterRemoved",
+            "type": "event"
+        },
+        "contract_address": "0x32950db2a7164ae833121501c797d79e7b79d74c",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_minter",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Axie_event_MinterRemoved"
+    }
+}

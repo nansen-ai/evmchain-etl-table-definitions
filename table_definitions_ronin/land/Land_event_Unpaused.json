@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Unpaused",
+            "type": "event"
+        },
+        "contract_address": "8c811e3c958e190f5ec15fb376533a3398620500",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "land",
+        "schema": [],
+        "table_description": "",
+        "table_name": "Land_event_Unpaused"
+    }
+}

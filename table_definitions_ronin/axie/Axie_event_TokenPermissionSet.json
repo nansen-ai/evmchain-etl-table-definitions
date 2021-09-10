@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_operator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes4",
+                    "name": "_funcSig",
+                    "type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "_approved",
+                    "type": "bool"
+                }
+            ],
+            "name": "TokenPermissionSet",
+            "type": "event"
+        },
+        "contract_address": "0x32950db2a7164ae833121501c797d79e7b79d74c",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_tokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_operator",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_funcSig",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_approved",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Axie_event_TokenPermissionSet"
+    }
+}

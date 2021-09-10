@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_operator",
+                    "type": "address"
+                }
+            ],
+            "name": "OperatorRemoved",
+            "type": "event"
+        },
+        "contract_address": "0x213073989821f738a7ba3520c3d31a1f9ad31bbd",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "marketplace",
+        "schema": [
+            {
+                "description": "",
+                "name": "_operator",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ClockAuction_event_OperatorRemoved"
+    }
+}

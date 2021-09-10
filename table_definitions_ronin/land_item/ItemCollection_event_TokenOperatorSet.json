@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_operator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "_approved",
+                    "type": "bool"
+                }
+            ],
+            "name": "TokenOperatorSet",
+            "type": "event"
+        },
+        "contract_address": "0xa96660f0e4a3e9bc7388925d245a6d4d79e21259",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "land_item",
+        "schema": [
+            {
+                "description": "",
+                "name": "_tokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_operator",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_approved",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ItemCollection_event_TokenOperatorSet"
+    }
+}

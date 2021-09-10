@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_withdrawalId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_mainchainAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "_standard",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tokenNumber",
+                    "type": "uint256"
+                }
+            ],
+            "name": "RequestTokenWithdrawalSigAgain",
+            "type": "event"
+        },
+        "contract_address": "0xe35d62ebe18413d96ca2a2f7cf215bb21a406b4b",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gateway",
+        "schema": [
+            {
+                "description": "",
+                "name": "_withdrawalId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_owner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_tokenAddress",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_mainchainAddress",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_standard",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_tokenNumber",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SidechainGatewayManager_event_RequestTokenWithdrawalSigAgain"
+    }
+}

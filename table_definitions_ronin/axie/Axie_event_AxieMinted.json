@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_axieId",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "sireId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "matronId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "birthDate",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "x",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "y",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct AxieGenetics.Genes",
+                            "name": "genes",
+                            "type": "tuple"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "breedCount",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "level",
+                            "type": "uint16"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IAxie.Axie",
+                    "name": "_axie",
+                    "type": "tuple"
+                }
+            ],
+            "name": "AxieMinted",
+            "type": "event"
+        },
+        "contract_address": "0x32950db2a7164ae833121501c797d79e7b79d74c",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_axieId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_axie",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Axie_event_AxieMinted"
+    }
+}

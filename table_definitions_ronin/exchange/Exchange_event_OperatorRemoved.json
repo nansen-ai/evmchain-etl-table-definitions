@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_operator",
+                    "type": "address"
+                }
+            ],
+            "name": "OperatorRemoved",
+            "type": "event"
+        },
+        "contract_address": "0x2da06d60bd413bcbb6586430857433bd9d3a4be4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "exchange",
+        "schema": [
+            {
+                "description": "",
+                "name": "_operator",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Exchange_event_OperatorRemoved"
+    }
+}
