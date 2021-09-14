@@ -24,7 +24,7 @@
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "",
+                    "name": "_uint",
                     "type": "uint256"
                 }
             ],
@@ -55,7 +55,7 @@
             },
             {
                 "description": "",
-                "name": "",
+                "name": "_uint",
                 "type": "STRING"
             }
         ],
