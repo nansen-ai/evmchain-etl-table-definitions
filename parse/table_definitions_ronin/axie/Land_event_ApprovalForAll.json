@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_operator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "_approved",
+                    "type": "bool"
+                }
+            ],
+            "name": "ApprovalForAll",
+            "type": "event"
+        },
+        "contract_address": "0x8c811e3c958e190f5ec15fb376533a3398620500",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_owner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_operator",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_approved",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Land_event_ApprovalForAll"
+    }
+}

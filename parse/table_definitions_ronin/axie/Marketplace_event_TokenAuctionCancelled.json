@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_listingIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_exchangeTokens",
+                    "type": "address"
+                }
+            ],
+            "name": "TokenAuctionCancelled",
+            "type": "event"
+        },
+        "contract_address": "0x213073989821f738a7ba3520c3d31a1f9ad31bbd",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_seller",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_listingIndex",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_exchangeTokens",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Marketplace_event_TokenAuctionCancelled"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_oldAdmin",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_newAdmin",
+                    "type": "address"
+                }
+            ],
+            "name": "AdminChanged",
+            "type": "event"
+        },
+        "contract_address": "0x5b16d12a0c2c88db94115968abd7afa78b6bc504",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_oldAdmin",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_newAdmin",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OfferAuction_event_AdminChanged"
+    }
+}
