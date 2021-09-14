@@ -1,0 +1,41 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "_id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "name": "validator",
+                    "type": "address"
+                }
+            ],
+            "name": "ValidatorRemoved",
+            "type": "event"
+        },
+        "contract_address": "0x0000000000000000000000000000000000000011",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_id",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "validator",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Validator_event_ValidatorRemoved"
+    }
+}

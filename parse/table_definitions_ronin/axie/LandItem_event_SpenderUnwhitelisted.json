@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_spender",
+                    "type": "address"
+                }
+            ],
+            "name": "SpenderUnwhitelisted",
+            "type": "event"
+        },
+        "contract_address": "0xa96660f0e4a3e9bc7388925d245a6d4d79e21259",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "_spender",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LandItem_event_SpenderUnwhitelisted"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "depositId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenNumber",
+                    "type": "uint256"
+                }
+            ],
+            "name": "TokenDeposited",
+            "type": "event"
+        },
+        "contract_address": "0xe35d62ebe18413d96ca2a2f7cf215bb21a406b4b",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+            {
+                "description": "",
+                "name": "depositId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "owner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenAddress",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenNumber",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Gateway_event_TokenDeposited"
+    }
+}
