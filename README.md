@@ -34,6 +34,7 @@ Certain datasets are currently private while others are public. If your blockcha
 ### Public
 
 - fantom 
+- celo 
 
 ### Private
 
