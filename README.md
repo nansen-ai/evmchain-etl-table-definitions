@@ -27,17 +27,19 @@ To make it super efficient to query the data you are looking for instead of havi
 
 ## My Dataset doesn't show up? 
 
-Certain datasets are currently private while others are public. If your blockchain is considered private, please sign up for a Nansen Developer Plan with your google cloud account. You will then be able to access theses private datasets. 
+Certain datasets are currently private while others are public. 
+If your blockchain is considered private, please sign up for a Nansen Query Plan with your google cloud account. 
+You will then be able to access theses private datasets. 
 
 ## Public vs Private 
 
 ### Public
 
-- fantom 
 - celo 
 
 ### Private
 
 - bsc
 - ronin 
-- arbitrum 
+- arbitrum
+- fantom 
