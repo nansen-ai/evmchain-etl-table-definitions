@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x486af39519b4dc9a7fccd318217352830e8ad9b4",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "error",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "info",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "detail",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Failure",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "Comptroller_event_Failure",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "error",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "info",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "detail",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
