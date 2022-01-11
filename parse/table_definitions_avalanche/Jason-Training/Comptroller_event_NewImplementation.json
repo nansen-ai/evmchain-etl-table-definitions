@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x486af39519b4dc9a7fccd318217352830e8ad9b4",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldImplementation",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address"
+                }
+            ],
+            "name": "NewImplementation",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "Comptroller_event_NewImplementation",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldImplementation",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newImplementation",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
