@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x334ad834cd4481bb02d09615e7c11a00579a7909",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "admin",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reduceAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newTotalReserves",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ReservesReduced",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiETH_event_ReservesReduced",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "admin",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "reduceAmount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newTotalReserves",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

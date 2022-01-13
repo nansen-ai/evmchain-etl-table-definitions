@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x35bd6aeda81a7e5fc7a7832490e71f757b0cd9ce",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldProtocolSeizeShareMantissa",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newProtocolSeizeShareMantissa",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewProtocolSeizeShare",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiQI_event_NewProtocolSeizeShare",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldProtocolSeizeShareMantissa",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newProtocolSeizeShareMantissa",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

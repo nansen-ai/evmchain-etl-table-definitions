@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xc9e5999b8e75c3feb117f6f73e664b9f3c8ca65c",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldAdmin",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAdmin",
+                    "type": "address"
+                }
+            ],
+            "name": "NewAdmin",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiUSDT_event_NewAdmin",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldAdmin",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newAdmin",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

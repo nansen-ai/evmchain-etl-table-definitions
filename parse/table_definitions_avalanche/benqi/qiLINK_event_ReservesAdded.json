@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x4e9f683a27a6bdad3fc2764003759277e93696e6",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "benefactor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "addAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newTotalReserves",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ReservesAdded",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiLINK_event_ReservesAdded",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "benefactor",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "addAmount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newTotalReserves",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

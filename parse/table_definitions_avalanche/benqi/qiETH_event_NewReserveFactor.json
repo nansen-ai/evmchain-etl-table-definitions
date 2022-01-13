@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x334ad834cd4481bb02d09615e7c11a00579a7909",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldReserveFactorMantissa",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newReserveFactorMantissa",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewReserveFactor",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiETH_event_NewReserveFactor",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldReserveFactorMantissa",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newReserveFactorMantissa",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

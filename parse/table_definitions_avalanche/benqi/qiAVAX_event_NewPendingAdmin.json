@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x5c0401e81bc07ca70fad469b451682c0d747ef1c",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldPendingAdmin",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newPendingAdmin",
+                    "type": "address"
+                }
+            ],
+            "name": "NewPendingAdmin",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiAVAX_event_NewPendingAdmin",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldPendingAdmin",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newPendingAdmin",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

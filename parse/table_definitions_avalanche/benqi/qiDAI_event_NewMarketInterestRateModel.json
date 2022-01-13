@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x835866d37afb8cb8f8334dccdaf66cf01832ff5d",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract InterestRateModel",
+                    "name": "oldInterestRateModel",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract InterestRateModel",
+                    "name": "newInterestRateModel",
+                    "type": "address"
+                }
+            ],
+            "name": "NewMarketInterestRateModel",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiDAI_event_NewMarketInterestRateModel",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldInterestRateModel",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newInterestRateModel",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

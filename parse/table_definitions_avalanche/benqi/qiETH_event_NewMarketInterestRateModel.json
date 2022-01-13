@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x334ad834cd4481bb02d09615e7c11a00579a7909",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract InterestRateModel",
+                    "name": "oldInterestRateModel",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract InterestRateModel",
+                    "name": "newInterestRateModel",
+                    "type": "address"
+                }
+            ],
+            "name": "NewMarketInterestRateModel",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiETH_event_NewMarketInterestRateModel",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldInterestRateModel",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newInterestRateModel",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

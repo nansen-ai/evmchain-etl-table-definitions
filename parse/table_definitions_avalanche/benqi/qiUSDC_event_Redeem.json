@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xbeb5d47a3f720ec0a390d04b4d41ed7d9688bc7f",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "redeemer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "redeemAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "redeemTokens",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Redeem",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiUSDC_event_Redeem",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "redeemer",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "redeemAmount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "redeemTokens",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

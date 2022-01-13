@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xe194c4c5ac32a3c9ffdb358d9bfd523a0b6d1568",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract ComptrollerInterface",
+                    "name": "oldComptroller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract ComptrollerInterface",
+                    "name": "newComptroller",
+                    "type": "address"
+                }
+            ],
+            "name": "NewComptroller",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "qiBTC_event_NewComptroller",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "oldComptroller",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newComptroller",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
