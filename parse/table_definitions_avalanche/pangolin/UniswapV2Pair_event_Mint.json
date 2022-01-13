@@ -1,7 +1,7 @@
 {
     "parser": {
         "type": "log",
-        "contract_address": "select pair from ref('uniswapv2factory_event_paircreated')",
+        "contract_address": "SELECT pair FROM ref('UniswapV2Factory_event_PairCreated')",
         "abi": {
             "anonymous": false,
             "inputs": [
