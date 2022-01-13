@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "select pair from ref('uniswapv2factory_event_paircreated')",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                }
+            ],
+            "name": "Burn",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "pangolin",
+        "table_name": "UniswapV2Pair_event_Burn",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "sender",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "amount0",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "amount1",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "to",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
