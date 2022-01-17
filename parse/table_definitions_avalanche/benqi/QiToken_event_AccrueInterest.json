@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "SELECT * FROM UNNEST(['0x5C0401e81Bc07Ca70fAD469b451682c0d747Ef1c', '0xe194c4c5aC32a3C9ffDb358d9Bfd523a0B6d1568', '0x334AD834Cd4481BB02d09615E7c11a00579A7909', '0xc9e5999b8e75C3fEB117F6f73E664b9f3C8ca65C', '0x4e9f683A27a6BdAD3FC2764003759277e93696e6', '0xBEb5d47A3f720Ec0a390d04b4d41ED7d9688bC7F', '0x835866d37AFB8CB8F8334dCCdaf66cf01832Ff5D', '0x35Bd6aedA81a7E5FC7A7832490e71F757b0cD9Ce'])",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "cashPrior",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "interestAccumulated",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "borrowIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalBorrows",
+                    "type": "uint256"
+                }
+            ],
+            "name": "AccrueInterest",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "benqi",
+        "table_name": "QiToken_event_AccrueInterest",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "cashPrior",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "interestAccumulated",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "borrowIndex",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "totalBorrows",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
