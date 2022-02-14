@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x2e3b85f85628301a0bce300dee3a6b04195a15ee",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nft",
+                    "type": "address"
+                }
+            ],
+            "name": "NftWhitelistRemove",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "treasure",
+        "table_name": "TreasureMarketplace_event_NftWhitelistRemove",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "nft",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

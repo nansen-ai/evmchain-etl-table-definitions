@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x2e3b85f85628301a0bce300dee3a6b04195a15ee",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "UpdateFee",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "treasure",
+        "table_name": "TreasureMarketplace_event_UpdateFee",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "fee",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

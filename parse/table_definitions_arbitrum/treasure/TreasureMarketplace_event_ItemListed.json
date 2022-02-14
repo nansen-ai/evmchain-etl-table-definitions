@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x2e3b85f85628301a0bce300dee3a6b04195a15ee",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nftAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "quantity",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "pricePerItem",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expirationTime",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ItemListed",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "treasure",
+        "table_name": "TreasureMarketplace_event_ItemListed",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "seller",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "nftAddress",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenId",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "quantity",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "pricePerItem",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "expirationTime",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
