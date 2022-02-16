@@ -25,7 +25,7 @@
     },
     "table": {
         "dataset_name": "vesta_finance",
-        "table_name": "VestaFarming_event_Staked",
+        "table_name": "VestaFarming_event_Withdrawn",
         "table_description": "",
         "schema": [
             {
