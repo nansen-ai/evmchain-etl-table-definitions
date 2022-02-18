@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x449d05c544601631785a7c062dcdff530330317e",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isRemoval",
+                    "type": "bool"
+                }
+            ],
+            "name": "EvMarketSignerUpdate",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "tofu_nft",
+        "table_name": "MarketNG_event_EvMarketSignerUpdate",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "addr",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "isRemoval",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

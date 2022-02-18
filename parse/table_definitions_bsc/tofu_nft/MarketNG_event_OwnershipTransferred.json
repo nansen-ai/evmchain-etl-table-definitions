@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x449d05c544601631785a7c062dcdff530330317e",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "tofu_nft",
+        "table_name": "MarketNG_event_OwnershipTransferred",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "previousOwner",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newOwner",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

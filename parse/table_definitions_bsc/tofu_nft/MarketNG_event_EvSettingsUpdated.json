@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x449d05c544601631785a7c062dcdff530330317e",
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "EvSettingsUpdated",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "tofu_nft",
+        "table_name": "MarketNG_event_EvSettingsUpdated",
+        "table_description": "",
+        "schema": []
+    }
+}

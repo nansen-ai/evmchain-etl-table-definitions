@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x86232f68b5bf2a3a03851d98556352512a3b12b9",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "refund",
+                    "type": "uint256"
+                }
+            ],
+            "name": "EvAuctionRefund",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "tofu_nft",
+        "table_name": "MarketNG_event_EvAuctionRefund",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "id",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "bidder",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "refund",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

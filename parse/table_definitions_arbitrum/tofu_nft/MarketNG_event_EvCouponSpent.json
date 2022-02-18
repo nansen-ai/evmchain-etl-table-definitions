@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x7bc8b1b5aba4df3be9f9a32dae501214dc0e4f3f",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "couponId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "EvCouponSpent",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "tofu_nft",
+        "table_name": "MarketNG_event_EvCouponSpent",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "id",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "couponId",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x86232f68b5bf2a3a03851d98556352512a3b12b9",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "Paused",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "tofu_nft",
+        "table_name": "MarketNG_event_Paused",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "account",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
