@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "lpToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "allocation",
+                    "type": "uint256"
+                }
+            ],
+            "name": "AddFarm",
+            "type": "event"
+        },
+        "contract_address": "0x9fed2bc7f0b4f4350b52e29e0a3c2bf5ebc3cc0a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "apeswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "lpToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "allocation",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MasterApeAdmin_event_AddFarm"
+    }
+}
