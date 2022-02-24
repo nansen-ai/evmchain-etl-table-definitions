@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "previousAllocationPercentage",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "allocationPercentage",
+                    "type": "uint256"
+                }
+            ],
+            "name": "SetFixedPercentFarm",
+            "type": "event"
+        },
+        "contract_address": "0x9fed2bc7f0b4f4350b52e29e0a3c2bf5ebc3cc0a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "apeswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "pid",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "previousAllocationPercentage",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "allocationPercentage",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MasterApeAdmin_event_SetFixedPercentFarm"
+    }
+}
