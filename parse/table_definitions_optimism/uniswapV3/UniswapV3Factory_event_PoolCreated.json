@@ -71,6 +71,6 @@
       }
     ],
     "table_description": "",
-    "table_name": "<TABLE_PREFIX>_event_PoolCreated"
+    "table_name": "UniswapV3Factory_event_PoolCreated"
   }
 }
