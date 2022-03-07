@@ -5,18 +5,18 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "uint24",
-          "name": "fee",
-          "type": "uint24"
+          "internalType": "address",
+          "name": "oldOwner",
+          "type": "address"
         },
         {
           "indexed": true,
-          "internalType": "int24",
-          "name": "tickSpacing",
-          "type": "int24"
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
         }
       ],
-      "name": "FeeAmountEnabled",
+      "name": "OwnerChanged",
       "type": "event"
     },
     "contract_address": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
@@ -24,20 +24,20 @@
     "type": "log"
   },
   "table": {
-    "dataset_name": "uniswapV3",
+    "dataset_name": "uniswap",
     "schema": [
       {
         "description": "",
-        "name": "fee",
+        "name": "oldOwner",
         "type": "STRING"
       },
       {
         "description": "",
-        "name": "tickSpacing",
+        "name": "newOwner",
         "type": "STRING"
       }
     ],
     "table_description": "",
-    "table_name": "UniswapV3Factory_event_FeeAmountEnabled"
+    "table_name": "UniswapV3Factory_event_OwnerChanged"
   }
 }

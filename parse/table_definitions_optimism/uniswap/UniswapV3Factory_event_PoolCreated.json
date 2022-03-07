@@ -42,7 +42,7 @@
     "type": "log"
   },
   "table": {
-    "dataset_name": "uniswapV3",
+    "dataset_name": "uniswap",
     "schema": [
       {
         "description": "",
