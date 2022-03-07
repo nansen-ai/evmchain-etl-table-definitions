@@ -36,7 +36,7 @@
     "field_mapping": {}
   },
   "table": {
-    "dataset_name": "ubeswap",
+    "dataset_name": "sushiswap",
     "table_name": "UniswapV2Factory_event_PairCreated",
     "table_description": "",
     "schema": [
