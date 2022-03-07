@@ -1,54 +1,58 @@
 {
     "parser": {
         "abi": {
-            "anonymous": false,
             "inputs": [
                 {
-                    "indexed": true,
                     "internalType": "address",
-                    "name": "from",
+                    "name": "",
                     "type": "address"
                 },
                 {
-                    "indexed": true,
                     "internalType": "address",
-                    "name": "to",
+                    "name": "",
                     "type": "address"
                 },
                 {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "value",
-                    "type": "uint256"
+                    "internalType": "uint24",
+                    "name": "",
+                    "type": "uint24"
                 }
             ],
-            "name": "Transfer",
-            "type": "event"
+            "name": "getPool",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
         },
-        "contract_address": "SELECT pair FROM ref('UniswapV2Factory_event_PairCreated')",
+        "contract_address": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
         "field_mapping": {},
-        "type": "log"
+        "type": "trace"
     },
     "table": {
-        "dataset_name": "ubeswap",
+        "dataset_name": "<INSERT_DATASET_NAME>",
         "schema": [
             {
                 "description": "",
-                "name": "from",
+                "name": "",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "to",
+                "name": "",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "value",
+                "name": "",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "UniswapV2Pair_event_Transfer"
+        "table_name": "<TABLE_PREFIX>_event_getPool"
     }
 }

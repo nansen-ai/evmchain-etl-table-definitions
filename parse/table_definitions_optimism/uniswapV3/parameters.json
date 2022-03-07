@@ -1,0 +1,46 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [],
+            "name": "parameters",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "token0",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "token1",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint24",
+                    "name": "fee",
+                    "type": "uint24"
+                },
+                {
+                    "internalType": "int24",
+                    "name": "tickSpacing",
+                    "type": "int24"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        "contract_address": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "<INSERT_DATASET_NAME>",
+        "schema": [],
+        "table_description": "",
+        "table_name": "<TABLE_PREFIX>_event_parameters"
+    }
+}
