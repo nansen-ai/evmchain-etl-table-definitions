@@ -57,7 +57,7 @@
                 "type": "string",
                 "default": "",
                 "examples": ["0xef45d134b73241eda7703fa787148d9c9f4950b0"],
-                "pattern": "0x[a-f0-9]{40}"
+                "pattern": "^0x[a-f0-9]{40}\\Z"
               },
               {
                 "$id": "#root/parser/contract_address",
