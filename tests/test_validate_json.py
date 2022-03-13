@@ -66,3 +66,10 @@ all_files = get_json_files_in_dir('./parse')
 def test_file(filename):
     valid, msg = validate_json(filename)
     assert (valid == True)
+
+@pytest.mark.parametrize("filename", all_files)
+def test_dataset_name_is_correct(filename):
+    json_data = load_json_file(filename)
+    dataset_name = json_data.get('table', {}).get('dataset_name', None)
+    assert os.path.split(filename)[0].split("/")[-1] == dataset_name
+
