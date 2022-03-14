@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint112",
+                    "name": "reserve0",
+                    "type": "uint112"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint112",
+                    "name": "reserve1",
+                    "type": "uint112"
+                }
+            ],
+            "name": "Sync",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM `blockchain-etl.fantom_spiritswap.SpiritFactory_event_PairCreated`",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "spiritswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "reserve0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "reserve1",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PancakePair_event_Sync"
+    }
+}
