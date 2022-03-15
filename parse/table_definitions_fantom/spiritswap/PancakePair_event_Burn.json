@@ -31,7 +31,7 @@
             "name": "Burn",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM `blockchain-etl.fantom_spiritswap.SpiritFactory_event_PairCreated`",
+        "contract_address": "SELECT pair FROM `blockchain-etl.fantom_spiritswap.SpiritFactory_event_PairCreated`",
         "field_mapping": {},
         "type": "log"
     },
