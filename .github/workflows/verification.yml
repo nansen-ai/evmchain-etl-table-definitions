@@ -3,7 +3,8 @@ name: pyTest
 on: 
   pull_request
   
-
+env: 
+  PYTEST_RUN_PATH: tests
 jobs:
   test:
     runs-on: ubuntu-latest
