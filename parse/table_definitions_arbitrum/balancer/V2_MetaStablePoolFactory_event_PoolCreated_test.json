@@ -13,7 +13,7 @@
             "name": "PoolCreated",
             "type": "event"
         },
-        "contract_address": "0xdae7e32adc5d490a43ccba1f0c736033f2b4efca",
+        "contract_address": "0xdae7e32adc5d490a43ccba1f0c736033f2b4eFca",
         "field_mapping": {},
         "type": "log"
     },
