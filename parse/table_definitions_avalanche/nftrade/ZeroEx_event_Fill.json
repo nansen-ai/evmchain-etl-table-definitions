@@ -91,7 +91,7 @@
             "name": "Fill",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0xcfb6ee27d82beb1b0f3ad501b968f01cd7cc5961', '0xc28f1550160478a7fb3b085f25d4b179e08e649a'])",
+        "contract_address": "0xcfb6ee27d82beb1b0f3ad501b968f01cd7cc5961",
         "field_mapping": {},
         "type": "log"
     },
