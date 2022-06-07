@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "taker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "erc20Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "erc20TokenAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "erc721Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "erc721TokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "ERC721BuyOrderFilled",
+            "type": "event"
+        },
+        "contract_address": "0xb3e3dfcb2d9f3dde16d78b9e6eb3538eb32b5ae1",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "element_market",
+        "schema": [
+            {
+                "description": "",
+                "name": "maker",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "taker",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "erc20Token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "erc20TokenAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "erc721Token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "erc721TokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "orderHash",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Element_event_ERC721BuyOrderFilled"
+    }
+}
