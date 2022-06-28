@@ -31,7 +31,7 @@
             "name": "TokenDeposited",
             "type": "event"
         },
-        "contract_address": "0xe35d62ebe18413d96ca2a2f7cf215bb21a406b4b",
+        "contract_address": "SELECT * FROM UNNEST(['0xe35d62ebe18413d96ca2a2f7cf215bb21a406b4b', '0x0cf8ff40a508bdbc39fbe1bb679dcba64e65c7df'])",
         "field_mapping": {},
         "type": "log"
     },
