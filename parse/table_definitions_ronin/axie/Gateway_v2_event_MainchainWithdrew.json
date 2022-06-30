@@ -111,6 +111,11 @@
           },
           {
             "description": "",
+            "name": "mainchain",
+            "type": "STRING"
+          },
+          {
+            "description": "",
             "name": "ronin",
             "type": "STRING"
           },
