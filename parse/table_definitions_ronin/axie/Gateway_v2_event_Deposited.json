@@ -104,16 +104,21 @@
     "table": {
         "dataset_name": "axie",
         "schema": [
-            {
-                "description": "",
-                "name": "receiptHash",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "receipt",
-                "type": "STRING"
-            }
+          {
+            "description": "",
+            "name": "receiptHash",
+            "type": "STRING"
+          },
+          {
+            "description": "",
+            "name": "ronin",
+            "type": "STRING"
+          },
+          {
+            "description": "",
+            "name": "info",
+            "type": "STRING"
+          }
         ],
         "table_description": "",
         "table_name": "Gateway_v2_event_Deposited"

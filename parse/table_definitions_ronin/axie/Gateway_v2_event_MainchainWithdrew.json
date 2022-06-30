@@ -110,9 +110,14 @@
             "type": "STRING"
           },
           {
-              "description": "",
-              "name": "receipt",
-              "type": "STRING"
+            "description": "",
+            "name": "ronin",
+            "type": "STRING"
+          },
+          {
+            "description": "",
+            "name": "info",
+            "type": "STRING"
           }
         ],
         "table_description": "",
