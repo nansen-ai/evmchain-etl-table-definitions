@@ -31,7 +31,7 @@
             "name": "PairCreated",
             "type": "event"
         },
-        "contract_address": "0xa4790135Ba4439cdb2eFB35fe191dC83d3D627F6",
+        "contract_address": "0xa4790135ba4439cdb2efb35fe191dc83d3d627f6",
         "field_mapping": {},
         "type": "log"
     },
