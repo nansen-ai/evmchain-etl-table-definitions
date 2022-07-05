@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint112",
+                    "name": "reserve0",
+                    "type": "uint112"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint112",
+                    "name": "reserve1",
+                    "type": "uint112"
+                }
+            ],
+            "name": "Sync",
+            "type": "event"
+        },
+        "contract_address": "SELECT pair FROM ref('BurgerswapV1Factory_event_PairCreated')",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "burgerswapV1",
+        "schema": [
+            {
+                "description": "",
+                "name": "reserve0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "reserve1",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "BurgerswapV1Pair_event_Sync"
+    }
+}
