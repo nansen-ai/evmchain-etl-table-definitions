@@ -84,3 +84,13 @@ def test_no_empty_event_input_names(filename):
         assert _input["name"] != "", \
             f'Empty name for input {i} of "{abi["name"]}".' \
             ' Please use "unnamedField0", "unnamedField1", etc.'
+
+
+@pytest.mark.parametrize("filename", all_files)
+def test_no_empty_column_names(filename):
+    json_data = load_json_file(filename)
+    table = json_data["table"]
+    for i, column in enumerate(table["schema"]):
+        assert column["name"] != "", \
+            f'Empty name for column {i} of "{table["table_name"]}".' \
+            ' Please use "unnamedField0", "unnamedField1", etc.'
