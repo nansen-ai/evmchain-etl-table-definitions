@@ -20,9 +20,15 @@
                     "internalType": "uint256",
                     "name": "amount1",
                     "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
                 }
             ],
-            "name": "Mint",
+            "name": "Burn",
             "type": "event"
         },
         "contract_address": "SELECT pair FROM ref('BurgerswapV1Factory_event_PairCreated')",
@@ -30,7 +36,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "burgerswapv1",
+        "dataset_name": "burgerswap",
         "schema": [
             {
                 "description": "",
@@ -46,9 +52,14 @@
                 "description": "",
                 "name": "amount1",
                 "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "to",
+                "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "BurgerswapV1Pair_event_Mint"
+        "table_name": "BurgerswapV1Pair_event_Burn"
     }
 }

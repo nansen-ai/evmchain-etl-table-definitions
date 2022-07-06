@@ -6,60 +6,49 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "sender",
+                    "name": "owner",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount0",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount1",
-                    "type": "uint256"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "to",
+                    "name": "spender",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
                 }
             ],
-            "name": "Burn",
+            "name": "Approval",
             "type": "event"
         },
-        "contract_address": "SELECT pair FROM ref('BurgerswapV2Factory_event_PairCreated')",
+        "contract_address": "SELECT pair FROM ref('BurgerswapV1Factory_event_PairCreated')",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "burgerswapv2",
+        "dataset_name": "burgerswap",
         "schema": [
             {
                 "description": "",
-                "name": "sender",
+                "name": "owner",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount0",
+                "name": "spender",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount1",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "to",
+                "name": "value",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "BurgerswapV2Pair_event_Burn"
+        "table_name": "BurgerswapV1Pair_event_Approval"
     }
 }

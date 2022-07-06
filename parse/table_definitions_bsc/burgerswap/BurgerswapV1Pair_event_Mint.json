@@ -6,49 +6,49 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "owner",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "spender",
+                    "name": "sender",
                     "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "value",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1",
                     "type": "uint256"
                 }
             ],
-            "name": "Approval",
+            "name": "Mint",
             "type": "event"
         },
-        "contract_address": "SELECT pair FROM ref('BurgerswapV2Factory_event_PairCreated')",
+        "contract_address": "SELECT pair FROM ref('BurgerswapV1Factory_event_PairCreated')",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "burgerswapv2",
+        "dataset_name": "burgerswap",
         "schema": [
             {
                 "description": "",
-                "name": "owner",
+                "name": "sender",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "spender",
+                "name": "amount0",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "value",
+                "name": "amount1",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "BurgerswapV2Pair_event_Approval"
+        "table_name": "BurgerswapV1Pair_event_Mint"
     }
 }

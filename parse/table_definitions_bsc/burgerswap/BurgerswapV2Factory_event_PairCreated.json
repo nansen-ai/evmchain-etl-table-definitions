@@ -24,19 +24,19 @@
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "",
+                    "name": "unnamedField0",
                     "type": "uint256"
                 }
             ],
             "name": "PairCreated",
             "type": "event"
         },
-        "contract_address": "0xa4790135ba4439cdb2efb35fe191dc83d3d627f6",
+        "contract_address": "0x8a1e9d3aebbbd5ba2a64d3355a48dd5e9b511256",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "burgerswapv1",
+        "dataset_name": "burgerswap",
         "schema": [
             {
                 "description": "",
@@ -55,11 +55,11 @@
             },
             {
                 "description": "",
-                "name": "",
+                "name": "unnamedField0",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "BurgerswapV1Factory_event_PairCreated"
+        "table_name": "BurgerswapV2Factory_event_PairCreated"
     }
 }
