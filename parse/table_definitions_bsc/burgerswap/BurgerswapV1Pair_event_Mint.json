@@ -25,12 +25,12 @@
             "name": "Mint",
             "type": "event"
         },
-        "contract_address": "SELECT pair FROM ref('BurgerswapV2Factory_event_PairCreated')",
+        "contract_address": "SELECT pair FROM ref('BurgerswapV1Factory_event_PairCreated')",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "burgerswapv2",
+        "dataset_name": "burgerswap",
         "schema": [
             {
                 "description": "",
@@ -49,6 +49,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "BurgerswapV2Pair_event_Mint"
+        "table_name": "BurgerswapV1Pair_event_Mint"
     }
 }

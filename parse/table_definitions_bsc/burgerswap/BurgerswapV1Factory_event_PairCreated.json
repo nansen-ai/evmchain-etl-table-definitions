@@ -6,60 +6,60 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "sender",
+                    "name": "token0",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount0",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount1",
-                    "type": "uint256"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "to",
+                    "name": "token1",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "pair",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "unnamedField0",
+                    "type": "uint256"
                 }
             ],
-            "name": "Burn",
+            "name": "PairCreated",
             "type": "event"
         },
-        "contract_address": "SELECT pair FROM ref('BurgerswapV1Factory_event_PairCreated')",
+        "contract_address": "0xa4790135ba4439cdb2efb35fe191dc83d3d627f6",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "burgerswapv1",
+        "dataset_name": "burgerswap",
         "schema": [
             {
                 "description": "",
-                "name": "sender",
+                "name": "token0",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount0",
+                "name": "token1",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount1",
+                "name": "pair",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "to",
+                "name": "",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "BurgerswapV1Pair_event_Burn"
+        "table_name": "BurgerswapV1Factory_event_PairCreated"
     }
 }
