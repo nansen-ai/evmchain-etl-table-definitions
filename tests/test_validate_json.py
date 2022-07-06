@@ -68,9 +68,19 @@ def test_file(filename):
     valid, msg = validate_json(filename)
     assert (valid == True)
 
+
 @pytest.mark.parametrize("filename", all_files)
 def test_dataset_name_is_correct(filename):
     json_data = load_json_file(filename)
     dataset_name = json_data.get('table', {}).get('dataset_name', None)
     assert os.path.split(filename)[0].split("/")[-1] == dataset_name
 
+
+@pytest.mark.parametrize("filename", all_files)
+def test_no_empty_event_input_names(filename):
+    json_data = load_json_file(filename)
+    abi = json_data["parser"]["abi"]
+    for i, _input in enumerate(abi["inputs"]):
+        assert _input["name"] != "", \
+            f'Empty name for input {i} of "{abi["name"]}".' \
+            ' Please use "unnamedField0", "unnamedField1", etc.'
