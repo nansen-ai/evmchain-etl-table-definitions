@@ -18,7 +18,7 @@
         "field_mapping": {}
     },
     "table": {
-        "dataset_name": "Joepegs",
+        "dataset_name": "joepegs",
         "table_name": "JoepegExchange_event_NewExecutionManager",
         "table_description": "",
         "schema": [

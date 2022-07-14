@@ -24,7 +24,7 @@
         "field_mapping": {}
     },
     "table": {
-        "dataset_name": "Joepegs",
+        "dataset_name": "joepegs",
         "table_name": "JoepegExchange_event_CancelAllOrders",
         "table_description": "",
         "schema": [
