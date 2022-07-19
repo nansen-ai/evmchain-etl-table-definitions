@@ -1,32 +1,32 @@
 {
     "parser": {
+        "type": "log",
+        "contract_address": "0xae079eda901f7727d0715aff8f82ba8295719977",
         "abi": {
             "anonymous": false,
             "inputs": [
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "pool",
+                    "name": "executionManager",
                     "type": "address"
                 }
             ],
-            "name": "PoolCreated",
+            "name": "NewExecutionManager",
             "type": "event"
         },
-        "contract_address": "0x55df810876354fc3e249f701dd78dede57991f8d",
-        "field_mapping": {},
-        "type": "log"
+        "field_mapping": {}
     },
     "table": {
-        "dataset_name": "Beethovenx",
+        "dataset_name": "joepegs",
+        "table_name": "JoepegExchange_event_NewExecutionManager",
+        "table_description": "",
         "schema": [
             {
+                "name": "executionManager",
                 "description": "",
-                "name": "pool",
                 "type": "STRING"
             }
-        ],
-        "table_description": "",
-        "table_name": "StablePoolFactory_event_PoolCreated"
+        ]
     }
 }

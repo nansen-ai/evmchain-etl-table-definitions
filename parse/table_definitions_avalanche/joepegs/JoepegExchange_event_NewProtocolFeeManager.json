@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xae079eda901f7727d0715aff8f82ba8295719977",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "protocolFeeManager",
+                    "type": "address"
+                }
+            ],
+            "name": "NewProtocolFeeManager",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "joepegs",
+        "table_name": "JoepegExchange_event_NewProtocolFeeManager",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "protocolFeeManager",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
