@@ -13,5 +13,5 @@ jobs:
       - name: Check folder names are lowercase
         run: |
           echo $(pwd)
-          bash ./folder_name_test.sh
+          bash folder_name_test.sh
         shell: bash
