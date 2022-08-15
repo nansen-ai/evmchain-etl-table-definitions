@@ -1,4 +1,4 @@
-INVALID_FOLDER_NAMES=$(ls -d ./*/*[[:upper:]]* 2> /dev/null)
+INVALID_FOLDER_NAMES=$(ls -d ./parse/*/*[[:upper:]]* 2> /dev/null)
 if [[ $INVALID_FOLDER_NAMES ]]; then
     for INVALID_FOLDER_NAME in $INVALID_FOLDER_NAMES
     do 
