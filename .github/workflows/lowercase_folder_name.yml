@@ -10,6 +10,6 @@ jobs:
   lowercase_folder_name:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Check folder names are lowercase
-        run: bash folder_name_test.sh
-        working-directory: ./parse
+        run: bash ./scripts/folder_name_test.sh
