@@ -1,0 +1,15 @@
+name: lowercaseFolderName
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  lowercase_folder_name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check folder names are lowercase
+        run: bash folder_name_test.sh
+        working-directory: ./parse
