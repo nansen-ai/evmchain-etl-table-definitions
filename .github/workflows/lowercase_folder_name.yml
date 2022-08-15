@@ -11,4 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check folder names are lowercase
-        run: bash ./folder_name_test.sh
+        run: |
+          echo $(pwd)
+          bash ./folder_name_test.sh
+        shell: bash
