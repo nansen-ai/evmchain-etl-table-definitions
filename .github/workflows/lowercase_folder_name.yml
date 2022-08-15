@@ -13,4 +13,4 @@ jobs:
       - name: Check folder names are lowercase
         run: |
           echo $(pwd)
-          bash ${GITHUB_WORKSPACE}/folder_name_test.sh
+          bash ${GITHUB_WORKSPACE}/scripts/folder_name_test.sh
