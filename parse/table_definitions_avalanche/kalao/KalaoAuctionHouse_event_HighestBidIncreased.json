@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x36d69b62b5c312d27790751814b7099f1e3245b2",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "endTime",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimTime",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "postion",
+                    "type": "uint256"
+                }
+            ],
+            "name": "HighestBidIncreased",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "kalao",
+        "table_name": "KalaoAuctionHouse_event_HighestBidIncreased",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "bidder",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "amount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "endTime",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "claimTime",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "postion",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

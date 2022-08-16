@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x36d69b62b5c312d27790751814b7099f1e3245b2",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "winner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "kalaoPart",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "royaltyAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "position",
+                    "type": "uint256"
+                }
+            ],
+            "name": "AuctionEnded",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "kalao",
+        "table_name": "KalaoAuctionHouse_event_AuctionEnded",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "winner",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "amount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "kalaoPart",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "royaltyAmount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "position",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
