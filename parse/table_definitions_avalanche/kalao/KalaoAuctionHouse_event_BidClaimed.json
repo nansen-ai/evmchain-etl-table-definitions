@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x36d69b62b5c312d27790751814b7099f1e3245b2",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "position",
+                    "type": "uint256"
+                }
+            ],
+            "name": "BidClaimed",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "kalao",
+        "table_name": "KalaoAuctionHouse_event_BidClaimed",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "position",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
