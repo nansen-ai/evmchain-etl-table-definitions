@@ -112,7 +112,71 @@
             {
                 "description": "",
                 "name": "receipt",
-                "type": "STRING"
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "kind",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "mainchain",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "name": "addr",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "tokenAddr",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "chainId",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ronin",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "name": "addr",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "tokenAddr",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "chainId",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "info",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "name": "erc",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "id",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "quantity",
+                                "type": "STRING"
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "table_description": "",
