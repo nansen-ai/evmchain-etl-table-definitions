@@ -36,7 +36,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "<INSERT_DATASET_NAME>",
+        "dataset_name": "venus",
         "schema": [
             {
                 "description": "",
