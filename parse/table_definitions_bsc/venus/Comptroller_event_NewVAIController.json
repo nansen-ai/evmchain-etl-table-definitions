@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract VAIControllerInterface",
+                    "name": "oldVAIController",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract VAIControllerInterface",
+                    "name": "newVAIController",
+                    "type": "address"
+                }
+            ],
+            "name": "NewVAIController",
+            "type": "event"
+        },
+        "contract_address": "0xf6c14d4dfe45c132822ce28c646753c54994e59c",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "<INSERT_DATASET_NAME>",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldVAIController",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newVAIController",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "<TABLE_PREFIX>_event_NewVAIController"
+    }
+}
