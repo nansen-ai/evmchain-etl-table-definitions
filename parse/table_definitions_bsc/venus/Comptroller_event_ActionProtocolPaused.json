@@ -27,6 +27,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "<TABLE_PREFIX>_event_ActionProtocolPaused"
+        "table_name": "Comptroller_event_ActionProtocolPaused"
     }
 }
