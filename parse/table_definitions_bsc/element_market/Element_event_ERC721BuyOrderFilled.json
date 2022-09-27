@@ -49,7 +49,7 @@
             "name": "ERC721BuyOrderFilled",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0xb3e3dfcb2d9f3dde16d78b9e6eb3538eb32b5ae1', '0x46a03313fa8ef8ac8798f502bb38d35e5e1acbfc'])",
+        "contract_address": "0xb3e3dfcb2d9f3dde16d78b9e6eb3538eb32b5ae1",
         "field_mapping": {},
         "type": "log"
     },
