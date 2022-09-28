@@ -120,12 +120,78 @@
             {
                 "description": "",
                 "name": "_axie",
-                "type": "STRING"
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "sireId",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "matronId",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "birthDate",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "genes",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "name": "x",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "y",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "breedCount",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "level",
+                        "type": "STRING"
+                    }
+                ]
             },
             {
                 "description": "",
                 "name": "_axiegg",
-                "type": "STRING"
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "sireGenes",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "name": "x",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "y",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "matronGenes",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "name": "x",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "y",
+                                "type": "STRING"
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "table_description": "",
