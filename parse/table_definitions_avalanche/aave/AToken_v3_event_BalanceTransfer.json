@@ -31,7 +31,7 @@
             "name": "BalanceTransfer",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0xf329e36c7bf6e5e86ce2150875a84ce77f477375', '0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee', '0x6ab707aca953edaefbc4fd23ba73294241490620', '0x191c10aa4af7c30e871e70c95db0e4eb77237530', '0x6d80113e533a2c0fe82eabd35f1875dcea89ea97', '0x625e7708f30ca75bfd92586e17077590c60eb4cd', '0x078f358208685046a11c85e8ad32895ded33a249', '0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8'])",
+        "contract_address": "SELECT * FROM UNNEST(['0xf329e36c7bf6e5e86ce2150875a84ce77f477375', '0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee', '0x6ab707aca953edaefbc4fd23ba73294241490620', '0x191c10aa4af7c30e871e70c95db0e4eb77237530', '0x6d80113e533a2c0fe82eabd35f1875dcea89ea97', '0x625e7708f30ca75bfd92586e17077590c60eb4cd', '0x078f358208685046a11c85e8ad32895ded33a249', '0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8', '0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be', '0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64', '0x152b9d0fdc40c096757f570a51e494bd4b943e50', '0x5c49b268c9841aff1cc3b0a418ff5c3442ee3f3b'])",
         "field_mapping": {},
         "type": "log"
     },
