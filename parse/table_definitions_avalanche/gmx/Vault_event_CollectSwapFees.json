@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feeUsd",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feeTokens",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CollectSwapFees",
+            "type": "event"
+        },
+        "contract_address": "0x9ab2de34a33fb459b538c43f251eb825645e8595",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "feeUsd",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "feeTokens",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Vault_event_CollectSwapFees"
+    }
+}
