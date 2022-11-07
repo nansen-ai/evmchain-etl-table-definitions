@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x11ac3118309a7215c6d87c7c396e2df333ae3a9c",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "position",
+                    "type": "uint256"
+                }
+            ],
+            "name": "SaleCancelled",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "kalao",
+        "table_name": "KalaoDirect_event_SaleCancelled",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "position",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

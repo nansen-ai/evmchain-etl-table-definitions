@@ -1,0 +1,131 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "key",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "collateralToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "indexToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isLong",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "size",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateral",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reserveAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "realisedPnl",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "markPrice",
+                    "type": "uint256"
+                }
+            ],
+            "name": "LiquidatePosition",
+            "type": "event"
+        },
+        "contract_address": "0x489ee077994b6658eafa855c308275ead8097c4a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "key",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "indexToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isLong",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "size",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateral",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "reserveAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "realisedPnl",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "markPrice",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Vault_event_LiquidatePosition"
+    }
+}

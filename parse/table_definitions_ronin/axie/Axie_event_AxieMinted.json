@@ -78,7 +78,43 @@
             {
                 "description": "",
                 "name": "_axie",
-                "type": "STRING"
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "sireId",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "matronId",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "birthDate",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "genes",
+                        "type": "RECORD",
+                        "fields": [
+                            {
+                                "name": "x",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "y",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "breedCount",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "level",
+                        "type": "STRING"
+                    }
+                ]
             }
         ],
         "table_description": "",

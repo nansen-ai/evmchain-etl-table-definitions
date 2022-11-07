@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xae079eda901f7727d0715aff8f82ba8295719977",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "orderNonces",
+                    "type": "uint256[]"
+                }
+            ],
+            "name": "CancelMultipleOrders",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "joepegs",
+        "table_name": "JoepegExchange_event_CancelMultipleOrders",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "user",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "orderNonces",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

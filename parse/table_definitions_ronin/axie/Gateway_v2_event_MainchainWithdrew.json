@@ -1,0 +1,185 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "receiptHash",
+                "type": "bytes32"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "enum Transfer.Kind",
+                    "name": "kind",
+                    "type": "uint8"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "addr",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "address",
+                        "name": "tokenAddr",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "chainId",
+                        "type": "uint256"
+                      }
+                    ],
+                    "internalType": "struct Token.Owner",
+                    "name": "mainchain",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "addr",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "address",
+                        "name": "tokenAddr",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "chainId",
+                        "type": "uint256"
+                      }
+                    ],
+                    "internalType": "struct Token.Owner",
+                    "name": "ronin",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "enum Token.Standard",
+                        "name": "erc",
+                        "type": "uint8"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "id",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "quantity",
+                        "type": "uint256"
+                      }
+                    ],
+                    "internalType": "struct Token.Info",
+                    "name": "info",
+                    "type": "tuple"
+                  }
+                ],
+                "indexed": false,
+                "internalType": "struct Transfer.Receipt",
+                "name": "receipt",
+                "type": "tuple"
+              }
+            ],
+            "name": "MainchainWithdrew",
+            "type": "event"
+          },
+        "contract_address": "0x0cf8ff40a508bdbc39fbe1bb679dcba64e65c7df",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "axie",
+        "schema": [
+          {
+            "description": "",
+            "name": "receiptHash",
+            "type": "STRING"
+          },
+          {
+              "description": "",
+              "name": "receipt",
+              "type": "RECORD",
+              "fields": [
+                  {
+                      "name": "id",
+                      "type": "STRING"
+                  },
+                  {
+                      "name": "kind",
+                      "type": "STRING"
+                  },
+                  {
+                      "name": "mainchain",
+                      "type": "RECORD",
+                      "fields": [
+                          {
+                              "name": "addr",
+                              "type": "STRING"
+                          },
+                          {
+                              "name": "tokenAddr",
+                              "type": "STRING"
+                          },
+                          {
+                              "name": "chainId",
+                              "type": "STRING"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "ronin",
+                      "type": "RECORD",
+                      "fields": [
+                          {
+                              "name": "addr",
+                              "type": "STRING"
+                          },
+                          {
+                              "name": "tokenAddr",
+                              "type": "STRING"
+                          },
+                          {
+                              "name": "chainId",
+                              "type": "STRING"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "info",
+                      "type": "RECORD",
+                      "fields": [
+                          {
+                              "name": "erc",
+                              "type": "STRING"
+                          },
+                          {
+                              "name": "id",
+                              "type": "STRING"
+                          },
+                          {
+                              "name": "quantity",
+                              "type": "STRING"
+                          }
+                      ]
+                  }
+              ]
+          }
+        ],
+        "table_description": "",
+        "table_name": "Gateway_v2_event_MainchainWithdrew"
+    }
+}

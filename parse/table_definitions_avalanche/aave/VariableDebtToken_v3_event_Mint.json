@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "onBehalfOf",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "balanceIncrease",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Mint",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM UNNEST(['0xe80761ea617f66f96274ea5e8c37f03960ecc679', '0x8619d80fb0141ba7f184cbf22fd724116d9f7ffc', '0xfb00ac187a8eb5afae4eace434f493eb62672df7', '0x953a573793604af8d41f306feb8274190db4ae0e', '0x4a1c3ad6ed28a636ee1751c69071f6be75deb8b8', '0xfccf3cabbe80101232d343252614b6a3ee81c989', '0x92b42c66840c7ad907b4bf74879ff3ef7c529473', '0x0c84331e39d6658cd6e6b9ba04736cc4c4734351', '0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907', '0xce186f6cccb0c955445bb9d10c59cae488fea559', '0xa8669021776bc142dfca87c21b4a52595bcbb40a'])",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aave",
+        "schema": [
+            {
+                "description": "",
+                "name": "caller",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "onBehalfOf",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "value",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "balanceIncrease",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "index",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "VariableDebtToken_v3_event_Mint"
+    }
+}
