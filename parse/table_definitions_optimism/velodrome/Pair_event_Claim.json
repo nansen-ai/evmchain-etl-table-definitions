@@ -31,7 +31,7 @@
             "name": "Claim",
             "type": "event"
         },
-        "contract_address": "0x47029bc8f5cbe3b464004e87ef9c9419a48018cd",
+        "contract_address": "SELECT pair FROM ref('PairFactory_event_PairCreated')",
         "field_mapping": {},
         "type": "log"
     },
