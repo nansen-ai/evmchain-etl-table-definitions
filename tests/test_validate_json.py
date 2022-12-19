@@ -71,23 +71,3 @@ def test_table_name_is_correct(filename):
     basename = os.path.basename(filename)
     expected_table_name = basename.replace('.json', '')
     assert expected_table_name == table_name
-
-
-@pytest.mark.parametrize("filename", all_files)
-def test_no_empty_event_input_names(filename):
-    json_data = load_json_file(filename)
-    abi = json_data["parser"]["abi"]
-    for i, _input in enumerate(abi["inputs"]):
-        assert _input["name"] != "", \
-            f'Empty name for input {i} of "{abi["name"]}".' \
-            ' Please use "unnamedField0", "unnamedField1", etc.'
-
-
-@pytest.mark.parametrize("filename", all_files)
-def test_no_empty_column_names(filename):
-    json_data = load_json_file(filename)
-    table = json_data["table"]
-    for i, column in enumerate(table["schema"]):
-        assert column["name"] != "", \
-            f'Empty name for column {i} of "{table["table_name"]}".' \
-            ' Please use "unnamedField0", "unnamedField1", etc.'
