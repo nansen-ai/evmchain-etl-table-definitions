@@ -37,7 +37,7 @@
             "name": "Mint",
             "type": "event"
         },
-        "contract_address": "SELECT aToken FROM REF('PoolConfigurator_event_ReserveInitialized') group by aToken",
+        "contract_address": "SELECT aToken FROM ref('PoolConfigurator_event_ReserveInitialized') group by aToken",
         "field_mapping": {},
         "type": "log"
     },
