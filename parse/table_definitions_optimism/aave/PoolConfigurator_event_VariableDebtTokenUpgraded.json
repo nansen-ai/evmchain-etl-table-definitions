@@ -25,7 +25,7 @@
             "name": "VariableDebtTokenUpgraded",
             "type": "event"
         },
-        "contract_address": "0x8145edddf43f50276641b55bd3ad95944510021e",
+        "contract_address": "0x8145eddDf43f50276641b55bd3AD95944510021E",
         "field_mapping": {},
         "type": "log"
     },
