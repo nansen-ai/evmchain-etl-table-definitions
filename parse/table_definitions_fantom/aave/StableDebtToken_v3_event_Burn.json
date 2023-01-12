@@ -43,7 +43,7 @@
             "name": "Burn",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0xfaef6a702d15428e588d4c0614aefb4348d83d48', '0xd94112b5b62d53c9402e7a60289c6810def1dc9b', '0x70effc565db6eef7b927610155602d31b670e802', '0x89d976629b7055ff1ca02b927ba3e020f22a44e4', '0xf15f26710c827dde8acba678682f3ce24f2fb56e', '0x307ffe186f84a3bc2613d1ea417a5737d69a7007', '0x633b207dd676331c413d4c013a6294b0fe47cd0e', '0xd8ad37849950903571df17049516a5cd4cbe55f6', '0x08cb71192985e936c7cd166a8b268035e400c3c3', '0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841'])",
+        "contract_address": "SELECT stableDebtToken FROM ref('PoolConfigurator_event_ReserveInitialized') GROUP BY stableDebtToken",
         "field_mapping": {},
         "type": "log"
     },
