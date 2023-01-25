@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "CheckAccessDisabled",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM UNNEST(['0x0192a7ca918cc005253008be85dce18b164de437', '0x078f87538ff51039b1cd0cc649a845769ce047f9', '0x090ef17e7fff9abb3bff40f9b75bd5e08d4fb87c', '0x09e93abe052d91474aaa677b481e6ab116d7a4f0', '0x126e68511202615195046820ad29b9bc98c0ce81', '0x1be57612761c24e421ee9f88962e04b828381ce0', '0x27a0d23a7910c793dbcf394c659c7e7b739c200b', '0x2b914bc7c665f72a5627a4660cc5042086a2e4b3', '0x2c9fa45976174fa6137659a85df06866082ec7ff', '0x394cfc87d791e02eea552726228ad29680df6092', '0x3a1c9e3bdbffa357b22beaba923bfce854e6a311', '0x3ba21bdc9502b3eea66ce1a8270997dcc31cc468', '0x44f9db77f4fe702dc334920aadff841e944941e9', '0x58265774eecc52e3c5a8eef505f89526ae2bd391', '0x5d28a0116908dfc5abeb16d2ea9f9b909660c8ca', '0x5d6d3cd73c597e66353761e4040a73570818dc63', '0x60eba0e16e92ac9187d5410294b7d253ba717fda', '0x89f446d08222f3af6751236aad10533dbb18de63', '0x8c7b19db32033c2734b7c371b4c1bb2f0ad6fc7d', '0x8d098b961d3eb72ddd6bd79349434259b539cea1', '0xa5033f33c753660ee75d654754ffe584fc661312', '0xa97cb3c75ed6c8dc2dac1e645dee9d903e0d8f76', '0xad7799b5dd5afb2af782392c2523434772452f45', '0xae21867e103aa22d0790abf980277e9215b053f9', '0xb14da87982a93264462726922fe1408dea2b35f0', '0xbc42a3c5d384d1370b225be57445ff685e700284', '0xbf32c03c4247d9bf198f5591e1878df896aa68d8', '0xca0f6c2de4e20f3b07b79c083167df92d82432b2', '0xd62daef2c4d4f75ac2220e081aed49035c808f6b', '0xde34d5d486ef3754225c8f80d17a874a973b0d96', '0xe7d50a0b8b9ce9f9b9a6fee2be9b6f64f1014cc4', '0xe884bef1483953ab12d3be567519343fa21f4fd6', '0xedcaa147ee514fe328aacd40f7cb317ff2feb307', '0xee1ac4ddc089ebb281e9ba2292627af9f915bb7e', '0xf32d2696fd0c177b5b50e89306c30f07e7fd642a', '0xf8c08dd48cc94ff742f18d64fcb8626ea824cf15'])",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_CheckAccessDisabled"
+    }
+}
