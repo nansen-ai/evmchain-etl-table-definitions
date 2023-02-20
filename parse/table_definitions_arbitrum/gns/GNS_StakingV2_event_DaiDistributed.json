@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x6b8d3c08072a020ac065c467ce922e3a36d3f9d6",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "DaiDistributed",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "gns",
+        "table_name": "GNS_StakingV2_event_DaiDistributed",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "amount",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
