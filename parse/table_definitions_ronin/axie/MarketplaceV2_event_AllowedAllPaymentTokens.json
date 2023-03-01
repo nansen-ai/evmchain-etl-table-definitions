@@ -1,0 +1,35 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
+        "abi": {
+            "inputs": [
+                {
+                    "internal_type": "",
+                    "name": "",
+                    "type": "bool",
+                    "indexed": false
+                }
+            ],
+            "name": "AllowedAllPaymentTokens",
+            "outputs": null,
+            "payable": false,
+            "stateMutability": "",
+            "type": "event",
+            "anonymous": false
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "axie",
+        "table_name": "MarketplaceV2_event_AllowedAllPaymentTokens",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
+        "abi": {
+            "inputs": [
+                {
+                    "internal_type": "",
+                    "name": "KatanaRouterContract",
+                    "type": "address",
+                    "indexed": false
+                }
+            ],
+            "name": "KatanaRouterUpdated",
+            "outputs": null,
+            "payable": false,
+            "stateMutability": "",
+            "type": "event",
+            "anonymous": false
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "axie",
+        "table_name": "MarketplaceV2_event_KatanaRouterUpdated",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "KatanaRouterContract",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

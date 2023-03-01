@@ -1,0 +1,57 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
+        "abi": {
+            "inputs": [
+                {
+                    "internal_type": "",
+                    "name": "role",
+                    "type": "bytes32",
+                    "indexed": true
+                },
+                {
+                    "internal_type": "",
+                    "name": "previousAdminRole",
+                    "type": "bytes32",
+                    "indexed": true
+                },
+                {
+                    "internal_type": "",
+                    "name": "newAdminRole",
+                    "type": "bytes32",
+                    "indexed": true
+                }
+            ],
+            "name": "RoleAdminChanged",
+            "outputs": null,
+            "payable": false,
+            "stateMutability": "",
+            "type": "event",
+            "anonymous": false
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "axie",
+        "table_name": "MarketplaceV2_event_RoleAdminChanged",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "role",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "previousAdminRole",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newAdminRole",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
