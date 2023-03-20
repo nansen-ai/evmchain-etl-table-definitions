@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "profileId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "newMetadata",
+                    "type": "string"
+                }
+            ],
+            "name": "SetMetadata",
+            "type": "event"
+        },
+        "contract_address": "0x2723522702093601e6360CAe665518C4f63e9dA6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "bsc_link3_profile",
+        "schema": [
+            {
+                "description": "",
+                "name": "profileId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newMetadata",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ProfileNFT_event_SetMetadata"
+    }
+}

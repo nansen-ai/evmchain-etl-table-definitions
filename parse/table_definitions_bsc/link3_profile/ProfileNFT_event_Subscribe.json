@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "profileIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes[]",
+                    "name": "preDatas",
+                    "type": "bytes[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes[]",
+                    "name": "postDatas",
+                    "type": "bytes[]"
+                }
+            ],
+            "name": "Subscribe",
+            "type": "event"
+        },
+        "contract_address": "0x2723522702093601e6360CAe665518C4f63e9dA6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "bsc_link3_profile",
+        "schema": [
+            {
+                "description": "",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "profileIds",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "preDatas",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "postDatas",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ProfileNFT_event_Subscribe"
+    }
+}
