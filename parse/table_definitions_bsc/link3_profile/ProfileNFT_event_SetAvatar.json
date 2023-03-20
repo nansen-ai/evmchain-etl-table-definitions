@@ -19,12 +19,12 @@
             "name": "SetAvatar",
             "type": "event"
         },
-        "contract_address": "0x2723522702093601e6360CAe665518C4f63e9dA6",
+        "contract_address": "0x2723522702093601e6360cae665518c4f63e9da6",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "bsc_link3_profile",
+        "dataset_name": "link3_profile",
         "schema": [
             {
                 "description": "",
