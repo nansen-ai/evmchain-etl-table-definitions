@@ -25,7 +25,7 @@
             "name": "Transfer",
             "type": "event"
         },
-        "contract_address": "0xa5ba6e5ec19a1bf23c857991c857db62b2aa187b",
+        "contract_address": "SELECT aToken FROM ref('PoolConfigurator_event_ReserveInitialized') group by aToken",
         "field_mapping": {},
         "type": "log"
     },

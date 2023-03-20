@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "CheckAccessDisabled",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM UNNEST(['0x15e682ba1f3e68d507eb8d21f2d2a90ba82559ae', '0x1f0c026d3f87b0c69e3c8399a53b8da4aa6304c2', '0x2946220288dbbf77df0030fcecc2a8348cbbe32c', '0x421cff3ff719b5101f9c8da487445c39838a566c', '0x42a70dc2cfca080da3a2568a3ec3a51e6e76363f', '0x472105bb154bd92580a9669ab2483864c3de9974', '0x50a0a7c4066336203488c877958a8d7d3ab946fe', '0x50f8339e5668f85bcb4d8df987c12b7df4c99084', '0x5cd752a9493630cfbb6f545c78d342d638e90fe3', '0x649f04a23ee3708331a949395b61f37b3fd94847', '0x69ae9c103f8f39df5d35fc6bfcf346223a71ba48', '0x8173d07c6b085ae79326fd6dd514ab5966c3248c', '0x9c5a8b11cee8c207753c313a566761526f2c7934', '0x9fe3826d53e76e877ca6124ed2997a33b25896ba', '0xa4ea84d48d59f84bdd1a7f8da9410d2da2261d6f', '0xadc59a292c274b438bd29de01897b07d40e9b408', '0xbfc6236ce03765739db1393421c0d7675eed8d7d', '0xc2bd6467d9567cfaf2783d7de5f337bf98fe62c1', '0xc7439cd23025a798913a027fb46bc347021483db', '0xd62d2afe0196ef7a80836f74f420b7e8976f46ae', '0xd867c068534ad7d3be0fe4f321aacddce371db1a', '0xe3932dd2b44931c10a3254adba01e7e291780ccd', '0xf13148424cc6fdfa793eae323b081c130ff839f1', '0xfd94d015b1a293f027db73060b8e0f7c9e84db59', '0xfdb46212df397e25d96f646f9a2647daec3e3cca'])",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_CheckAccessDisabled"
+    }
+}
