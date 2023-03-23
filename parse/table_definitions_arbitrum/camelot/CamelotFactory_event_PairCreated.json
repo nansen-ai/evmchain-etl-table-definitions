@@ -1,0 +1,65 @@
+{
+  "parser": {
+      "abi": {
+          "anonymous": false,
+          "inputs": [
+              {
+                  "indexed": true,
+                  "internalType": "address",
+                  "name": "token0",
+                  "type": "address"
+              },
+              {
+                  "indexed": true,
+                  "internalType": "address",
+                  "name": "token1",
+                  "type": "address"
+              },
+              {
+                  "indexed": false,
+                  "internalType": "address",
+                  "name": "pair",
+                  "type": "address"
+              },
+              {
+                  "indexed": false,
+                  "internalType": "uint256",
+                  "name": "length",
+                  "type": "uint256"
+              }
+          ],
+          "name": "PairCreated",
+          "type": "event"
+      },
+      "contract_address": "0x6eccab422d763ac031210895c81787e87b43a652",
+      "field_mapping": {},
+      "type": "log"
+  },
+  "table": {
+      "dataset_name": "camelot",
+      "schema": [
+          {
+              "description": "",
+              "name": "token0",
+              "type": "STRING"
+          },
+          {
+              "description": "",
+              "name": "token1",
+              "type": "STRING"
+          },
+          {
+              "description": "",
+              "name": "pair",
+              "type": "STRING"
+          },
+          {
+              "description": "",
+              "name": "length",
+              "type": "STRING"
+          }
+      ],
+      "table_description": "",
+      "table_name": "CamelotFactory_event_PairCreated"
+  }
+}

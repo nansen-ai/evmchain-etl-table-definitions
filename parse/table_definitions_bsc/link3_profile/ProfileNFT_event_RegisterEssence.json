@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "profileId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "essenceId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "essenceTokenURI",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "essenceMw",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "prepareReturnData",
+                    "type": "bytes"
+                }
+            ],
+            "name": "RegisterEssence",
+            "type": "event"
+        },
+        "contract_address": "0x2723522702093601e6360cae665518c4f63e9da6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "link3_profile",
+        "schema": [
+            {
+                "description": "",
+                "name": "profileId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "essenceId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "name",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "symbol",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "essenceTokenURI",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "essenceMw",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "prepareReturnData",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ProfileNFT_event_RegisterEssence"
+    }
+}
