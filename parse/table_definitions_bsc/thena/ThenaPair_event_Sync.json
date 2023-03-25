@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reserve0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reserve1",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Sync",
+            "type": "event"
+        },
+        "contract_address": "SELECT pair FROM ref('ThenaPairFactory_event_PairCreated')",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "thena",
+        "schema": [
+            {
+                "description": "",
+                "name": "reserve0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "reserve1",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Pair_event_Sync"
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token0",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token1",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "pair",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "noname",
+                    "type": "uint256"
+                }
+            ],
+            "name": "PairCreated",
+            "type": "event"
+        },
+        "contract_address": "0xAFD89d21BdB66d00817d4153E055830B1c2B3970",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "thena",
+        "schema": [
+            {
+                "description": "",
+                "name": "token0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "token1",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "stable",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "pair",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "noname",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PairFactory_event_PairCreated"
+    }
+}
