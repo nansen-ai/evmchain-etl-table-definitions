@@ -71,6 +71,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PairFactory_event_PairCreated"
+        "table_name": "ThenaPairFactory_event_PairCreated"
     }
 }
