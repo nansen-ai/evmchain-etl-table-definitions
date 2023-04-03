@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenIn",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOut",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Swap",
+            "type": "event"
+        },
+        "contract_address": "0xabbc5f99639c9b6bcb58544ddf04efa6802f4064",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenIn",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenOut",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amountIn",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amountOut",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Router_event_Swap"
+    }
+}
