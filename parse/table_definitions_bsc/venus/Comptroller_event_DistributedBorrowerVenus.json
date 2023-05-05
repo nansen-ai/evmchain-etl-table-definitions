@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract VToken",
+                    "name": "vToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "venusDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "venusBorrowIndex",
+                    "type": "uint256"
+                }
+            ],
+            "name": "DistributedBorrowerVenus",
+            "type": "event"
+        },
+        "contract_address": "0xf6c14d4dfe45c132822ce28c646753c54994e59c",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "venus",
+        "schema": [
+            {
+                "description": "",
+                "name": "vToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "borrower",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "venusDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "venusBorrowIndex",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Comptroller_event_DistributedBorrowerVenus"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldVAIMintRate",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newVAIMintRate",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewVAIMintRate",
+            "type": "event"
+        },
+        "contract_address": "0xf6c14d4dfe45c132822ce28c646753c54994e59c",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "venus",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldVAIMintRate",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newVAIMintRate",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Comptroller_event_NewVAIMintRate"
+    }
+}

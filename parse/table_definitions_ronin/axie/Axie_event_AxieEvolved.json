@@ -46,7 +46,17 @@
             {
                 "description": "",
                 "name": "_genes",
-                "type": "STRING"
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "x",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "y",
+                        "type": "STRING"
+                    }
+                ]
             }
         ],
         "table_description": "",

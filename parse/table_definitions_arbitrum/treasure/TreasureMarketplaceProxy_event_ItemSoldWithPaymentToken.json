@@ -1,0 +1,98 @@
+{
+  "parser": {
+    "type": "log",
+    "contract_address": "0x09986b4e255b3c548041a30a2ee312fe176731c2",
+    "abi": {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "seller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "buyer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "quantity",
+          "type": "uint64"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "pricePerItem",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "paymentToken",
+          "type": "address"
+        }
+      ],
+      "name": "ItemSold",
+      "type": "event"
+    },
+    "field_mapping": {}
+  },
+  "table": {
+    "dataset_name": "treasure",
+    "table_name": "TreasureMarketplaceProxy_event_ItemSoldWithPaymentToken",
+    "table_description": "",
+    "schema": [
+      {
+        "name": "seller",
+        "description": "",
+        "type": "STRING"
+      },
+      {
+        "name": "buyer",
+        "description": "",
+        "type": "STRING"
+      },
+      {
+        "name": "nftAddress",
+        "description": "",
+        "type": "STRING"
+      },
+      {
+        "name": "tokenId",
+        "description": "",
+        "type": "STRING"
+      },
+      {
+        "name": "quantity",
+        "description": "",
+        "type": "STRING"
+      },
+      {
+        "name": "pricePerItem",
+        "description": "",
+        "type": "STRING"
+      },
+      {
+        "name": "paymentToken",
+        "description": "",
+        "type": "STRING"
+      }
+    ]
+  }
+}

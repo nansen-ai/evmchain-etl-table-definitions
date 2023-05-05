@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x36d69b62b5c312d27790751814b7099f1e3245b2",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sellerAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "startingPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "position",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "royalty",
+                    "type": "bool"
+                }
+            ],
+            "name": "AuctionStarted",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "kalao",
+        "table_name": "KalaoAuctionHouse_event_AuctionStarted",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "sellerAddress",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenAddress",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenId",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "startingPrice",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "duration",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "position",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "royalty",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x11ac3118309a7215c6d87c7c396e2df333ae3a9c",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sellerAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenAddres",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "position",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "royalty",
+                    "type": "bool"
+                }
+            ],
+            "name": "SaleStarted",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "kalao",
+        "table_name": "KalaoDirect_event_SaleStarted",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "sellerAddress",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenAddres",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenId",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "price",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "position",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "royalty",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

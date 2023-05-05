@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "key",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "hasProfit",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "delta",
+                    "type": "uint256"
+                }
+            ],
+            "name": "UpdatePnl",
+            "type": "event"
+        },
+        "contract_address": "0x9ab2de34a33fb459b538c43f251eb825645e8595",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "key",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "hasProfit",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "delta",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Vault_event_UpdatePnl"
+    }
+}

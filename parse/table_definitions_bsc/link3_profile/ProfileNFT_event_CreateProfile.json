@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "profileId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "handle",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "avatar",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "metadata",
+                    "type": "string"
+                }
+            ],
+            "name": "CreateProfile",
+            "type": "event"
+        },
+        "contract_address": "0x2723522702093601e6360cae665518c4f63e9da6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "link3_profile",
+        "schema": [
+            {
+                "description": "",
+                "name": "to",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "profileId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "handle",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "avatar",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "metadata",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ProfileNFT_event_CreateProfile"
+    }
+}
