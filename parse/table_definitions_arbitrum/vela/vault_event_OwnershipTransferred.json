@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x5957582f020301a2f732ad17a69ab2d8b2741241",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "vela",
+        "table_name": "vault_event_OwnershipTransferred",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "previousOwner",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "newOwner",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
