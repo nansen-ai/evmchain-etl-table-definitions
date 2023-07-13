@@ -10,4 +10,5 @@ STRUCT('0x0e9b5c79e005a30bf3fbb4d8cccb6b0082ac5a17' as contract_address, 18 as d
 STRUCT('0x20cd97619a51d1a6f1910ce62d98aceb9a13d5e6' as contract_address, 8 as decimals, '0x0411d28c94d85a36bc72cb0f875dfa8371d8ffff' as proxy_address, 'LUSD / USD' as description, 4 as version),
 STRUCT('0xcb35fe6e53e71b30301ec4a3948da4ad3c65ace4' as contract_address, 8 as decimals, '0x3f3f5df88dc9f13eac63df89ec16ef6e7e25dde7' as proxy_address, 'USDT / USD' as description, 4 as version),
 STRUCT('0xfc06bb03a9e1d8033f87ea6a682cbd65477a43b9' as contract_address, 8 as decimals, '0xc5c8e77b397e531b8ec06bfb0048328b30e9ecfb' as proxy_address, 'DAI / USD' as description, 4 as version),
-STRUCT('0x7aaee6ad40a947a162deab5afd0a1e12be6ff871' as contract_address, 8 as decimals, '0xa14d53bc1f1c0f31b4aa3bd109344e5009051a84' as proxy_address, 'EUR / USD' as description, 4 as version)])
+STRUCT('0x7aaee6ad40a947a162deab5afd0a1e12be6ff871' as contract_address, 8 as decimals, '0xa14d53bc1f1c0f31b4aa3bd109344e5009051a84' as proxy_address, 'EUR / USD' as description, 4 as version),
+STRUCT('0xc339c4c7c58cb1d964b7b66f846572d5c355441a' as contract_address, 8 as decimals, '0x59644ec622243878d1464a9504f9e9a31294128a' as proxy_address, 'MIMATIC / USD' as description, 4 as version)])
