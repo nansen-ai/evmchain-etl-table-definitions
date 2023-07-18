@@ -4,16 +4,22 @@
             "anonymous": false,
             "inputs": [
                 {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
                     "indexed": false,
                     "internalType": "UFixed18",
-                    "name": "newMinCollateral",
+                    "name": "amount",
                     "type": "uint256"
                 }
             ],
-            "name": "MinCollateralUpdated",
+            "name": "FeeClaim",
             "type": "event"
         },
-        "contract_address": "0xa59ef0208418559770a48d7ae4f260a28763167b",
+        "contract_address": "0xaf8ced28fce00abd30463d55da81156aa5aeeec2",
         "field_mapping": {},
         "type": "log"
     },
@@ -22,11 +28,16 @@
         "schema": [
             {
                 "description": "",
-                "name": "newMinCollateral",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Controller_event_MinCollateralUpdated"
+        "table_name": "Collateral_event_FeeClaim"
     }
 }

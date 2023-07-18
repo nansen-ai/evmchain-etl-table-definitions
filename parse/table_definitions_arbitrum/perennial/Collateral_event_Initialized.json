@@ -5,15 +5,15 @@
             "inputs": [
                 {
                     "indexed": false,
-                    "internalType": "bool",
-                    "name": "newPaused",
-                    "type": "bool"
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
                 }
             ],
-            "name": "PausedUpdated",
+            "name": "Initialized",
             "type": "event"
         },
-        "contract_address": "0xa59ef0208418559770a48d7ae4f260a28763167b",
+        "contract_address": "0xaf8ced28fce00abd30463d55da81156aa5aeeec2",
         "field_mapping": {},
         "type": "log"
     },
@@ -22,11 +22,11 @@
         "schema": [
             {
                 "description": "",
-                "name": "newPaused",
+                "name": "version",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Controller_event_PausedUpdated"
+        "table_name": "Collateral_event_Initialized"
     }
 }

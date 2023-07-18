@@ -5,21 +5,21 @@
             "inputs": [
                 {
                     "indexed": true,
-                    "internalType": "uint256",
-                    "name": "coordinatorId",
-                    "type": "uint256"
+                    "internalType": "contract IProduct",
+                    "name": "product",
+                    "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "newOwner",
-                    "type": "address"
+                    "internalType": "UFixed18",
+                    "name": "amount",
+                    "type": "uint256"
                 }
             ],
-            "name": "CoordinatorOwnerUpdated",
+            "name": "ShortfallResolution",
             "type": "event"
         },
-        "contract_address": "0xa59ef0208418559770a48d7ae4f260a28763167b",
+        "contract_address": "0xaf8ced28fce00abd30463d55da81156aa5aeeec2",
         "field_mapping": {},
         "type": "log"
     },
@@ -28,16 +28,16 @@
         "schema": [
             {
                 "description": "",
-                "name": "coordinatorId",
+                "name": "product",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "newOwner",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Controller_event_CoordinatorOwnerUpdated"
+        "table_name": "Collateral_event_ShortfallResolution"
     }
 }

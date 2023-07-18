@@ -13,7 +13,7 @@
             "name": "Initialized",
             "type": "event"
         },
-        "contract_address": "0xa59ef0208418559770a48d7ae4f260a28763167b,
+        "contract_address": "0xa59ef0208418559770a48d7ae4f260a28763167b",
         "field_mapping": {},
         "type": "log"
     },
