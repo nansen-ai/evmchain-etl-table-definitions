@@ -25,7 +25,7 @@
             "name": "AccountSettle",
             "type": "event"
         },
-        "contract_address": "0x427bc8694ea59f063b7caa43e3dd77d416922250",
+        "contract_address": "SELECT * FROM UNNEST(['0x260422c091da8c88ef21f5d1112ab43aa94787cd', '0x5b99d122af97ba012aa237bd01577278bfaaff1e', '0x5e660b7b8357059241eaec143e1e68a5a108d035', '0x4e67a8a428206af5a6ac00ba08a67ce827182985'])",
         "field_mapping": {},
         "type": "log"
     },
