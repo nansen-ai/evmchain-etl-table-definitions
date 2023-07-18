@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "PackedFixed18",
+                            "name": "minRate",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "PackedFixed18",
+                            "name": "maxRate",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "PackedFixed18",
+                            "name": "targetRate",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "PackedUFixed18",
+                            "name": "targetUtilization",
+                            "type": "uint128"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct JumpRateUtilizationCurve",
+                    "name": "",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
+                }
+            ],
+            "name": "JumpRateUtilizationCurveUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x427bc8694ea59f063b7caa43e3dd77d416922250",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "minRate",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxRate",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "targetRate",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "targetUtilization",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "",
+                "type": "RECORD"
+            },
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Product_event_JumpRateUtilizationCurveUpdated"
+    }
+}

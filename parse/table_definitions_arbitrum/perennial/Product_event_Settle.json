@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "preVersion",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "toVersion",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Settle",
+            "type": "event"
+        },
+        "contract_address": "0x427bc8694ea59f063b7caa43e3dd77d416922250",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "preVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "toVersion",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Product_event_Settle"
+    }
+}

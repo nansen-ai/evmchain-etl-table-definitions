@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newOracle",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oracleVersion",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OracleUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x427bc8694ea59f063b7caa43e3dd77d416922250",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newOracle",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "oracleVersion",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Product_event_OracleUpdated"
+    }
+}

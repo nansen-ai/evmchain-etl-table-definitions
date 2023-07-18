@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "UFixed18",
+                    "name": "newPositionFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
+                }
+            ],
+            "name": "PositionFeeUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x427bc8694ea59f063b7caa43e3dd77d416922250",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newPositionFee",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Product_event_PositionFeeUpdated"
+    }
+}
