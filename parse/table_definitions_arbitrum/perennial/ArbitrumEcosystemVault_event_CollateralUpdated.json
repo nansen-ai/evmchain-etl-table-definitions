@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract IProduct",
+                    "name": "product",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed18",
+                    "name": "targetCollateral",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CollateralUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x1960628db367281b1a186dd5b80b5dd6978f016f",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "product",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "targetCollateral",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ArbitrumEcosystemVault_event_CollateralUpdated"
+    }
+}
