@@ -28,7 +28,7 @@
                     ],
                     "indexed": false,
                     "internalType": "struct JumpRateUtilizationCurve",
-                    "name": "",
+                    "name": "updates",
                     "type": "tuple"
                 },
                 {
