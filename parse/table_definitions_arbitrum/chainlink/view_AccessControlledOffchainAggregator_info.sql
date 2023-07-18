@@ -3,6 +3,7 @@ STRUCT('0xf6328f007a2fdc547875e24a3bc7e0603fd01727' as contract_address, 8 as de
 STRUCT('0x2946220288dbbf77df0030fcecc2a8348cbbe32c' as contract_address, 8 as decimals, '0x50834f3163758fcc1df9973b6e91f0f0f0434ad3' as proxy_address, 'USDC / USD' as description, 4 as version),
 STRUCT('0xb20bd22d3d2e5a628523d37b3ded569598eb649b' as contract_address, 8 as decimals, '0xd0c7101eacbb49f3decccc166d238410d6d46d57' as proxy_address, 'WBTC / USD' as description, 4 as version),
 STRUCT('0x3607e46698d218b3a5cae44bf381475c0a5e2ca7' as contract_address, 8 as decimals, '0x639fe6ab55c921f74e7fac1ee960c0b6293ba612' as proxy_address, 'ETH / USD' as description, 4 as version),
+STRUCT('0x5d041081725468aa43e72ff0445fde2ad1ade775' as contract_address, 8 as decimals, '0x0809e3d38d1b4214958faf06d8b1b1a2b73f2ab8' as proxy_address, 'FRAX / USD' as description, 4 as version),
 STRUCT('0x3c6abda21358c15601a3175d8dd66d0c572cc904' as contract_address, 8 as decimals, '0xad1d5344aade45f43e596773bcc4c423eabdd034' as proxy_address, 'AAVE / USD' as description, 4 as version),
 STRUCT('0x3c6abda21358c15601a3175d8dd66d0c572cc904' as contract_address, 8 as decimals, '0xad1d5344aade45f43e596773bcc4c423eabdd034' as proxy_address, 'AAVE / USD' as description, 4 as version),
 STRUCT('0x9b8ddcf800a7bfcdebad6d65514de59160a2c9cc' as contract_address, 8 as decimals, '0x86e53cf1b870786351da77a57575e79cb55812cb' as proxy_address, 'LINK / USD' as description, 4 as version),
