@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract IProduct",
+                    "name": "product",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed18",
+                    "name": "targetPosition",
+                    "type": "uint256"
+                }
+            ],
+            "name": "PositionUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x5a572b5fbbc43387b5ef8de2c4728a4108ef24a6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "product",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "targetPosition",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "BlueChipVault_event_PositionUpdated"
+    }
+}
