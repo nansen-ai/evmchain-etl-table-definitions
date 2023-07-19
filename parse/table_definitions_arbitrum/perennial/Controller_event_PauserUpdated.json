@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newPauser",
+                    "type": "address"
+                }
+            ],
+            "name": "PauserUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xa59ef0208418559770a48d7ae4f260a28763167b",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newPauser",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Controller_event_PauserUpdated"
+    }
+}
