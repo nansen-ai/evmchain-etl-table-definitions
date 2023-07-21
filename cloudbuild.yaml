@@ -1,6 +1,6 @@
 steps:
   - name: gcr.io/cloud-builders/gsutil
-    args: ["-m", "rsync", "-r", "-c", "-d", "-x", ".*/sqls/.*", "./parse", "gs://${_BUCKET}/dags/resources/stages/parse"]
+    args: ["-m", "rsync", "-r", "-c", "-d", "./parse", "gs://${_BUCKET}/dags/resources/stages/parse"]
 
 substitutions:
  _BUCKET: your-bucket
