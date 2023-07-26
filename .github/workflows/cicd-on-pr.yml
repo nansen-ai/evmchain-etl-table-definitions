@@ -27,12 +27,12 @@ jobs:
 
     - name: Run Docker image
       run: |
-        echo "$SERVICE_ACCOUNT_DEV" > /tmp/credentials.json
+        echo "$SERVICE_ACCOUNT_DEV" > ./credentials.json
         docker run \
           -v $PWD:/app \
-          -e GOOGLE_APPLICATION_CREDENTIALS=/tmp/credentials.json \
+          -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json \
           gcr.io/nansen-blockchain-etl-dev/evmchain-etl-parse:pr-350 \
           --project nansen-blockchain-etl-dev
-        rm /tmp/credentials.json
+        rm ./credentials.json
       env:
         SERVICE_ACCOUNT_DEV: ${{ secrets.SERVICE_ACCOUNT_DEV }}
