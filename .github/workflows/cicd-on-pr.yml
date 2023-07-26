@@ -10,10 +10,10 @@ on:
             - ready_for_review
 
 jobs:
-  setup:
+  get-modified-dirs:
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.setup-matrix.outputs.matrix }}
+      dirs: ${{ steps.get-dirs.outputs.dirs }}
 
     steps:
       - name: Checkout repo
@@ -30,18 +30,13 @@ jobs:
           DIRS_JSON=$(echo $DIRS | tr '\n' ' ' | jq -R -s -c 'split(" ") | map(select(length > 0))')
           echo "dirs=$DIRS_JSON" >> $GITHUB_OUTPUT
 
-      - name: Setup matrix
-        id: setup-matrix
-        run: |
-          echo 'matrix=${{ steps.get-dirs.outputs.dirs }}' >> $GITHUB_OUTPUT
-
   run:
-    needs: setup
-    if: needs.setup.outputs.matrix != '[]'
+    needs: get-modified-dirs
+    if: needs.get-modified-dirs.outputs.dirs != '[]'
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dir: ${{fromJson(needs.setup.outputs.matrix)}}
+        dir: ${{fromJson(needs.get-modified-dirs.outputs.dirs)}}
 
     steps:
     - name: Checkout code
