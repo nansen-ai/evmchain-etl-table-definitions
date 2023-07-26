@@ -38,12 +38,11 @@ jobs:
   run:
     needs: setup
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{needs.setup.outputs.matrix}}
 
     steps:
-    - name: Debug matrix output
-      run: |
-        echo "${{ needs.setup.outputs.matrix }}"
-
     - name: Checkout code
       uses: actions/checkout@v2
 
