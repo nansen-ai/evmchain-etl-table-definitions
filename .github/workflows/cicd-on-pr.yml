@@ -17,14 +17,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Debug SERVICE_ACCOUNT_DEV
-      env:
-        SERVICE_ACCOUNT_DEV: ${{ secrets.SERVICE_ACCOUNT_DEV }}
-      run: echo "${SERVICE_ACCOUNT_DEV:0:30}"
-
     - name: Authenticate Docker to GCR
       run: |
-        echo "${{ secrets.SERVICE_ACCOUNT_DEV }}" | docker login -u _json_key --password-stdin https://gcr.io
+        echo "$SERVICE_ACCOUNT_DEV" > sa_key.json
+        cat sa_key.json | docker login -u _json_key --password-stdin https://gcr.io
+        rm sa_key.json
+      env:
+        SERVICE_ACCOUNT_DEV: ${{ secrets.SERVICE_ACCOUNT_DEV }}
 
     - name: Run Docker image
       run: |
