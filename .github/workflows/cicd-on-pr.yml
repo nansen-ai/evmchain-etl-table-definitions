@@ -18,7 +18,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Debug SERVICE_ACCOUNT_DEV
-      run: echo "${{ secrets.SERVICE_ACCOUNT_DEV:0:30 }}"
+      env:
+        GCP_SA_KEY: ${{ secrets.SERVICE_ACCOUNT_DEV }}
+      run: echo "${SERVICE_ACCOUNT_DEV:0:30}"
 
     - name: Authenticate Docker to GCR
       run: |
