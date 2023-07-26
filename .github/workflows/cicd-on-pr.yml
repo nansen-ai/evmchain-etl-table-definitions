@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Get modified directories
         id: get-dirs
