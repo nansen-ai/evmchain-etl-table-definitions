@@ -25,14 +25,33 @@ jobs:
       env:
         SERVICE_ACCOUNT_DEV: ${{ secrets.SERVICE_ACCOUNT_DEV }}
 
+    - name: Get modified directories
+      id: get-dirs
+      run: |
+        DIRS=$(git diff --name-only origin/main... | grep '^parse/table_definitions' | cut -d"/" -f1-3 | uniq)
+        echo "Modified directories: $DIRS"
+        sudo apt-get install jq
+        DIRS_JSON=$(echo $DIRS | jq -R -s -c 'split(" ")')
+        echo "::set-output name=dirs::$DIRS_JSON"
+
+    - name: Setup matrix
+      id: setup-matrix
+      run: |
+        echo "::set-output name=matrix::{\"dir\": ${{ steps.get-dirs.outputs.dirs }}}"
+
     - name: Run Docker image
+      with:
+        strategy:
+          matrix:
+            dir: ${{fromJson(steps.setup-matrix.outputs.matrix).dir}}
       run: |
         echo "$SERVICE_ACCOUNT_DEV" > ./credentials.json
         docker run \
           -v $PWD:/app \
           -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json \
           gcr.io/nansen-blockchain-etl-dev/evmchain-etl-parse:pr-350 \
-          --project nansen-blockchain-etl-dev
+          --project nansen-blockchain-etl-dev \
+          --dataset ${{ matrix.dir }}
         rm ./credentials.json
       env:
         SERVICE_ACCOUNT_DEV: ${{ secrets.SERVICE_ACCOUNT_DEV }}
