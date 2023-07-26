@@ -83,5 +83,6 @@
         ],
         "table_description": "",
         "table_name": "CampfireMarket_event_Cancel"
-    }
+    },
+    "version": "1"
 }
