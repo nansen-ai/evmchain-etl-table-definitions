@@ -40,10 +40,9 @@ jobs:
         echo "::set-output name=matrix::{\"dir\": ${{ steps.get-dirs.outputs.dirs }}}"
 
     - name: Run Docker image
-      with:
-        strategy:
-          matrix:
-            dir: ${{fromJson(steps.setup-matrix.outputs.matrix).dir}}
+      strategy:
+        matrix:
+          dir: ${{fromJson(steps.setup-matrix.outputs.matrix).dir}}
       run: |
         echo "$SERVICE_ACCOUNT_DEV" > ./credentials.json
         docker run \
