@@ -28,7 +28,7 @@ jobs:
           echo "Modified directories: $DIRS"
           sudo apt-get install jq
           DIRS_JSON=$(echo $DIRS | tr '\n' ' ' | jq -R -s -c 'split(" ") | map(select(length > 0))')
-          echo 'dirs=$DIRS_JSON' >> $GITHUB_OUTPUT
+          echo "dirs=$DIRS_JSON" >> $GITHUB_OUTPUT
 
       - name: Setup matrix
         id: setup-matrix
