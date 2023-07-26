@@ -27,7 +27,7 @@ jobs:
           DIRS=$(git diff --name-only origin/main... | grep '^parse/table_definitions' | cut -d"/" -f1-3 | uniq)
           echo "Modified directories: $DIRS"
           sudo apt-get install jq
-          DIRS_JSON=$(echo $DIRS | jq -R -s -c 'split(" ")')
+          DIRS_JSON=$(echo $DIRS | tr '\n' ' ' | jq -R -s -c 'split(" ")')
           echo "::set-output name=dirs::$DIRS_JSON"
 
       - name: Setup matrix
