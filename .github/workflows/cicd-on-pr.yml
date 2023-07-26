@@ -13,6 +13,10 @@ jobs:
   deploy-table-definitions:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        dir: ${{fromJson(steps.setup-matrix.outputs.matrix).dir}}
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -40,9 +44,6 @@ jobs:
         echo "::set-output name=matrix::{\"dir\": ${{ steps.get-dirs.outputs.dirs }}}"
 
     - name: Run Docker image
-      strategy:
-        matrix:
-          dir: ${{fromJson(steps.setup-matrix.outputs.matrix).dir}}
       run: |
         echo "$SERVICE_ACCOUNT_DEV" > ./credentials.json
         docker run \
