@@ -10,12 +10,15 @@ on:
             - ready_for_review
 
 jobs:
-  run-gcp-script:
+  deploy-table-definitions:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Debug SERVICE_ACCOUNT_DEV
+      run: echo "${{ secrets.SERVICE_ACCOUNT_DEV:0:30 }}"
 
     - name: Authenticate Docker to GCR
       run: |
