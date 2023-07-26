@@ -1,0 +1,31 @@
+---
+name: CICD (PR)
+on:
+    pull_request:
+        branches: [main]
+        types:
+            - opened
+            - reopened
+            - synchronize
+            - ready_for_review
+
+jobs:
+  run-gcp-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Authenticate Docker to GCR
+      run: |
+        echo "${{ secrets.SERVICE_ACCOUNT_DEV }}" | docker login -u _json_key --password-stdin https://gcr.io
+
+    - name: Run Docker image
+      run: |
+        echo "${{ secrets.SERVICE_ACCOUNT_DEV }}" > /tmp/credentials.json
+        docker run \
+          -v $PWD:/app \
+          -e GOOGLE_APPLICATION_CREDENTIALS=/tmp/credentials.json \
+          gcr.io/nansen-blockchain-etl-dev/evmchain-etl-parse:pr-350 \
+          --project nansen-blockchain-etl-dev \
