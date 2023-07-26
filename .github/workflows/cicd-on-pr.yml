@@ -33,7 +33,7 @@ jobs:
       - name: Setup matrix
         id: setup-matrix
         run: |
-          echo "::set-output name=matrix::${{ steps.get-dirs.outputs.dirs }}"
+          echo "matrix=${{ steps.get-dirs.outputs.dirs }}" >> $GITHUB_ENV
 
   run:
     needs: setup
