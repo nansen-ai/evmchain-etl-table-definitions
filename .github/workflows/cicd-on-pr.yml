@@ -33,7 +33,7 @@ jobs:
       - name: Setup matrix
         id: setup-matrix
         run: |
-          echo "matrix=["test1", "test2"]" >> $GITHUB_OUTPUT
+          echo 'matrix=["test1", "test2"]' >> $GITHUB_OUTPUT
 
   run:
     needs: setup
