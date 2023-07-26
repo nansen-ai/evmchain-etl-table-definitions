@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "tokenX",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "tokenY",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "binStep",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract ILBPair",
+                    "name": "LBPair",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                }
+            ],
+            "name": "LBPairCreated",
+            "type": "event"
+        },
+        "contract_address": "0x8e42f2f4101563bf679975178e880fd87d3efd4e",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "traderjoe",
+        "schema": [
+            {
+                "description": "",
+                "name": "tokenX",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenY",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "binStep",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "LBPair",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "pid",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LBFactory_event_LBPairCreated"
+    }
+}
