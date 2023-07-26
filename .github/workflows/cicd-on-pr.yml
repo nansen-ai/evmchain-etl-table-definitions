@@ -10,12 +10,35 @@ on:
             - ready_for_review
 
 jobs:
-  deploy-table-definitions:
+  setup:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.setup-matrix.outputs.matrix }}
 
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Get modified directories
+        id: get-dirs
+        run: |
+          DIRS=$(git diff --name-only origin/main... | grep '^parse/table_definitions' | cut -d"/" -f1-3 | uniq)
+          echo "Modified directories: $DIRS"
+          sudo apt-get install jq
+          DIRS_JSON=$(echo $DIRS | jq -R -s -c 'split(" ")')
+          echo "::set-output name=dirs::$DIRS_JSON"
+
+      - name: Setup matrix
+        id: setup-matrix
+        run: |
+          echo "::set-output name=matrix::{\"dir\": ${{ steps.get-dirs.outputs.dirs }}}"
+
+  run:
+    needs: setup
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        dir: ${{fromJson(steps.setup-matrix.outputs.matrix).dir}}
+        dir: ${{fromJson(needs.setup.outputs.matrix).dir}}
 
     steps:
     - name: Checkout code
@@ -28,20 +51,6 @@ jobs:
         rm sa_key.json
       env:
         SERVICE_ACCOUNT_DEV: ${{ secrets.SERVICE_ACCOUNT_DEV }}
-
-    - name: Get modified directories
-      id: get-dirs
-      run: |
-        DIRS=$(git diff --name-only origin/main... | grep '^parse/table_definitions' | cut -d"/" -f1-3 | uniq)
-        echo "Modified directories: $DIRS"
-        sudo apt-get install jq
-        DIRS_JSON=$(echo $DIRS | jq -R -s -c 'split(" ")')
-        echo "::set-output name=dirs::$DIRS_JSON"
-
-    - name: Setup matrix
-      id: setup-matrix
-      run: |
-        echo "::set-output name=matrix::{\"dir\": ${{ steps.get-dirs.outputs.dirs }}}"
 
     - name: Run Docker image
       run: |
