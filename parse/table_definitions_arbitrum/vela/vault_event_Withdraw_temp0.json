@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0x5957582f020301a2f732ad17a69ab2d8b2741241",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Withdraw",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "vela",
+        "table_name": "vault_event_Withdraw_temp0",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "account",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "token",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "amount",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
