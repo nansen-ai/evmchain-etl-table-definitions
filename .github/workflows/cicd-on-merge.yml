@@ -56,8 +56,8 @@ jobs:
         docker run \
           -v $PWD:/app \
           -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json \
-          gcr.io/nansen-blockchain-etl-prod/evmchain-etl-parse:latest \
-          --project nansen-blockchain-etl-prod \
+          gcr.io/${{ vars.PARSE_PROJECT }}/evmchain-etl-parse:latest \
+          --project ${{ vars.PARSE_PROJECT }} \
           --environment prod \
           --chain_name $CHAIN_NAME \
           --dataset_name $DATASET_NAME \
