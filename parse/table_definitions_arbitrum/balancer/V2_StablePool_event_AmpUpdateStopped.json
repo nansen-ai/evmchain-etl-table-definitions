@@ -27,6 +27,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "V2_MetaStablePool_event_AmpUpdateStopped"
+        "table_name": "V2_StablePool_event_AmpUpdateStopped"
     }
 }

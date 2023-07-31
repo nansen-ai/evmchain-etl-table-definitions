@@ -60,6 +60,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "V2_MetaStablePool_event_AmpUpdateStarted"
+        "table_name": "V2_StablePool_event_AmpUpdateStarted"
     }
 }
