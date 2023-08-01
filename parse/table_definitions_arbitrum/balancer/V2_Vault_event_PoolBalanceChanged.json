@@ -71,6 +71,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Vault_event_PoolBalanceChanged"
+        "table_name": "V2_Vault_event_PoolBalanceChanged"
     }
 }
