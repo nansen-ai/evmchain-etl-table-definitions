@@ -48,7 +48,7 @@
         "field_mapping": {}
     },
     "table": {
-        "dataset_name": "sushiswap",
+        "dataset_name": "uniswap",
         "table_name": "UniswapV3Pool_event_Burn",
         "table_description": "",
         "schema": [
