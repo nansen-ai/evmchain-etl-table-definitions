@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "oldOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnerChanged",
+            "type": "event"
+        },
+        "contract_address": "0xc35dadb65012ec5796536bd9864ed8773abc74c4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "sushiswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldOwner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newOwner",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "UniswapV3Factory_event_OwnerChanged"
+    }
+}
