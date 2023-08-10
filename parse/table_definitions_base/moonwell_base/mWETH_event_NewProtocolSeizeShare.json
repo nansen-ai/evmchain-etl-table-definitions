@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldProtocolSeizeShareMantissa",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newProtocolSeizeShareMantissa",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewProtocolSeizeShare",
+            "type": "event"
+        },
+        "contract_address": "0x628ff693426583d9a7fb391e54366292f509d457",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_artemis",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldProtocolSeizeShareMantissa",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newProtocolSeizeShareMantissa",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "mWETH_event_NewProtocolSeizeShare"
+    }
+}
