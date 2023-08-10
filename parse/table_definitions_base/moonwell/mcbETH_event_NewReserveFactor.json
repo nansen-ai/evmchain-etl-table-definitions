@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldReserveFactorMantissa",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newReserveFactorMantissa",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewReserveFactor",
+            "type": "event"
+        },
+        "contract_address": "0x3bf93770f2d4a794c3d9ebefbaebae2a8f09a5e5",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldReserveFactorMantissa",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newReserveFactorMantissa",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "mcbETH_event_NewReserveFactor"
+    }
+}
