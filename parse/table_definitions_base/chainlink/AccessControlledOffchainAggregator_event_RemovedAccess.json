@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                }
+            ],
+            "name": "RemovedAccess",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM UNNEST(['0x08f9654349b33b955133b28e35dbecce9950c219','0x6228a44cd0ec29c3373c9742e4bbaf6f2e536b9a','0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077','0x0ee7145e1370653533e2f2e824424be2aa95a4aa'])",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [
+            {
+                "description": "",
+                "name": "user",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_RemovedAccess"
+    }
+}

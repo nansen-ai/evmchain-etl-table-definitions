@@ -1,0 +1,4 @@
+SELECT * FROM UNNEST([STRUCT('0x08f9654349b33b955133b28e35dbecce9950c219' as contract_address, 18 as decimals, '0x806b4ac04501c29769051e42783cf04dce41440b' as proxy_address, 'CBETH / ETH' as description, 4 as version),
+STRUCT('0x6228a44cd0ec29c3373c9742e4bbaf6f2e536b9a' as contract_address, 8 as decimals, '0x9dda783de64a9d1a60c49ca761ebe528c35ba428' as proxy_address, 'COMP / USD' as description, 4 as version),
+STRUCT('0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077' as contract_address, 8 as decimals, '0x71041dddad3595f9ced3dccfbe3d1f4b0a16bb70' as proxy_address, 'ETH / USD' as description, 4 as version),
+STRUCT('0x0ee7145e1370653533e2f2e824424be2aa95a4aa' as contract_address, 8 as decimals, '0x7e860098f58bbfc8648a4311b374b1d669a2bc6b' as proxy_address, 'USDC / USD' as description, 4 as version)])
