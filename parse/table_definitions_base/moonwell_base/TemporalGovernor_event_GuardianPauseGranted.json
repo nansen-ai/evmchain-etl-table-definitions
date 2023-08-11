@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "name": "GuardianPauseGranted",
+            "type": "event"
+        },
+        "contract_address": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_base",
+        "schema": [
+            {
+                "description": "",
+                "name": "timestamp",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "TemporalGovernor_event_GuardianPauseGranted"
+    }
+}
