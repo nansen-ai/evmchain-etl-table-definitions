@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "aggregatorRoundId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int192",
+                    "name": "answer",
+                    "type": "int192"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "transmitter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int192[]",
+                    "name": "observations",
+                    "type": "int192[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "observers",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "rawReportContext",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "NewTransmission",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM UNNEST(['0x08f9654349b33b955133b28e35dbecce9950c219', '0x6228a44cd0ec29c3373c9742e4bbaf6f2e536b9a', '0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077', '0x0ee7145e1370653533e2f2e824424be2aa95a4aa'])",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [
+            {
+                "description": "",
+                "name": "aggregatorRoundId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "answer",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "transmitter",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "observations",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "observers",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "rawReportContext",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_NewTransmission"
+    }
+}
