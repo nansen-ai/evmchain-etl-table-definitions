@@ -6,26 +6,32 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "cometProxy",
+                    "name": "absorber",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint64",
-                    "name": "oldIRBase",
-                    "type": "uint64"
+                    "internalType": "uint256",
+                    "name": "basePaidOut",
+                    "type": "uint256"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint64",
-                    "name": "newIRBase",
-                    "type": "uint64"
+                    "internalType": "uint256",
+                    "name": "usdValue",
+                    "type": "uint256"
                 }
             ],
-            "name": "SetBorrowPerYearInterestRateBase",
+            "name": "AbsorbDebt",
             "type": "event"
         },
-        "contract_address": "0x45939657d1ca34a8fa39a924b71d28fe8431e581",
+        "contract_address": "0x46e6b214b524310239732d51387075e0e70970bf",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +40,26 @@
         "schema": [
             {
                 "description": "",
-                "name": "cometProxy",
+                "name": "absorber",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "oldIRBase",
+                "name": "borrower",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "newIRBase",
+                "name": "basePaidOut",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "usdValue",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Configurator_v3_event_SetBorrowPerYearInterestRateBase"
+        "table_name": "cWETHv3_event_AbsorbDebt"
     }
 }
