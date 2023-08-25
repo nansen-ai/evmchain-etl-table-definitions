@@ -19,7 +19,7 @@
             "name": "ReserveActive",
             "type": "event"
         },
-        "contract_address": "0x5456c510acb8bd0b9a65b4b632db2925690d3237",
+        "contract_address": "0x5731a04b1e775f0fdd454bf70f3335886e9a96be",
         "field_mapping": {},
         "type": "log"
     },
