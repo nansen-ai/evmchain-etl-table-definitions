@@ -6,7 +6,19 @@
                 {
                     "indexed": true,
                     "internalType": "address",
+                    "name": "src",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
                     "type": "address"
                 },
                 {
@@ -16,10 +28,10 @@
                     "type": "uint256"
                 }
             ],
-            "name": "WithdrawReserves",
+            "name": "WithdrawCollateral",
             "type": "event"
         },
-        "contract_address": "0x9c4ec768c28520b50860ea7a15bd7213a9ff58bf",
+        "contract_address": "0x46e6b214b524310239732d51387075e0e70970bf",
         "field_mapping": {},
         "type": "log"
     },
@@ -28,7 +40,17 @@
         "schema": [
             {
                 "description": "",
+                "name": "src",
+                "type": "STRING"
+            },
+            {
+                "description": "",
                 "name": "to",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "asset",
                 "type": "STRING"
             },
             {
@@ -38,6 +60,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "cUSDbCv3_event_WithdrawReserves"
+        "table_name": "cWETHv3_event_WithdrawCollateral"
     }
 }
