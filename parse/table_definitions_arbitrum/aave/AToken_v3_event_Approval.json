@@ -50,6 +50,5 @@
         ],
         "table_description": "",
         "table_name": "AToken_v3_event_Approval"
-    },
-    "version": "1"
+    }
 }
