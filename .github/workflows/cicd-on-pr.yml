@@ -1,0 +1,60 @@
+---
+name: CICD (PR)
+on:
+    pull_request:
+        branches: [main]
+        types:
+            - opened
+            - reopened
+            - synchronize
+            - ready_for_review
+            - closed
+
+jobs:
+  check-lowercase-folder-names:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check folder names are lowercase
+        run: bash ./scripts/folder_name_test.sh
+
+  validate-json-files:
+    runs-on: ubuntu-latest
+    name: Validate Json Files in parse Directory
+    steps:
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+          pip install jsonschema
+      - name: Run pyTest to Validate JSON Files
+        run: python -m pytest --import-mode=append tests/test_validate_json.py
+
+  check-changed-file-limit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Check number of changed files
+        id: check-files
+        run: |
+          # Count the number of changed files
+          NUM_FILES=$(git diff --name-only HEAD~1 HEAD | wc -l)
+          echo "Number of changed files: $NUM_FILES"
+          
+          # Fail the job if more than 50 files are changed
+          if [ "$NUM_FILES" -gt 50 ]; then
+            echo "Error: More than 50 files have been changed. Failing the job."
+            exit 1
+          else
+            echo "Number of changed files is within limit."
+          fi
