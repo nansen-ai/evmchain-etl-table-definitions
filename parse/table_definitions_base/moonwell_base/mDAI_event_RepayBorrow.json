@@ -42,7 +42,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "base_moobwell_base",
+        "dataset_name": "moonwell_base",
         "schema": [
             {
                 "description": "",
