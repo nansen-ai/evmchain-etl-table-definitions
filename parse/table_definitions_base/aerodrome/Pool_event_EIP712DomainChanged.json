@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "EIP712DomainChanged",
+            "type": "event"
+        },
+        "contract_address": "SELECT pool FROM ref('PoolFactory_event_PoolCreated')",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [],
+        "table_description": "",
+        "table_name": "Pool_event_EIP712DomainChanged"
+    }
+}
