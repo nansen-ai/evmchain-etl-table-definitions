@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract MultiRewardDistributor",
+                    "name": "oldRewardDistributor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract MultiRewardDistributor",
+                    "name": "newRewardDistributor",
+                    "type": "address"
+                }
+            ],
+            "name": "NewRewardDistributor",
+            "type": "event"
+        },
+        "contract_address": "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_base",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldRewardDistributor",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newRewardDistributor",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Comptroller_event_NewRewardDistributor"
+    }
+}
