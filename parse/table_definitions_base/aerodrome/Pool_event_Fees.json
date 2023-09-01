@@ -25,7 +25,7 @@
             "name": "Fees",
             "type": "event"
         },
-        "contract_address": "0xa4e46b4f701c62e14df11b48dce76a7d793cd6d7",
+        "contract_address": "SELECT pool FROM ref('PoolFactory_event_PoolCreated')",
         "field_mapping": {},
         "type": "log"
     },
