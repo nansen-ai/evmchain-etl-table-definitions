@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "endpoint",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "quote",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "fees",
+                    "type": "address"
+                }
+            ],
+            "name": "ClearinghouseInitialized",
+            "type": "event"
+        },
+        "contract_address": "0xb8c8d489a3c86bb5f2cc04445da9149c1fb79fbe",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "endpoint",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "quote",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "fees",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Clearinghouse_event_ClearinghouseInitialized"
+    }
+}
