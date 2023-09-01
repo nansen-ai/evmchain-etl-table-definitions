@@ -25,7 +25,7 @@
             "name": "Transfer",
             "type": "event"
         },
-        "contract_address": "0x2de0697aee08843d4975c55eed60e209adf92502",
+        "contract_address": "0x04a8faed05c97290ab4d793a971adee97cd1cbbd",
         "field_mapping": {},
         "type": "log"
     },
