@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "onBehalfOf",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Mint",
+            "type": "event"
+        },
+        "contract_address": "0x2de0697aee08843d4975c55eed60e209adf92502",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "radiant",
+        "schema": [
+            {
+                "description": "",
+                "name": "from",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "onBehalfOf",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "value",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "index",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "VariableDebtToken_USDC.e_event_Mint"
+    }
+}

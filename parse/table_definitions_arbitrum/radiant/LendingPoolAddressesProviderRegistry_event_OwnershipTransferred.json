@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        "contract_address": "0x9d36dce6c66e3c206526f5d7b3308fff16c1aa5e",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "radiant",
+        "schema": [
+            {
+                "description": "",
+                "name": "previousOwner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newOwner",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LendingPoolAddressesProviderRegistry_event_OwnershipTransferred"
+    }
+}
