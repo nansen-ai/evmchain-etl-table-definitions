@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "liquidatorSubaccount",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "liquidateeSubaccount",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "mode",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "healthGroup",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int128",
+                    "name": "amount",
+                    "type": "int128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int128",
+                    "name": "amountQuote",
+                    "type": "int128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int128",
+                    "name": "insuranceCover",
+                    "type": "int128"
+                }
+            ],
+            "name": "Liquidation",
+            "type": "event"
+        },
+        "contract_address": "0xb8c8d489a3c86bb5f2cc04445da9149c1fb79fbe",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "liquidatorSubaccount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "liquidateeSubaccount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "mode",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "healthGroup",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amountQuote",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "insuranceCover",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Clearinghouse_event_Liquidation"
+    }
+}

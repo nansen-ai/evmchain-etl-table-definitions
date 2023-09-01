@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        "contract_address": "0x1800aeebdc39cf286d99d38cb9ec45f26bf99893",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "previousOwner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newOwner",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Endpoint_event_OwnershipTransferred"
+    }
+}
