@@ -49,6 +49,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "AToken_USDC.e_event_Approval"
+        "table_name": "AToken_USDCe_event_Approval"
     }
 }

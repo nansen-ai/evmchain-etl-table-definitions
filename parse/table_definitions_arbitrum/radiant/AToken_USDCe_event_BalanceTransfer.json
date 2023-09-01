@@ -60,6 +60,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "AToken_USDC.e_event_BalanceTransfer"
+        "table_name": "AToken_USDCe_event_BalanceTransfer"
     }
 }

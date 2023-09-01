@@ -49,6 +49,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "VariableDebtToken_USDC.e_event_Burn"
+        "table_name": "VariableDebtToken_USDCe_event_Burn"
     }
 }
