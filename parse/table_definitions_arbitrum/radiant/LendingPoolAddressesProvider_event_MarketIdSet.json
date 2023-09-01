@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "newMarketId",
+                    "type": "string"
+                }
+            ],
+            "name": "MarketIdSet",
+            "type": "event"
+        },
+        "contract_address": "0x091d52cace1edc5527c99cdcfa6937c1635330e4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "radiant",
+        "schema": [
+            {
+                "description": "",
+                "name": "newMarketId",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LendingPoolAddressesProvider_event_MarketIdSet"
+    }
+}
