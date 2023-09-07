@@ -10,6 +10,12 @@
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "onBehalfOf",
+                    "type": "address"
+                },
+                {
                     "indexed": false,
                     "internalType": "uint256",
                     "name": "value",
@@ -25,7 +31,7 @@
             "name": "Mint",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0x727354712bdfcd8596a3852fd2065b3c34f4f770', '0xd69d402d1bdb9a2b8c3d88d98b9ceaf9e4cd72d9', '0x48a29e756cc1c097388f3b2f3b570ed270423b3d', '0x0d914606f3424804fa1bbbe56ccc3416733acec6', '0x0df5dfd95966753f01cb80e76dc20ea958238c46', '0x42c248d137512907048021b30d9da17f48b5b7b2', '0x2dade5b7df9da3a7e1c9748d169cd6dff77e3d01'])",
+        "contract_address": "SELECT * FROM UNNEST(['0x3eeafa33625df20837ed0cb83ae4d1e34788b141', '0x7c2e0f792ea5b4a4dbd7fa7f949cf39a5c0ba185', '0x107583adaa37dfd1cc0bf577183bf91351d07413', '0x04a8faed05c97290ab4d793a971adee97cd1cbbd', '0xab04c0841f39596c9f18a981a2bd32f63ab7a817', '0x97b81aa985115953ba31d59781e2d8159a50f488', '0x295b97012945bd4a1a79ec7f679e16761a437e5c'])",
         "field_mapping": {},
         "type": "log"
     },
@@ -35,6 +41,11 @@
             {
                 "description": "",
                 "name": "from",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "onBehalfOf",
                 "type": "STRING"
             },
             {
@@ -49,6 +60,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "AToken_event_Mint"
+        "table_name": "VariableDebtToken_v2_event_Mint"
     }
 }
