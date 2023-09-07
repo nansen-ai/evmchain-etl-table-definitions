@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Mint",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM UNNEST(['0x727354712bdfcd8596a3852fd2065b3c34f4f770', '0xd69d402d1bdb9a2b8c3d88d98b9ceaf9e4cd72d9', '0x48a29e756cc1c097388f3b2f3b570ed270423b3d', '0x0d914606f3424804fa1bbbe56ccc3416733acec6', '0x0df5dfd95966753f01cb80e76dc20ea958238c46', '0x42c248d137512907048021b30d9da17f48b5b7b2', '0x2dade5b7df9da3a7e1c9748d169cd6dff77e3d01'])",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "radiant",
+        "schema": [
+            {
+                "description": "",
+                "name": "from",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "value",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "index",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AToken_event_Mint"
+    }
+}
