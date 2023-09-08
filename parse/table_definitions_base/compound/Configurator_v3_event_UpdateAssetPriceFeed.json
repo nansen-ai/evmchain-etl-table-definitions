@@ -31,7 +31,7 @@
             "name": "UpdateAssetPriceFeed",
             "type": "event"
         },
-        "contract_address": "0x45939657d1ca34a8fa39a924b71d28fe8431e581",
+        "contract_address": "0x83E0F742cAcBE66349E3701B171eE2487a26e738",
         "field_mapping": {},
         "type": "log"
     },
