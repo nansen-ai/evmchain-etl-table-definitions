@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "version",
+                    "type": "uint8"
+                }
+            ],
+            "name": "Initialized",
+            "type": "event"
+        },
+        "contract_address": "0x8250f4af4b972684f7b336503e2d6dfedeb1487a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "base_pyth",
+        "schema": [
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PythOracle_event_Initialized"
+    }
+}
