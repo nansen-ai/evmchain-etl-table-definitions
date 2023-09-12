@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address"
+                }
+            ],
+            "name": "Upgraded",
+            "type": "event"
+        },
+        "contract_address": "0x8250f4af4b972684f7b336503e2d6dfedeb1487a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "pyth",
+        "schema": [
+            {
+                "description": "",
+                "name": "implementation",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PythOracle_event_Upgraded"
+    }
+}
