@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint24",
+                    "name": "idReference",
+                    "type": "uint24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint24",
+                    "name": "volatilityReference",
+                    "type": "uint24"
+                }
+            ],
+            "name": "ForcedDecay",
+            "type": "event"
+        },
+        "contract_address": "SELECT LBPair FROM ref('LBFactory_event_LBPairCreated')",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "traderjoe_21",
+        "schema": [
+            {
+                "description": "",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "idReference",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "volatilityReference",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LBPair_event_ForcedDecay"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint24",
+                    "name": "id",
+                    "type": "uint24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "totalFees",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "protocolFees",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "CompositionFees",
+            "type": "event"
+        },
+        "contract_address": "SELECT LBPair FROM ref('LBFactory_event_LBPairCreated')",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "traderjoe_21",
+        "schema": [
+            {
+                "description": "",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "id",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "totalFees",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "protocolFees",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LBPair_event_CompositionFees"
+    }
+}

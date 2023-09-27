@@ -1,0 +1,109 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "baseFactor",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "filterPeriod",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "decayPeriod",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "reductionFactor",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint24",
+                    "name": "variableFeeControl",
+                    "type": "uint24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "protocolShare",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint24",
+                    "name": "maxVolatilityAccumulator",
+                    "type": "uint24"
+                }
+            ],
+            "name": "StaticFeeParametersSet",
+            "type": "event"
+        },
+        "contract_address": "SELECT LBPair FROM ref('LBFactory_event_LBPairCreated')",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "traderjoe_21",
+        "schema": [
+            {
+                "description": "",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "baseFactor",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "filterPeriod",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "decayPeriod",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "reductionFactor",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "variableFeeControl",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "protocolShare",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "maxVolatilityAccumulator",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LBPair_event_StaticFeeParametersSet"
+    }
+}
