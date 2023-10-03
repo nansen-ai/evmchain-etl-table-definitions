@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_nftManager",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "removed",
+                    "type": "bool"
+                }
+            ],
+            "name": "NFTManagerRemoved",
+            "type": "event"
+        },
+        "contract_address": "0xc7a590291e07b9fe9e64b86c58fd8fc764308c4a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "kyberswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "_nftManager",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "removed",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Factory_event_NFTManagerRemoved"
+    }
+}
