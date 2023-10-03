@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldConfigMaster",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newConfigMaster",
+                    "type": "address"
+                }
+            ],
+            "name": "ConfigMasterUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xc7a590291e07b9fe9e64b86c58fd8fc764308c4a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "kyberswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldConfigMaster",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newConfigMaster",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Factory_event_ConfigMasterUpdated"
+    }
+}
