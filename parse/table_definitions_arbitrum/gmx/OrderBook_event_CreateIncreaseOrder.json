@@ -1,0 +1,142 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "orderIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "purchaseToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "purchaseTokenAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "collateralToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "indexToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sizeDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isLong",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "triggerPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "triggerAboveThreshold",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "executionFee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CreateIncreaseOrder",
+            "type": "event"
+        },
+        "contract_address": "0x09f77e8a13de9a35a7231028187e9fd5db8a2acb",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "orderIndex",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "purchaseToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "purchaseTokenAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "indexToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "sizeDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isLong",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "triggerPrice",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "triggerAboveThreshold",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "executionFee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OrderBook_event_CreateIncreaseOrder"
+    }
+}
