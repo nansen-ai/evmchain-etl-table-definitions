@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "tokens",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "longSizes",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "shortSizes",
+                    "type": "uint256[]"
+                }
+            ],
+            "name": "SetMaxGlobalSizes",
+            "type": "event"
+        },
+        "contract_address": "0xb87a436b93ffe9d75c5cfa7bacfff96430b09868",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "arbitrum_gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "tokens",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "longSizes",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "shortSizes",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PositionRouter_event_SetMaxGlobalSizes"
+    }
+}

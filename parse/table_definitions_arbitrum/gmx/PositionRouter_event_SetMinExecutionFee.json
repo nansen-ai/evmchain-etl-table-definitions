@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minExecutionFee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "SetMinExecutionFee",
+            "type": "event"
+        },
+        "contract_address": "0xb87a436b93ffe9d75c5cfa7bacfff96430b09868",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "arbitrum_gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "minExecutionFee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PositionRouter_event_SetMinExecutionFee"
+    }
+}
