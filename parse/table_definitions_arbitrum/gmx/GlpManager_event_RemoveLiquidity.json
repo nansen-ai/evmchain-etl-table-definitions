@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "glpAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "aumInUsdg",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "glpSupply",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "usdgAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256"
+                }
+            ],
+            "name": "RemoveLiquidity",
+            "type": "event"
+        },
+        "contract_address": "0x3963ffc9dff443c2a94f21b129d429891e32ec18",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "glpAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "aumInUsdg",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "glpSupply",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "usdgAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amountOut",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "GlpManager_event_RemoveLiquidity"
+    }
+}
