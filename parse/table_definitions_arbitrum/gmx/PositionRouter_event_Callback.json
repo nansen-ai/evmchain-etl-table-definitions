@@ -24,7 +24,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "arbitrum_gmx",
+        "dataset_name": "gmx",
         "schema": [
             {
                 "description": "",
