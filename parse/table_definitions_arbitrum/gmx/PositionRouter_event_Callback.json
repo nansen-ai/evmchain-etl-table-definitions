@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "callbackTarget",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool"
+                }
+            ],
+            "name": "Callback",
+            "type": "event"
+        },
+        "contract_address": "0xb87a436b93ffe9d75c5cfa7bacfff96430b09868",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "callbackTarget",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "success",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PositionRouter_event_Callback"
+    }
+}

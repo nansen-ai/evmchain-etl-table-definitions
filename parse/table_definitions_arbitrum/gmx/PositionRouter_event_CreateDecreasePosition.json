@@ -1,0 +1,175 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "indexToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateralDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sizeDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isLong",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "acceptablePrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minOut",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "executionFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "queueIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockTime",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CreateDecreasePosition",
+            "type": "event"
+        },
+        "contract_address": "0xb87a436b93ffe9d75c5cfa7bacfff96430b09868",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "path",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "indexToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "sizeDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isLong",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "receiver",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "acceptablePrice",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "minOut",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "executionFee",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "index",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "queueIndex",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "blockNumber",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "blockTime",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PositionRouter_event_CreateDecreasePosition"
+    }
+}
