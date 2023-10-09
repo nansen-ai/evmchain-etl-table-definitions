@@ -27,6 +27,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Market_event_BeneficiaryUpdated"
+        "table_name": "Market_v2_event_BeneficiaryUpdated"
     }
 }

@@ -104,6 +104,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Market_event_Updated"
+        "table_name": "Market_v2_event_Updated"
     }
 }

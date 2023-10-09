@@ -27,6 +27,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "VaultFactory_event_PauserUpdated"
+        "table_name": "VaultFactory_v2_event_PauserUpdated"
     }
 }

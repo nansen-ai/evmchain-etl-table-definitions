@@ -38,6 +38,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Market_event_FeeClaimed"
+        "table_name": "Market_v2_event_FeeClaimed"
     }
 }

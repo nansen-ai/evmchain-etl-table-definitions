@@ -171,6 +171,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Market_event_ParameterUpdated"
+        "table_name": "Market_v2_event_ParameterUpdated"
     }
 }
