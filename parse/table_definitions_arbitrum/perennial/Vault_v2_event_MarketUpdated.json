@@ -25,7 +25,7 @@
             "name": "MarketUpdated",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0x699e37dfcee5c6e4c5d0bc1c2ffbc2afec55f6fb',  '0xf8b6010fd6ba8f3e52c943a1473b1b1459a73094'])",
+        "contract_address": "SELECT * FROM UNNEST(['0x699e37dfcee5c6e4c5d0bc1c2ffbc2afec55f6fb', '0xf8b6010fd6ba8f3e52c943a1473b1b1459a73094'])",
         "field_mapping": {},
         "type": "log"
     },
