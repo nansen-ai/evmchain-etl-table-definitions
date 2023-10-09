@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Paused",
+            "type": "event"
+        },
+        "contract_address": "0xdad8a103473dfd47f90168a0e46766ed48e26ec7",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [],
+        "table_description": "",
+        "table_name": "MarketFactory_v2_event_Paused"
+    }
+}
