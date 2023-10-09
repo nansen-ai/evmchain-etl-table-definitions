@@ -72,6 +72,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "MarketFactory_event_MarketCreated"
+        "table_name": "MarketFactory_v2_event_MarketCreated"
     }
 }

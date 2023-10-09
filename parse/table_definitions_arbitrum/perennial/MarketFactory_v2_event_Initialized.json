@@ -27,6 +27,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "MarketFactory_event_Initialized"
+        "table_name": "MarketFactory_v2_event_Initialized"
     }
 }
