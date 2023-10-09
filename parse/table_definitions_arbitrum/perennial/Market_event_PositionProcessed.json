@@ -1,0 +1,240 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fromOracleVersion",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toOracleVersion",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fromPosition",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "toPosition",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "UFixed6",
+                            "name": "positionFeeMaker",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "positionFeeFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "fundingMaker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "fundingLong",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "fundingShort",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "fundingFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "interestMaker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "interestLong",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "interestShort",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "interestFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "pnlMaker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "pnlLong",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "pnlShort",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "rewardMaker",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "rewardLong",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "rewardShort",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct VersionAccumulationResult",
+                    "name": "accumulationResult",
+                    "type": "tuple"
+                }
+            ],
+            "name": "PositionProcessed",
+            "type": "event"
+        },
+        "contract_address": "0xd5fbf1e37786a4507ec115bb35a938ddcbae137d",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "fromOracleVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "toOracleVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "fromPosition",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "toPosition",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "positionFeeMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingShort",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestShort",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "pnlMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "pnlLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "pnlShort",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "rewardMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "rewardLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "rewardShort",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "accumulationResult",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_event_PositionProcessed"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "Token18",
+                    "name": "newReward",
+                    "type": "address"
+                }
+            ],
+            "name": "RewardUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xd5fbf1e37786a4507ec115bb35a938ddcbae137d",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newReward",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_event_RewardUpdated"
+    }
+}
