@@ -144,7 +144,7 @@
             "name": "RiskParameterUpdated",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0x90a664846960aafa2c164605aebb8e9ac338f9a0',  '0xcc83e3cda48547e3c250a88c8d5e97089fd28f60', '0x02258be4ac91982dc1af7a3d2c4f05be6079c253', '0x7e34b5cbc6427bd53ecfaefc9ac2cad04e982f78'])",
+        "contract_address": "SELECT * FROM UNNEST(['0x90a664846960aafa2c164605aebb8e9ac338f9a0', '0xcc83e3cda48547e3c250a88c8d5e97089fd28f60', '0x02258be4ac91982dc1af7a3d2c4f05be6079c253', '0x7e34b5cbc6427bd53ecfaefc9ac2cad04e982f78'])",
         "field_mapping": {},
         "type": "log"
     },
