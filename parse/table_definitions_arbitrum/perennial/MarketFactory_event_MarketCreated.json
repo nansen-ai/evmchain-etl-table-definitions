@@ -1,0 +1,77 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IMarket",
+                    "name": "market",
+                    "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "Token18",
+                            "name": "token",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "contract IOracleProvider",
+                            "name": "oracle",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "contract IPayoffProvider",
+                            "name": "payoff",
+                            "type": "address"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IMarket.MarketDefinition",
+                    "name": "definition",
+                    "type": "tuple"
+                }
+            ],
+            "name": "MarketCreated",
+            "type": "event"
+        },
+        "contract_address": "0xdad8a103473dfd47f90168a0e46766ed48e26ec7",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "market",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "token",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "oracle",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "payoff",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "definition",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketFactory_event_MarketCreated"
+    }
+}

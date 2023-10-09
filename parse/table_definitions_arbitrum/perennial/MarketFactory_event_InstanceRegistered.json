@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IInstance",
+                    "name": "instance",
+                    "type": "address"
+                }
+            ],
+            "name": "InstanceRegistered",
+            "type": "event"
+        },
+        "contract_address": "0xdad8a103473dfd47f90168a0e46766ed48e26ec7",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "instance",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketFactory_event_InstanceRegistered"
+    }
+}
