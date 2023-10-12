@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IOracleProvider",
+                    "name": "oracle",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "OracleCreated",
+            "type": "event"
+        },
+        "contract_address": "0x8cda59615c993f925915d3eb4394badb3feef413",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "oracle",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "id",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OracleFactory_v2_event_OracleCreated"
+    }
+}
