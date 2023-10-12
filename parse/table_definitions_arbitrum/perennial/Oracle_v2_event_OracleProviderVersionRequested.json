@@ -13,7 +13,7 @@
             "name": "OracleProviderVersionRequested",
             "type": "event"
         },
-        "contract_address": "SELECT distinct oracle from ref('OracleFactory_v2_event_OracleCreated')",
+        "contract_address": "SELECT DISTINCT oracle FROM ref('OracleFactory_v2_event_OracleCreated')",
         "field_mapping": {},
         "type": "log"
     },
