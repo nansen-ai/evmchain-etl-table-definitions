@@ -19,7 +19,7 @@
             "name": "WithdrawProtocolFeeBalance",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0xd22363e3762ca7339569f3d33eade20127d5f98c', '0xdecc0c09c3b5f6e92ef4184125d5648a66e35298', '0x165137624f1f692e69659f944bf69de02874ee27','0x368605d9c6243a80903b9e326f1cddde088b8924','0x2f8bc9081c7fcfec25b9f41a50d97eaa592058ae','0x3533f5e279bdbf550272a199a223da798d9eff78','0x5421fa1a48f9ff81e4580557e86c7c0d24c18036'])",
+        "contract_address": "SELECT * FROM UNNEST(['0xd22363e3762ca7339569f3d33eade20127d5f98c', '0xdecc0c09c3b5f6e92ef4184125d5648a66e35298', '0x165137624f1f692e69659f944bf69de02874ee27', '0x368605d9c6243a80903b9e326f1cddde088b8924', '0x2f8bc9081c7fcfec25b9f41a50d97eaa592058ae', '0x3533f5e279bdbf550272a199a223da798d9eff78', '0x5421fa1a48f9ff81e4580557e86c7c0d24c18036'])",
         "field_mapping": {},
         "type": "log"
     },
