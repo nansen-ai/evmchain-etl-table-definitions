@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "dstChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "dstPoolId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "weight",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ChainPathUpdate",
+            "type": "event"
+        },
+        "contract_address": "SELECT * FROM UNNEST(['0x915a55e36a01285a14f05de6e81ed9ce89772f8e', '0x892785f33cdee22a30aef750f285e18c18040c3e', '0xb6cfcf89a7b22988bfc96632ac2a9d6dab60d641', '0xaa4bf442f024820b2c28cd0fd72b82c63e66f56c', '0xf39b7be294cb36de8c510e267b82bb588705d977', '0x600e576f9d853c95d58029093a16ee49646f3ca5'])",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "stargate_finance",
+        "schema": [
+            {
+                "description": "",
+                "name": "dstChainId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "dstPoolId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "weight",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Pool_event_ChainPathUpdate"
+    }
+}
