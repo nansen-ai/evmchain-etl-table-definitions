@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newDefaultGateway",
+                    "type": "address"
+                }
+            ],
+            "name": "DefaultGatewayUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xe80eb0238029333e368e0bddb7acdf1b9cb28278",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "arbitrum_bridge",
+        "schema": [
+            {
+                "description": "",
+                "name": "newDefaultGateway",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "L2GatewayRouter_event_DefaultGatewayUpdated"
+    }
+}
