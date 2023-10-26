@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "feeTo",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint24",
+                    "name": "governmentFeeUnits",
+                    "type": "uint24"
+                }
+            ],
+            "name": "FeeConfigurationUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xc7a590291e07b9fe9e64b86c58fd8fc764308c4a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "kyberswap_elastic",
+        "schema": [
+            {
+                "description": "",
+                "name": "feeTo",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "governmentFeeUnits",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Factory_event_FeeConfigurationUpdated"
+    }
+}
