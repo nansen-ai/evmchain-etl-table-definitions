@@ -1,0 +1,142 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address payable",
+                    "name": "refundReceiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "additionalInfo",
+                    "type": "bytes"
+                }
+            ],
+            "name": "SafeMultiSigTransaction",
+            "type": "event"
+        },
+        "contract_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "to",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "value",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "data",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "operation",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "safeTxGas",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "baseGas",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "gasPrice",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "gasToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "refundReceiver",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "signatures",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "additionalInfo",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Multisig_event_SafeMultiSigTransaction"
+    }
+}
