@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "baseRatePerBlock",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "multiplierPerBlock",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "jumpMultiplierPerBlock",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "kink",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewInterestParams",
+            "type": "event"
+        },
+        "contract_address": "0x62c31a75334e566aa049ab24a2ff13ac3a5c02d0",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "baseRatePerBlock",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "multiplierPerBlock",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "jumpMultiplierPerBlock",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "kink",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "JumpRateModelV4_event_NewInterestParams"
+    }
+}
