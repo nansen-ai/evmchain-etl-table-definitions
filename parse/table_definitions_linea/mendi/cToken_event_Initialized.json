@@ -13,7 +13,7 @@
             "name": "Initialized",
             "type": "event"
         },
-        "contract_address": "SELECT cToken FROM ref('Unitroller_event_MarketListed') GROUP BY stableDebtToken",
+        "contract_address": "SELECT cToken FROM ref('Unitroller_event_MarketListed') GROUP BY cToken",
         "field_mapping": {},
         "type": "log"
     },
