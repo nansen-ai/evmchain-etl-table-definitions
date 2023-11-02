@@ -19,7 +19,7 @@
             "name": "NewReserveFactor",
             "type": "event"
         },
-        "contract_address": "0x6e0c50657b610f4613b1c6b1dae95262a3f6c4f7",
+        "contract_address": "SELECT cToken FROM ref('Unitroller_event_MarketListed') GROUP BY stableDebtToken",
         "field_mapping": {},
         "type": "log"
     },
