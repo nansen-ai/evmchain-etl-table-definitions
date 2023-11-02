@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract CToken",
+                    "name": "cToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "action",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "pauseState",
+                    "type": "bool"
+                }
+            ],
+            "name": "ActionPaused",
+            "type": "event"
+        },
+        "contract_address": "0x1b4d3b0421ddc1eb216d230bc01527422fb93103",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "cToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "action",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "pauseState",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Unitroller_event_ActionPaused"
+    }
+}
