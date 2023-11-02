@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "version",
+                    "type": "uint8"
+                }
+            ],
+            "name": "Initialized",
+            "type": "event"
+        },
+        "contract_address": "0x6e0c50657b610f4613b1c6b1dae95262a3f6c4f7",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "cToken_event_Initialized"
+    }
+}

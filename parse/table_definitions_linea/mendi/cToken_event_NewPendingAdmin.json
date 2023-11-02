@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldPendingAdmin",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newPendingAdmin",
+                    "type": "address"
+                }
+            ],
+            "name": "NewPendingAdmin",
+            "type": "event"
+        },
+        "contract_address": "0x6e0c50657b610f4613b1c6b1dae95262a3f6c4f7",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldPendingAdmin",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newPendingAdmin",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "cToken_event_NewPendingAdmin"
+    }
+}
