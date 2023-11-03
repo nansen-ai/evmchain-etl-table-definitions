@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "previousConfigBlockNumber",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "configCount",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "signers",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "transmitters",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "threshold",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "encodedConfigVersion",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "encoded",
+                    "type": "bytes"
+                }
+            ],
+            "name": "ConfigSet",
+            "type": "event"
+        },
+        "contract_address": "0x462f8eea5cf35df6a7df89c12107262bf134b380",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [
+            {
+                "description": "",
+                "name": "previousConfigBlockNumber",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "configCount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "signers",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "transmitters",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "threshold",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "encodedConfigVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "encoded",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_ConfigSet"
+    }
+}

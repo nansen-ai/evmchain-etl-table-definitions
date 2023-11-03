@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "roundId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "startedBy",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "startedAt",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewRound",
+            "type": "event"
+        },
+        "contract_address": "0x462f8eea5cf35df6a7df89c12107262bf134b380",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [
+            {
+                "description": "",
+                "name": "roundId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "startedBy",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "startedAt",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_NewRound"
+    }
+}

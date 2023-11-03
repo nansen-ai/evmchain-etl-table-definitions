@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract LinkTokenInterface",
+                    "name": "_oldLinkToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract LinkTokenInterface",
+                    "name": "_newLinkToken",
+                    "type": "address"
+                }
+            ],
+            "name": "LinkTokenSet",
+            "type": "event"
+        },
+        "contract_address": "0x462f8eea5cf35df6a7df89c12107262bf134b380",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [
+            {
+                "description": "",
+                "name": "_oldLinkToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_newLinkToken",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_LinkTokenSet"
+    }
+}
