@@ -1,54 +1,55 @@
 {
-    "parser": {
-        "abi": {
-            "anonymous": false,
-            "inputs": [
-                {
-                    "indexed": true,
-                    "internalType": "int256",
-                    "name": "current",
-                    "type": "int256"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "uint256",
-                    "name": "roundId",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "updatedAt",
-                    "type": "uint256"
-                }
-            ],
-            "name": "AnswerUpdated",
-            "type": "event"
+  "parser": {
+    "abi": {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "int256",
+          "name": "current",
+          "type": "int256"
         },
-        "contract_address": "0x462f8eea5cf35df6a7df89c12107262bf134b380",
-        "field_mapping": {},
-        "type": "log"
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "AnswerUpdated",
+      "type": "event"
     },
-    "table": {
-        "dataset_name": "chainlink",
-        "schema": [
-            {
-                "description": "",
-                "name": "current",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "roundId",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "updatedAt",
-                "type": "STRING"
-            }
-        ],
-        "table_description": "",
-        "table_name": "AccessControlledOffchainAggregator_event_AnswerUpdated"
-    }
+    "contract_address": "SELECT contract_address FROM ref('view_AccessControlledOffchainAggregator_info') GROUP BY contract_address",
+    "field_mapping": {},
+    "type": "log"
+  },
+  "table": {
+    "dataset_name": "chainlink",
+    "schema": [
+      {
+        "description": "",
+        "name": "current",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "roundId",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "updatedAt",
+        "type": "STRING"
+      }
+    ],
+    "table_description": "",
+    "table_name": "AccessControlledOffchainAggregator_event_AnswerUpdated"
+  }
 }
+
