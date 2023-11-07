@@ -83,5 +83,6 @@
         ],
         "table_description": "",
         "table_name": "Vault_v2_event_Updated"
-    }
+    },
+    "version": "1"
 }
