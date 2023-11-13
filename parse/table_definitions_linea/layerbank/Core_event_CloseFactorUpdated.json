@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newCloseFactor",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CloseFactorUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x009a0b7c38b542208936f1179151cd08e2943833",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "layerbank",
+        "schema": [
+            {
+                "description": "",
+                "name": "newCloseFactor",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Core_event_CloseFactorUpdated"
+    }
+}
