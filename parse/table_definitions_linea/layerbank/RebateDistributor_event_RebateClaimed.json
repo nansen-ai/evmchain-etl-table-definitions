@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "marketFees",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalLabAmount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "RebateClaimed",
+            "type": "event"
+        },
+        "contract_address": "0xea01659b66a682d41f4718bb62134ea8109fbfc6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "layerbank",
+        "schema": [
+            {
+                "description": "",
+                "name": "user",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "marketFees",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "totalLabAmount",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "RebateDistributor_event_RebateClaimed"
+    }
+}

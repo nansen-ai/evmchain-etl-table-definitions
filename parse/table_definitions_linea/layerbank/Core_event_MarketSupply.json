@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "gToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "uAmount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "MarketSupply",
+            "type": "event"
+        },
+        "contract_address": "0x009a0b7c38b542208936f1179151cd08e2943833",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "layerbank",
+        "schema": [
+            {
+                "description": "",
+                "name": "user",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "gToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "uAmount",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Core_event_MarketSupply"
+    }
+}
