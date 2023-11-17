@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "referralAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                }
+            ],
+            "name": "ReferralRewardTransferred",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "axie",
+        "table_name": "Marketplace_v2_event_ReferralRewardTransferred",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "token",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "referralAddr",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "amount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "receiver",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}
