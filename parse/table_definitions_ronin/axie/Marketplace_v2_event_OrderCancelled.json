@@ -8,7 +8,7 @@
                 {
                     "indexed": false,
                     "internalType": "bytes32",
-                    "name": "",
+                    "name": "unnamedField0",
                     "type": "bytes32"
                 },
                 {
@@ -29,7 +29,7 @@
         "table_description": "",
         "schema": [
             {
-                "name": "",
+                "name": "unnamedField0",
                 "description": "",
                 "type": "STRING"
             },
