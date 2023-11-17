@@ -6,9 +6,5 @@ STRUCT('0x72fc7950a832396720736e7e08d6f74c84c6909a' as contract_address, 8 as de
 STRUCT('0x79b0e87ff1c40d27a0f941296d70a91cd1553482' as contract_address, 18 as decimals, '0xf586d0728a47229e747d824a939000cf21def5a0' as proxy_address, 'STETH / ETH' as description, 4 as version),
 STRUCT('0x0ee7145e1370653533e2f2e824424be2aa95a4aa' as contract_address, 8 as decimals, '0x7e860098f58bbfc8648a4311b374b1d669a2bc6b' as proxy_address, 'USDC / USD' as description, 4 as version),
 STRUCT('0xdc2d2fa8e7b824a2c16128446e288280dcb12844' as contract_address, 8 as decimals, '0xf19d560eb8d2adf07bd6d13ed03e1d11215721f9' as proxy_address, 'USDT / USD' as description, 4 as version),
-<<<<<<< Updated upstream
-STRUCT('0x79b0e87ff1c40d27a0f941296d70a91cd1553482' as contract_address, 18 as decimals, '0xf586d0728a47229e747d824a939000cf21def5a0' as proxy_address, 'STETH / ETH' as description, 4 as version),
-=======
 STRUCT('0x484cc23fee336291e3c8803cf27e16b9bee68744' as contract_address, 18 as decimals, '0xf397bf97280b488ca19ee3093e81c0a77f02e9a5' as proxy_address, 'RETH / ETH' as description, 4 as version)
->>>>>>> Stashed changes
 STRUCT('0xe186722b9d5c063625c49a4bf6bb3d669f66a8b5' as contract_address, 8 as decimals, '0xccadc697c55bbb68dc5bcdf8d3cbe83cdd4e071e' as proxy_address, 'WBTC / USD' as description, 4 as version)])

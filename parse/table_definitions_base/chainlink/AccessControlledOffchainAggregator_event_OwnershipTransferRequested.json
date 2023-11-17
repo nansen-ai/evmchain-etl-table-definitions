@@ -19,7 +19,7 @@
             "name": "OwnershipTransferRequested",
             "type": "event"
         },
-        "contract_address": "SELECT proxy_address FROM ref('view_AccessControlledOffchainAggregator_info')",
+        "contract_address": "SELECT contract_address FROM ref('view_AccessControlledOffchainAggregator_info')",
         "field_mapping": {},
         "type": "log"
     },
