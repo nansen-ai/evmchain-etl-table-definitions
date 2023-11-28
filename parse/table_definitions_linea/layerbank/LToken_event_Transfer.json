@@ -25,7 +25,7 @@
             "name": "Transfer",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0xc7d8489dae3d2ebef075b1db2257e2c231c9d231', '0xea0f73296a6147fb56bae29306aae0ffaff9de5f', '0x2ad69a0cf272b9941c7ddcada7b0273e9046c4b0'])",
+        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
         "field_mapping": {},
         "type": "log"
     },
