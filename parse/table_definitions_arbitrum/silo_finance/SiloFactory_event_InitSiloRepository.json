@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "InitSiloRepository",
+            "type": "event"
+        },
+        "contract_address": "0x4166487056a922d784b073d4d928a516b074b719",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "silo_finance",
+        "schema": [],
+        "table_description": "",
+        "table_name": "SiloFactory_event_InitSiloRepository"
+    }
+}
