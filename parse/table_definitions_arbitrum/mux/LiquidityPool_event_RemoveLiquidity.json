@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "trader",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "tokenId",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "tokenPrice",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "mlpPrice",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "mlpAmount",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "fee",
+                    "type": "uint96"
+                }
+            ],
+            "name": "RemoveLiquidity",
+            "type": "event"
+        },
+        "contract_address": "0x3e0199792ce69dc29a0a36146bfa68bd7c8d6633",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mux",
+        "schema": [
+            {
+                "description": "",
+                "name": "trader",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenPrice",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "mlpPrice",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "mlpAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "fee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LiquidityPool_event_RemoveLiquidity"
+    }
+}
