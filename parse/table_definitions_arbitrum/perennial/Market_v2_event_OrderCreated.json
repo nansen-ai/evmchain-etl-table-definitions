@@ -83,7 +83,7 @@
             "name": "OrderCreated",
             "type": "event"
         },
-        "contract_address": "0xed4b2545510336236760f523890dc38b3e01ff26",
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
         "field_mapping": {},
         "type": "log"
     },
@@ -164,6 +164,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "MarketImpl_v2_event_OrderCreated"
+        "table_name": "Market_v2_event_OrderCreated"
     }
 }
