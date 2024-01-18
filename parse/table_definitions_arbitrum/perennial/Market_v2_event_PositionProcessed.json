@@ -32,7 +32,7 @@
                         {
                             "internalType": "UFixed6",
                             "name": "positionFeeMaker",
-                            "type": "uint256"
+                            "type": "int256"
                         },
                         {
                             "internalType": "UFixed6",
