@@ -48,7 +48,7 @@
                         {
                             "internalType": "UFixed6",
                             "name": "positionFee",
-                            "type": "uint256"
+                            "type": "int256"
                         },
                         {
                             "internalType": "UFixed6",
@@ -126,6 +126,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Market_v2_event_AccountPositionProcessed"
+        "table_name": "Market_v2_1_event_AccountPositionProcessed"
     }
 }
