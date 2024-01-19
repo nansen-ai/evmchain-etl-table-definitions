@@ -48,7 +48,7 @@
                         {
                             "internalType": "UFixed6",
                             "name": "positionFee",
-                            "type": "int256"
+                            "type": "uint256"
                         },
                         {
                             "internalType": "UFixed6",
