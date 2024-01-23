@@ -4,15 +4,15 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "liquidator",
+                    "name": "asset",
                     "type": "address"
                 },
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "borrower",
+                    "name": "depositor",
                     "type": "address"
                 },
                 {
@@ -23,35 +23,29 @@
                 },
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "gTokenCollateral",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "seizeAmount",
-                    "type": "uint256"
+                    "internalType": "bool",
+                    "name": "collateralOnly",
+                    "type": "bool"
                 }
             ],
-            "name": "LiquidateBorrow",
+            "name": "Deposit",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+        "contract_address": "SELECT silo FROM ref('SiloFactory_event_NewSiloCreated')",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "silo_finance",
         "schema": [
             {
                 "description": "",
-                "name": "liquidator",
+                "name": "asset",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "borrower",
+                "name": "depositor",
                 "type": "STRING"
             },
             {
@@ -61,16 +55,11 @@
             },
             {
                 "description": "",
-                "name": "gTokenCollateral",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "seizeAmount",
+                "name": "collateralOnly",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "LToken_event_LiquidateBorrow"
+        "table_name": "Silo_event_Deposit"
     }
 }

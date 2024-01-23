@@ -1,0 +1,188 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "trader",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "assetId",
+                    "type": "uint8"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "bytes32",
+                            "name": "subAccountId",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "collateralId",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "profitAssetId",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "isLong",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "amount",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "assetPrice",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "collateralPrice",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "profitAssetPrice",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "feeUsd",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "hasProfit",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "pnlUsd",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "remainPosition",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "remainCollateral",
+                            "type": "uint96"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Events.ClosePositionArgs",
+                    "name": "args",
+                    "type": "tuple"
+                }
+            ],
+            "name": "ClosePosition",
+            "type": "event"
+        },
+        "contract_address": "0x3e0199792ce69dc29a0a36146bfa68bd7c8d6633",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mux",
+        "schema": [
+            {
+                "description": "",
+                "name": "trader",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "assetId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "subAccountId",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "collateralId",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "profitAssetId",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "isLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "amount",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "assetPrice",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "collateralPrice",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "profitAssetPrice",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "feeUsd",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "hasProfit",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "pnlUsd",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "remainPosition",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "remainCollateral",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "args",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LiquidityPool_event_ClosePosition"
+    }
+}

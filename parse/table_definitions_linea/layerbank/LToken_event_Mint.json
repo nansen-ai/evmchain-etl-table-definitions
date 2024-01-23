@@ -1,43 +1,43 @@
 {
-    "parser": {
-        "abi": {
-            "anonymous": false,
-            "inputs": [
-                {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "minter",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "mintAmount",
-                    "type": "uint256"
-                }
-            ],
-            "name": "Mint",
-            "type": "event"
+  "parser": {
+    "abi": {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "minter",
+          "type": "address"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0xc7d8489dae3d2ebef075b1db2257e2c231c9d231', '0xea0f73296a6147fb56bae29306aae0ffaff9de5f', '0x2ad69a0cf272b9941c7ddcada7b0273e9046c4b0'])",
-        "field_mapping": {},
-        "type": "log"
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "mintAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Mint",
+      "type": "event"
     },
-    "table": {
-        "dataset_name": "layerbank",
-        "schema": [
-            {
-                "description": "",
-                "name": "minter",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "mintAmount",
-                "type": "STRING"
-            }
-        ],
-        "table_description": "",
-        "table_name": "LToken_event_Mint"
-    }
+    "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+    "field_mapping": {},
+    "type": "log"
+  },
+  "table": {
+    "dataset_name": "layerbank",
+    "schema": [
+      {
+        "description": "",
+        "name": "minter",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "mintAmount",
+        "type": "STRING"
+      }
+    ],
+    "table_description": "",
+    "table_name": "LToken_event_Mint"
+  }
 }

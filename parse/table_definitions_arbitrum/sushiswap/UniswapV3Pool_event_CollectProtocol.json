@@ -6,49 +6,60 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "owner",
+                    "name": "sender",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "spender",
+                    "name": "recipient",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
+                    "internalType": "uint128",
+                    "name": "amount0",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "amount1",
+                    "type": "uint128"
                 }
             ],
-            "name": "Approval",
+            "name": "CollectProtocol",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+        "contract_address": "SELECT pool FROM ref('UniswapV3Factory_event_PoolCreated')",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "sushiswap",
         "schema": [
             {
                 "description": "",
-                "name": "owner",
+                "name": "sender",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "spender",
+                "name": "recipient",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "amount0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount1",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "LToken_event_Approval"
+        "table_name": "UniswapV3Pool_event_CollectProtocol"
     }
 }

@@ -5,39 +5,39 @@
             "inputs": [
                 {
                     "indexed": true,
-                    "internalType": "address",
-                    "name": "previousOwner",
-                    "type": "address"
+                    "internalType": "uint24",
+                    "name": "fee",
+                    "type": "uint24"
                 },
                 {
                     "indexed": true,
-                    "internalType": "address",
-                    "name": "newOwner",
-                    "type": "address"
+                    "internalType": "int24",
+                    "name": "tickSpacing",
+                    "type": "int24"
                 }
             ],
-            "name": "OwnershipTransferred",
+            "name": "FeeAmountEnabled",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+        "contract_address": "0x1af415a1eba07a4986a52b6f2e7de7003d82231e",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "sushiswap",
         "schema": [
             {
                 "description": "",
-                "name": "previousOwner",
+                "name": "fee",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "newOwner",
+                "name": "tickSpacing",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "LToken_event_OwnershipTransferred"
+        "table_name": "UniswapV3Factory_event_FeeAmountEnabled"
     }
 }

@@ -4,13 +4,19 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "assetId",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "liquidator",
+                    "name": "project",
                     "type": "address"
                 },
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
                     "name": "borrower",
                     "type": "address"
@@ -18,35 +24,34 @@
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "amount",
+                    "name": "rawBorrowAmount",
                     "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "gTokenCollateral",
-                    "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "seizeAmount",
+                    "name": "rawFee",
                     "type": "uint256"
                 }
             ],
-            "name": "LiquidateBorrow",
+            "name": "BorrowAsset",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+        "contract_address": "0x3e0199792ce69dc29a0a36146bfa68bd7c8d6633",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "mux",
         "schema": [
             {
                 "description": "",
-                "name": "liquidator",
+                "name": "assetId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "project",
                 "type": "STRING"
             },
             {
@@ -56,21 +61,16 @@
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "rawBorrowAmount",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "gTokenCollateral",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "seizeAmount",
+                "name": "rawFee",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "LToken_event_LiquidateBorrow"
+        "table_name": "LiquidityPool_event_BorrowAsset"
     }
 }

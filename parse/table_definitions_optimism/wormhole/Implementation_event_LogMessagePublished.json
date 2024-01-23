@@ -4,73 +4,73 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "liquidator",
+                    "name": "sender",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "borrower",
-                    "type": "address"
+                    "internalType": "uint64",
+                    "name": "sequence",
+                    "type": "uint64"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
+                    "internalType": "uint32",
+                    "name": "nonce",
+                    "type": "uint32"
                 },
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "gTokenCollateral",
-                    "type": "address"
+                    "internalType": "bytes",
+                    "name": "payload",
+                    "type": "bytes"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint256",
-                    "name": "seizeAmount",
-                    "type": "uint256"
+                    "internalType": "uint8",
+                    "name": "consistencyLevel",
+                    "type": "uint8"
                 }
             ],
-            "name": "LiquidateBorrow",
+            "name": "LogMessagePublished",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+        "contract_address": "0xee91c335eab126df5fdb3797ea9d6ad93aec9722",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "wormhole",
         "schema": [
             {
                 "description": "",
-                "name": "liquidator",
+                "name": "sender",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "borrower",
+                "name": "sequence",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "nonce",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "gTokenCollateral",
+                "name": "payload",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "seizeAmount",
+                "name": "consistencyLevel",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "LToken_event_LiquidateBorrow"
+        "table_name": "Implementation_event_LogMessagePublished"
     }
 }

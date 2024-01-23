@@ -1,0 +1,142 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "hash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "matcher",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum MarketOrder.OrderKind",
+                    "name": "kind",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "bidToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bidPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "settlePrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sellerReceived",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "marketFeePercentage",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "marketFeeTaken",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OrderMatched",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "axie",
+        "table_name": "Marketplace_v2_event_OrderMatched",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "hash",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "maker",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "matcher",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "kind",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "bidToken",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "bidPrice",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "paymentToken",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "settlePrice",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "sellerReceived",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "marketFeePercentage",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "marketFeeTaken",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

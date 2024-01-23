@@ -4,73 +4,73 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "subAccountId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "liquidator",
+                    "name": "trader",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "borrower",
-                    "type": "address"
+                    "internalType": "uint8",
+                    "name": "collateralId",
+                    "type": "uint8"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "amount",
+                    "name": "rawAmount",
                     "type": "uint256"
                 },
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "gTokenCollateral",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "seizeAmount",
-                    "type": "uint256"
+                    "internalType": "uint96",
+                    "name": "wadAmount",
+                    "type": "uint96"
                 }
             ],
-            "name": "LiquidateBorrow",
+            "name": "WithdrawCollateral",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+        "contract_address": "0x3e0199792ce69dc29a0a36146bfa68bd7c8d6633",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "mux",
         "schema": [
             {
                 "description": "",
-                "name": "liquidator",
+                "name": "subAccountId",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "borrower",
+                "name": "trader",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "collateralId",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "gTokenCollateral",
+                "name": "rawAmount",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "seizeAmount",
+                "name": "wadAmount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "LToken_event_LiquidateBorrow"
+        "table_name": "LiquidityPool_event_WithdrawCollateral"
     }
 }

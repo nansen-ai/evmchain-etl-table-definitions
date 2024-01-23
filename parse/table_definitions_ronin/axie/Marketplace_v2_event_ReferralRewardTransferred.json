@@ -1,18 +1,20 @@
 {
     "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
         "abi": {
             "anonymous": false,
             "inputs": [
                 {
                     "indexed": false,
                     "internalType": "address",
-                    "name": "liquidator",
+                    "name": "token",
                     "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "address",
-                    "name": "borrower",
+                    "name": "referralAddr",
                     "type": "address"
                 },
                 {
@@ -24,53 +26,40 @@
                 {
                     "indexed": false,
                     "internalType": "address",
-                    "name": "gTokenCollateral",
+                    "name": "receiver",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "seizeAmount",
-                    "type": "uint256"
                 }
             ],
-            "name": "LiquidateBorrow",
+            "name": "ReferralRewardTransferred",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
-        "field_mapping": {},
-        "type": "log"
+        "field_mapping": {}
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "axie",
+        "table_name": "Marketplace_v2_event_ReferralRewardTransferred",
+        "table_description": "",
         "schema": [
             {
+                "name": "token",
                 "description": "",
-                "name": "liquidator",
                 "type": "STRING"
             },
             {
+                "name": "referralAddr",
                 "description": "",
-                "name": "borrower",
                 "type": "STRING"
             },
             {
-                "description": "",
                 "name": "amount",
+                "description": "",
                 "type": "STRING"
             },
             {
+                "name": "receiver",
                 "description": "",
-                "name": "gTokenCollateral",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "seizeAmount",
                 "type": "STRING"
             }
-        ],
-        "table_description": "",
-        "table_name": "LToken_event_LiquidateBorrow"
+        ]
     }
 }

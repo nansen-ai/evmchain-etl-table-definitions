@@ -1,54 +1,54 @@
 {
     "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
         "abi": {
             "anonymous": false,
             "inputs": [
                 {
                     "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "owner",
+                    "name": "account",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "spender",
+                    "name": "sender",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
                 }
             ],
-            "name": "Approval",
+            "name": "RoleGranted",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
-        "field_mapping": {},
-        "type": "log"
+        "field_mapping": {}
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "axie",
+        "table_name": "Marketplace_v2_event_RoleGranted",
+        "table_description": "",
         "schema": [
             {
+                "name": "role",
                 "description": "",
-                "name": "owner",
                 "type": "STRING"
             },
             {
+                "name": "account",
                 "description": "",
-                "name": "spender",
                 "type": "STRING"
             },
             {
+                "name": "sender",
                 "description": "",
-                "name": "amount",
                 "type": "STRING"
             }
-        ],
-        "table_description": "",
-        "table_name": "LToken_event_Approval"
+        ]
     }
 }

@@ -6,38 +6,49 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "previousOwner",
+                    "name": "asset",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "newOwner",
+                    "name": "user",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
                 }
             ],
-            "name": "OwnershipTransferred",
+            "name": "Borrow",
             "type": "event"
         },
-        "contract_address": "SELECT gToken FROM ref('Core_event_MarketListed') GROUP BY gToken",
+        "contract_address": "SELECT silo FROM ref('SiloFactory_event_NewSiloCreated')",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "layerbank",
+        "dataset_name": "silo_finance",
         "schema": [
             {
                 "description": "",
-                "name": "previousOwner",
+                "name": "asset",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "newOwner",
+                "name": "user",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "LToken_event_OwnershipTransferred"
+        "table_name": "Silo_event_Borrow"
     }
 }
