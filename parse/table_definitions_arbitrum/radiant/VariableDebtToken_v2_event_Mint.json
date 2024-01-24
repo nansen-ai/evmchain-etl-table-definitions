@@ -31,7 +31,7 @@
             "name": "Mint",
             "type": "event"
         },
-        "contract_address": "SELECT * FROM UNNEST(['0x3eeafa33625df20837ed0cb83ae4d1e34788b141', '0x7c2e0f792ea5b4a4dbd7fa7f949cf39a5c0ba185', '0x107583adaa37dfd1cc0bf577183bf91351d07413', '0x04a8faed05c97290ab4d793a971adee97cd1cbbd', '0xab04c0841f39596c9f18a981a2bd32f63ab7a817', '0x97b81aa985115953ba31d59781e2d8159a50f488', '0x295b97012945bd4a1a79ec7f679e16761a437e5c'])",
+        "contract_address": "SELECT * FROM UNNEST(['0x3eeafa33625df20837ed0cb83ae4d1e34788b141', '0x7c2e0f792ea5b4a4dbd7fa7f949cf39a5c0ba185', '0x107583adaa37dfd1cc0bf577183bf91351d07413', '0x04a8faed05c97290ab4d793a971adee97cd1cbbd', '0xab04c0841f39596c9f18a981a2bd32f63ab7a817', '0x97b81aa985115953ba31d59781e2d8159a50f488', '0x295b97012945bd4a1a79ec7f679e16761a437e5c', '0xd69b772bffe78165c152fd2e370b6cae239e3bdb'])",
         "field_mapping": {},
         "type": "log"
     },
