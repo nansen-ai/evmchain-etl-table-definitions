@@ -1,0 +1,294 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "UFixed6",
+                            "name": "margin",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "maintenance",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerSkewFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerImpactFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerImpactFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerLimit",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "efficiencyLimit",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "liquidationFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "minLiquidationFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "maxLiquidationFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "UFixed6",
+                                    "name": "minRate",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "UFixed6",
+                                    "name": "maxRate",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "UFixed6",
+                                    "name": "targetRate",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "UFixed6",
+                                    "name": "targetUtilization",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct UJumpRateUtilizationCurve6",
+                            "name": "utilizationCurve",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "UFixed6",
+                                    "name": "k",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "UFixed6",
+                                    "name": "max",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct PController6",
+                            "name": "pController",
+                            "type": "tuple"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "minMargin",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "minMaintenance",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "skewScale",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "staleAfter",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "makerReceiveOnly",
+                            "type": "bool"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct RiskParameter",
+                    "name": "newRiskParameter",
+                    "type": "tuple"
+                }
+            ],
+            "name": "RiskParameterUpdated",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_1_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "margin",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maintenance",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerSkewFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerImpactFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerImpactFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerLimit",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "efficiencyLimit",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "liquidationFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "minLiquidationFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxLiquidationFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "fields": [
+                            {
+                                "description": "",
+                                "name": "minRate",
+                                "type": "STRING"
+                            },
+                            {
+                                "description": "",
+                                "name": "maxRate",
+                                "type": "STRING"
+                            },
+                            {
+                                "description": "",
+                                "name": "targetRate",
+                                "type": "STRING"
+                            },
+                            {
+                                "description": "",
+                                "name": "targetUtilization",
+                                "type": "STRING"
+                            }
+                        ],
+                        "name": "utilizationCurve",
+                        "type": "RECORD"
+                    },
+                    {
+                        "description": "",
+                        "fields": [
+                            {
+                                "description": "",
+                                "name": "k",
+                                "type": "STRING"
+                            },
+                            {
+                                "description": "",
+                                "name": "max",
+                                "type": "STRING"
+                            }
+                        ],
+                        "name": "pController",
+                        "type": "RECORD"
+                    },
+                    {
+                        "description": "",
+                        "name": "minMargin",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "minMaintenance",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "skewScale",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "staleAfter",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerReceiveOnly",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "newRiskParameter",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_1_event_RiskParameterUpdated"
+    }
+}
