@@ -1,0 +1,109 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed6",
+                    "name": "newMaker",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed6",
+                    "name": "newLong",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed6",
+                    "name": "newShort",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "Fixed6",
+                    "name": "collateral",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "protect",
+                    "type": "bool"
+                }
+            ],
+            "name": "Updated",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newMaker",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newLong",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newShort",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateral",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "protect",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_1_event_Updated"
+    }
+}
