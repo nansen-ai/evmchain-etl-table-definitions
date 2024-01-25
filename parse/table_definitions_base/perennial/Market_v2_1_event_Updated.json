@@ -55,7 +55,7 @@
             "name": "Updated",
             "type": "event"
         },
-        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_1_event_MarketCreated') GROUP BY market",
         "field_mapping": {},
         "type": "log"
     },
