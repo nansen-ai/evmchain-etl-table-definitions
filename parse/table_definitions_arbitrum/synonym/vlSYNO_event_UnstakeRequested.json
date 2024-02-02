@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "UnstakeRequested",
+            "type": "event"
+        },
+        "contract_address": "0x6e0e8c78d7b894beff66ade8b27b089a53cf4d04",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "synonym",
+        "schema": [
+            {
+                "description": "",
+                "name": "staker",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "index",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "vlSYNO_event_UnstakeRequested"
+    }
+}
