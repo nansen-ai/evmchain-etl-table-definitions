@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "version",
+                    "type": "uint64"
+                }
+            ],
+            "name": "Initialized",
+            "type": "event"
+        },
+        "contract_address": "0xffe52f091e6c51f264694f7c173222bac06a01f3",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "synonym",
+        "schema": [
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "rCT_event_Initialized"
+    }
+}
