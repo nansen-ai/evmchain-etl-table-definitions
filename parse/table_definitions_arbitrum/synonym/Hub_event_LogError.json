@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "sourceAddress",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "sourceChain",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "deliveryHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "error",
+                    "type": "string"
+                }
+            ],
+            "name": "LogError",
+            "type": "event"
+        },
+        "contract_address": "0x1e3f1f1ca8c62aabcb3b78d87223e988dfa3780e",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "synonym",
+        "schema": [
+            {
+                "description": "",
+                "name": "sourceAddress",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "sourceChain",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "deliveryHash",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "error",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Hub_event_LogError"
+    }
+}
