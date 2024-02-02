@@ -31,7 +31,7 @@
             "name": "AccrualIndexUpdated",
             "type": "event"
         },
-        "contract_address": "0xe523fcb5da13b149c92bf4e87bfef744ca14e1f8",
+        "contract_address": "0x1e3f1f1ca8c62aabcb3b78d87223e988dfa3780e",
         "field_mapping": {},
         "type": "log"
     },

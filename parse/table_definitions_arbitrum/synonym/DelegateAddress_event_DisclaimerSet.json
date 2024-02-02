@@ -5,15 +5,15 @@
             "inputs": [
                 {
                     "indexed": false,
-                    "internalType": "uint64",
-                    "name": "version",
-                    "type": "uint64"
+                    "internalType": "string",
+                    "name": "disclaimer",
+                    "type": "string"
                 }
             ],
-            "name": "Initialized",
+            "name": "DisclaimerSet",
             "type": "event"
         },
-        "contract_address": "0xe29578c5aef73b045d0baabee52b223d5cf02443",
+        "contract_address": "0x84eee5ac39bd10e3bd2324940206628e5174ac17",
         "field_mapping": {},
         "type": "log"
     },
@@ -22,11 +22,11 @@
         "schema": [
             {
                 "description": "",
-                "name": "version",
+                "name": "disclaimer",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "rCT_event_Initialized"
+        "table_name": "DelegateAddress_event_DisclaimerSet"
     }
 }
