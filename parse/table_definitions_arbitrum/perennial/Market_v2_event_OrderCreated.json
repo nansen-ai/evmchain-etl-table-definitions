@@ -1,0 +1,169 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "Fixed6",
+                            "name": "maker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "long",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "short",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "net",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "skew",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "impact",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "utilization",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "efficiency",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "fee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "keeper",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Order",
+                    "name": "order",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "Fixed6",
+                    "name": "collateral",
+                    "type": "int256"
+                }
+            ],
+            "name": "OrderCreated",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "maker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "long",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "short",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "net",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "skew",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "impact",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "utilization",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "efficiency",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "keeper",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "order",
+                "type": "RECORD"
+            },
+            {
+                "description": "",
+                "name": "collateral",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_event_OrderCreated"
+    }
+}
