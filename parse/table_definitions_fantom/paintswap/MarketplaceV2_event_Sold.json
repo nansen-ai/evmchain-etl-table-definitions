@@ -55,7 +55,7 @@
             "name": "Sold",
             "type": "event"
         },
-        "contract_address": "0xf3df7b6dccc267393784a3876d0cbcbdc73147d4",
+        "contract_address": "0x6125fd14b6790d5f66509b7aa53274c93dae70b9",
         "field_mapping": {},
         "type": "log"
     },
