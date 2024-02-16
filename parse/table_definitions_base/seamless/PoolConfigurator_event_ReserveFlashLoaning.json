@@ -19,7 +19,7 @@
             "name": "ReserveFlashLoaning",
             "type": "event"
         },
-        "contract_address": "0xbfb7391282a3576892bd1da328269ebac1b086cf",
+        "contract_address": "0x7b08a77539a50218c8fb4b706b87fb799d3505a0",
         "field_mapping": {},
         "type": "log"
     },
