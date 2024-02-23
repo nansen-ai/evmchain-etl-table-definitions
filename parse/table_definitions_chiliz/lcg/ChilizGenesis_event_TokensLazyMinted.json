@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "startTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "endTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "baseURI",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "encryptedBaseURI",
+                    "type": "bytes"
+                }
+            ],
+            "name": "TokensLazyMinted",
+            "type": "event"
+        },
+        "contract_address": "0xfb917e76927e2bed4361baa088c6e680e8546c4b",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "lcg",
+        "schema": [
+            {
+                "description": "",
+                "name": "startTokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "endTokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "baseURI",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "encryptedBaseURI",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ChilizGenesis_event_TokensLazyMinted"
+    }
+}
