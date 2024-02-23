@@ -1,0 +1,109 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "trader",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "subject",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isBuy",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "shareAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ethAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "protocolEthAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "subjectEthAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "supply",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Trade",
+            "type": "event"
+        },
+        "contract_address": "0xcf205808ed36593aa40a44f10c7f7c2f67d4a4d4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "common",
+        "schema": [
+            {
+                "description": "",
+                "name": "trader",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "subject",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isBuy",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "shareAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "ethAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "protocolEthAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "subjectEthAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "supply",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "All_event_Trade"
+    }
+}
