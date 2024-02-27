@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "RewardsUnpaused",
+            "type": "event"
+        },
+        "contract_address": "0xe9005b078701e2a0948d2eac43010d35870ad9d2",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_base",
+        "schema": [],
+        "table_description": "",
+        "table_name": "MultiRewardDistributor_event_RewardsUnpaused"
+    }
+}
