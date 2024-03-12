@@ -1,0 +1,66 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256[]",
+                            "name": "kinks",
+                            "type": "uint256[]"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "ratePrecision",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint256[]",
+                            "name": "rates",
+                            "type": "uint256[]"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct PiecewiseInterestRate.PiecewiseInterestRateModel",
+                    "name": "model",
+                    "type": "tuple"
+                }
+            ],
+            "name": "ModelSet",
+            "type": "event"
+        },
+        "contract_address": "SELECT DISTINCT interest_rate_calculator FROM ref('AssetRegistry_event_AssetRegistered')",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "synonym",
+        "schema": [
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "kinks",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "ratePrecision",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "rates",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "model",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PiecewiseInterestRate_event_ModelSet"
+    }
+}
