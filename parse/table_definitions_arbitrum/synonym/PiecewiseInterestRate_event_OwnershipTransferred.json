@@ -19,7 +19,7 @@
             "name": "OwnershipTransferred",
             "type": "event"
         },
-        "contract_address": "SELECT DISTINCT interest_rate_calculator FROM ref('AssetRegistry_event_AssetRegistered')",
+        "contract_address": "SELECT interestRateCalculator FROM ref('AssetRegistry_event_AssetRegistered') group by interestRateCalculator",
         "field_mapping": {},
         "type": "log"
     },
