@@ -1,0 +1,153 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "collateralToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "indexToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "orderIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateralDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sizeDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "triggerPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "executionFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isLong",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "triggerAboveThreshold",
+                    "type": "bool"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "isIncreaseOrder",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isMaxOrder",
+                    "type": "bool"
+                }
+            ],
+            "name": "CancelOrder",
+            "type": "event"
+        },
+        "contract_address": "0x66217ebf82de81b8b536d5fbeb060f4f3aa8c8d2",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "OrderManager",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "indexToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "orderIndex",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "sizeDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "triggerPrice",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "executionFee",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isLong",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "triggerAboveThreshold",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isIncreaseOrder",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isMaxOrder",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OrderManager_event_CancelOrder"
+    }
+}

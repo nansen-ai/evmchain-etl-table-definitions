@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateralDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prevLeverage",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nextLeverage",
+                    "type": "uint256"
+                }
+            ],
+            "name": "LeverageDecreased",
+            "type": "event"
+        },
+        "contract_address": "0x66217ebf82de81b8b536d5fbeb060f4f3aa8c8d2",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "OrderManager",
+        "schema": [
+            {
+                "description": "",
+                "name": "collateralDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "prevLeverage",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "nextLeverage",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OrderManager_event_LeverageDecreased"
+    }
+}

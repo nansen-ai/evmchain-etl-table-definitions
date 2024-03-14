@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minBlockDelayKeeper",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minTimeDelayPublic",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "maxTimeDelay",
+                    "type": "uint256"
+                }
+            ],
+            "name": "SetDelayValues",
+            "type": "event"
+        },
+        "contract_address": "0x66217ebf82de81b8b536d5fbeb060f4f3aa8c8d2",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "OrderManager",
+        "schema": [
+            {
+                "description": "",
+                "name": "minBlockDelayKeeper",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "minTimeDelayPublic",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "maxTimeDelay",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OrderManager_event_SetDelayValues"
+    }
+}

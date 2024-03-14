@@ -1,0 +1,164 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_collateralToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "indexToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sizeDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isLong",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "acceptablePrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "executionFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "queueIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockTime",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CreateIncreasePosition",
+            "type": "event"
+        },
+        "contract_address": "0x66217ebf82de81b8b536d5fbeb060f4f3aa8c8d2",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "OrderManager",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_collateralToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "indexToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amountIn",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "sizeDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "isLong",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "acceptablePrice",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "executionFee",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "index",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "queueIndex",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "blockNumber",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "blockTime",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "gasPrice",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OrderManager_event_CreateIncreasePosition"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "fundingLongRate",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "fundingShortRate",
+                    "type": "int256"
+                }
+            ],
+            "name": "UpdateFundingRate",
+            "type": "event"
+        },
+        "contract_address": "0xc5f444d25d5013c395f70398350d2969ef0f6aa0",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "Vault",
+        "schema": [
+            {
+                "description": "",
+                "name": "token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "fundingLongRate",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "fundingShortRate",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Vault_event_UpdateFundingRate"
+    }
+}
