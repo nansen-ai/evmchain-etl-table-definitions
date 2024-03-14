@@ -48,7 +48,7 @@
                 "type": "STRING"
             }
         ],
-        "table_description": "",
+        "table_description": "logx",
         "table_name": "LLP_event_Transfer"
     }
 }
