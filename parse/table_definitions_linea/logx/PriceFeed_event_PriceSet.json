@@ -1,0 +1,86 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "maxPrice",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "minPrice",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "int32",
+                            "name": "maxPriceExpo",
+                            "type": "int32"
+                        },
+                        {
+                            "internalType": "int32",
+                            "name": "minPriceExpo",
+                            "type": "int32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "publishTime",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct LineaPriceFeed.TokenPrice",
+                    "name": "priceSet",
+                    "type": "tuple"
+                }
+            ],
+            "name": "PriceSet",
+            "type": "event"
+        },
+        "contract_address": "0xdccc1dc6c3518dc160f7d2ec72dac1a6ee9a7b4f",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "PriceFeed",
+        "schema": [
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "maxPrice",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "minPrice",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxPriceExpo",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "minPriceExpo",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "publishTime",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "priceSet",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PriceFeed_event_PriceSet"
+    }
+}
