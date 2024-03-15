@@ -30,7 +30,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "RewardTracker",
+        "dataset_name": "logx",,
         "schema": [
             {
                 "description": "",
@@ -48,7 +48,7 @@
                 "type": "STRING"
             }
         ],
-        "table_description": "logx",
+        "table_description": "",
         "table_name": "RewardTracker_event_Approval"
     }
 }

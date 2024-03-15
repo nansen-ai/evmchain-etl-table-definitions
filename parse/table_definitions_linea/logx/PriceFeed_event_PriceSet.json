@@ -45,7 +45,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "PriceFeed",
+        "dataset_name": "logx",,
         "schema": [
             {
                 "description": "",
@@ -80,7 +80,7 @@
                 "type": "RECORD"
             }
         ],
-        "table_description": "logx",
+        "table_description": "",
         "table_name": "PriceFeed_event_PriceSet"
     }
 }

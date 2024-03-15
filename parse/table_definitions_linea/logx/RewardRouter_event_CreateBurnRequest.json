@@ -24,7 +24,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "RewardRouter",
+        "dataset_name": "logx",,
         "schema": [
             {
                 "description": "",
@@ -37,7 +37,7 @@
                 "type": "STRING"
             }
         ],
-        "table_description": "logx",
+        "table_description": "",
         "table_name": "RewardRouter_event_CreateBurnRequest"
     }
 }
