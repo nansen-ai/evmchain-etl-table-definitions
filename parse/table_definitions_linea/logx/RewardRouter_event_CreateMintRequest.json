@@ -24,7 +24,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "logx",,
+        "dataset_name": "logx",
         "schema": [
             {
                 "description": "",
