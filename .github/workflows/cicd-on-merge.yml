@@ -1,0 +1,67 @@
+---
+name: CICD (Merge)
+on:
+    push:
+        branches: [main]
+
+jobs:
+  get-updated-dirs:
+    runs-on: ubuntu-latest
+    outputs:
+      dirs: ${{ steps.get-dirs.outputs.dirs }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Get updated directories
+        id: get-dirs
+        run: |
+          DIRS=$(git diff --name-only HEAD~1 HEAD | grep '^parse/table_definitions' | cut -d"/" -f1-3 | uniq)
+          echo "Updated directories: $DIRS"
+          sudo apt-get install jq
+          DIRS_JSON=$(echo $DIRS | tr '\n' ' ' | jq -R -s -c 'split(" ") | map(select(length > 0))')
+          echo "dirs=$DIRS_JSON" >> $GITHUB_OUTPUT
+
+  run:
+    needs: get-updated-dirs
+    if: needs.get-updated-dirs.outputs.dirs != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{fromJson(needs.get-updated-dirs.outputs.dirs)}}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Authenticate Docker to GCR
+      run: |
+        echo "$SERVICE_ACCOUNT_PROD" > sa_key.json
+        cat sa_key.json | docker login -u _json_key --password-stdin https://gcr.io
+        rm sa_key.json
+      env:
+        SERVICE_ACCOUNT_PROD: ${{ secrets.SERVICE_ACCOUNT_PROD }}
+
+    - name: Run Docker image
+      run: |
+        CHAIN_NAME=${{ matrix.dir }}
+        CHAIN_NAME=${CHAIN_NAME#parse/table_definitions_} # this will remove 'parse/table_definitions_' from start
+        DATASET_NAME=${CHAIN_NAME#*/}  # this will get the substring after the first '/'
+        CHAIN_NAME=${CHAIN_NAME%/*}  # this will get the substring before the first '/'
+
+        echo "$SERVICE_ACCOUNT_PROD" > ./credentials.json
+        docker run \
+          -v $PWD:/app \
+          -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json \
+          gcr.io/${{ vars.PARSE_PROJECT }}/evmchain-etl-parse:latest \
+          --project ${{ vars.PARSE_PROJECT }} \
+          --environment prod \
+          --chain_name $CHAIN_NAME \
+          --dataset_name $DATASET_NAME \
+          --dataset_folder "/app/${{ matrix.dir }}"
+        rm ./credentials.json
+      env:
+        SERVICE_ACCOUNT_PROD: ${{ secrets.SERVICE_ACCOUNT_PROD }}

@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "newEnabled",
+                    "type": "bool"
+                }
+            ],
+            "name": "OperatorUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xdad8a103473dfd47f90168a0e46766ed48e26ec7",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "operator",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newEnabled",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketFactory_v2_event_OperatorUpdated"
+    }
+}

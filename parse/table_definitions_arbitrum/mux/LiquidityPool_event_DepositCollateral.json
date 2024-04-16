@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "subAccountId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "trader",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "collateralId",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rawAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "wadAmount",
+                    "type": "uint96"
+                }
+            ],
+            "name": "DepositCollateral",
+            "type": "event"
+        },
+        "contract_address": "0x3e0199792ce69dc29a0a36146bfa68bd7c8d6633",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mux",
+        "schema": [
+            {
+                "description": "",
+                "name": "subAccountId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "trader",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "rawAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "wadAmount",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LiquidityPool_event_DepositCollateral"
+    }
+}

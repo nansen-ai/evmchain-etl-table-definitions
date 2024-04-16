@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address"
+                }
+            ],
+            "name": "ExecutionFromModuleSuccess",
+            "type": "event"
+        },
+        "contract_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "module",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Multisig_event_ExecutionFromModuleSuccess"
+    }
+}

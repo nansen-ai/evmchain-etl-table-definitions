@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "aumInUsdg",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "glpSupply",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "usdgAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mintAmount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "AddLiquidity",
+            "type": "event"
+        },
+        "contract_address": "0x3963ffc9dff443c2a94f21b129d429891e32ec18",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "aumInUsdg",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "glpSupply",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "usdgAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "mintAmount",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "GlpManager_event_AddLiquidity"
+    }
+}

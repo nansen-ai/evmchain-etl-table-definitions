@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "previousPriceMantissa",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "requestedPriceMantissa",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newPriceMantissa",
+                    "type": "uint256"
+                }
+            ],
+            "name": "PricePosted",
+            "type": "event"
+        },
+        "contract_address": "0xec942be8a8114bfd0396a5052c36027f2ca6a9d0",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_base",
+        "schema": [
+            {
+                "description": "",
+                "name": "asset",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "previousPriceMantissa",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "requestedPriceMantissa",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newPriceMantissa",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ChainlinkOracle_event_PricePosted"
+    }
+}

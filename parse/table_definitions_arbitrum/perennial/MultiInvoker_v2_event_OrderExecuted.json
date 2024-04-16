@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IMarket",
+                    "name": "market",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "positionId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OrderExecuted",
+            "type": "event"
+        },
+        "contract_address": "0x431603567ecbb4aa1ce5a4fdbe5554caea658832",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "market",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "nonce",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "positionId",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MultiInvoker_v2_event_OrderExecuted"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newCoordinator",
+                    "type": "address"
+                }
+            ],
+            "name": "CoordinatorUpdated",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newCoordinator",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_event_CoordinatorUpdated"
+    }
+}

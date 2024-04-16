@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "disclaimer",
+                    "type": "string"
+                }
+            ],
+            "name": "DisclaimerSet",
+            "type": "event"
+        },
+        "contract_address": "0x67de8310f082cc3e7fffdd4e13d39312860c2aaa",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "synonym",
+        "schema": [
+            {
+                "description": "",
+                "name": "disclaimer",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "TokenConverter_event_DisclaimerSet"
+    }
+}

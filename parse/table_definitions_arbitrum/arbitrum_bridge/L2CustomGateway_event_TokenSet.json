@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Address",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l2Address",
+                    "type": "address"
+                }
+            ],
+            "name": "TokenSet",
+            "type": "event"
+        },
+        "contract_address": "0x190274fea8f30e3f48ce43adcbd9a74110118284",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "arbitrum_bridge",
+        "schema": [
+            {
+                "description": "",
+                "name": "l1Address",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "l2Address",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "L2CustomGateway_event_TokenSet"
+    }
+}

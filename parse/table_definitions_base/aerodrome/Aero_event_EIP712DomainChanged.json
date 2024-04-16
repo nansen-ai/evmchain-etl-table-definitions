@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "EIP712DomainChanged",
+            "type": "event"
+        },
+        "contract_address": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [],
+        "table_description": "",
+        "table_name": "Aero_event_EIP712DomainChanged"
+    }
+}

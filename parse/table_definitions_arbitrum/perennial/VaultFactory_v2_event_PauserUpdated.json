@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newPauser",
+                    "type": "address"
+                }
+            ],
+            "name": "PauserUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xad3565680aecee27a39249d8c2d55dac79be5ad0",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newPauser",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "VaultFactory_v2_event_PauserUpdated"
+    }
+}

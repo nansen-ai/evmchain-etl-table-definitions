@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minPurchaseTokenAmountUsd",
+                    "type": "uint256"
+                }
+            ],
+            "name": "UpdateMinPurchaseTokenAmountUsd",
+            "type": "event"
+        },
+        "contract_address": "0x09f77e8a13de9a35a7231028187e9fd5db8a2acb",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "minPurchaseTokenAmountUsd",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OrderBook_event_UpdateMinPurchaseTokenAmountUsd"
+    }
+}

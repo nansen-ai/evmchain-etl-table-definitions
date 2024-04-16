@@ -1,0 +1,106 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "UFixed6",
+                            "name": "protocolFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "maxFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "maxFeeAbsolute",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "maxCut",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "maxRate",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "minMaintenance",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "minEfficiency",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct ProtocolParameter",
+                    "name": "newParameter",
+                    "type": "tuple"
+                }
+            ],
+            "name": "ParameterUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xdad8a103473dfd47f90168a0e46766ed48e26ec7",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "protocolFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxFeeAbsolute",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxCut",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxRate",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "minMaintenance",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "minEfficiency",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "newParameter",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketFactory_v2_event_ParameterUpdated"
+    }
+}

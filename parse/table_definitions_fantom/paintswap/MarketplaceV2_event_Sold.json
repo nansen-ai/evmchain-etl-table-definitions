@@ -1,0 +1,109 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "marketplaceId",
+                    "type": "uint256"
+                  },
+                  {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "nfts",
+                    "type": "address[]"
+                  },
+                  {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "amountBatches",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "price",
+                    "type": "uint128"
+                  },
+                  {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                  },
+                  {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                  },
+                  {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                  }
+            ],
+            "name": "Sold",
+            "type": "event"
+        },
+        "contract_address": "0x6125fd14b6790d5f66509b7aa53274c93dae70b9",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "paintswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "marketplaceId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "nfts",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tokenIds",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amountBatches",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "price",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "buyer",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "seller",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketplaceV2_event_Sold"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract CToken",
+                    "name": "cToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newSupplyCap",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewSupplyCap",
+            "type": "event"
+        },
+        "contract_address": "0x1b4d3b0421ddc1eb216d230bc01527422fb93103",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "cToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newSupplyCap",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Unitroller_event_NewSupplyCap"
+    }
+}

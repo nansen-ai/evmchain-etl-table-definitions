@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "pauser",
+                    "type": "address"
+                }
+            ],
+            "name": "SetPauser",
+            "type": "event"
+        },
+        "contract_address": "0x420dd381b31aef6683db6b902084cb0ffece40da",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "pauser",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PoolFactory_event_SetPauser"
+    }
+}

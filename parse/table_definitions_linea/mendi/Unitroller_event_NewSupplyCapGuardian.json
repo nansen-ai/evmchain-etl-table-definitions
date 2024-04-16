@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldSupplyCapGuardian",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newSupplyCapGuardian",
+                    "type": "address"
+                }
+            ],
+            "name": "NewSupplyCapGuardian",
+            "type": "event"
+        },
+        "contract_address": "0x1b4d3b0421ddc1eb216d230bc01527422fb93103",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldSupplyCapGuardian",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newSupplyCapGuardian",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Unitroller_event_NewSupplyCapGuardian"
+    }
+}

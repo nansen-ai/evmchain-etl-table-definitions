@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "productId",
+                    "type": "uint32"
+                }
+            ],
+            "name": "AddProduct",
+            "type": "event"
+        },
+        "contract_address": "0xa8eb898262fb84afd004a322ad5b32f3916835db",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "productId",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PerpEngine_event_AddProduct"
+    }
+}

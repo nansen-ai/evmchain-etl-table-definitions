@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract MToken",
+                    "name": "mToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "emissionToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "newTimestamp",
+                    "type": "uint32"
+                }
+            ],
+            "name": "GlobalBorrowIndexUpdated",
+            "type": "event"
+        },
+        "contract_address": "0xe9005b078701e2a0948d2eac43010d35870ad9d2",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_base",
+        "schema": [
+            {
+                "description": "",
+                "name": "mToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "emissionToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newIndex",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newTimestamp",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MultiRewardDistributor_event_GlobalBorrowIndexUpdated"
+    }
+}

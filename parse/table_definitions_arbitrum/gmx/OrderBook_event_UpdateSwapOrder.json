@@ -1,0 +1,120 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ordexIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minOut",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "triggerRatio",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "triggerAboveThreshold",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "shouldUnwrap",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "executionFee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "UpdateSwapOrder",
+            "type": "event"
+        },
+        "contract_address": "0x09f77e8a13de9a35a7231028187e9fd5db8a2acb",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "ordexIndex",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "path",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amountIn",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "minOut",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "triggerRatio",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "triggerAboveThreshold",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "shouldUnwrap",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "executionFee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "OrderBook_event_UpdateSwapOrder"
+    }
+}

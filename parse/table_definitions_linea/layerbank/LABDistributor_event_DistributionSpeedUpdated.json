@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "gToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "supplySpeed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "borrowSpeed",
+                    "type": "uint256"
+                }
+            ],
+            "name": "DistributionSpeedUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x5d06067f86946620c326713b846ddc8b97470957",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "layerbank",
+        "schema": [
+            {
+                "description": "",
+                "name": "gToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "supplySpeed",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "borrowSpeed",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LABDistributor_event_DistributionSpeedUpdated"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tierId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalRebate",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "discountShare",
+                    "type": "uint256"
+                }
+            ],
+            "name": "SetTier",
+            "type": "event"
+        },
+        "contract_address": "0xe6fab3f0c7199b0d34d7fbe83394fc0e0d06e99d",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "tierId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "totalRebate",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "discountShare",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ReferralStorage_event_SetTier"
+    }
+}

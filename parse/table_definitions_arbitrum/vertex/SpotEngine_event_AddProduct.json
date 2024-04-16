@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "productId",
+                    "type": "uint32"
+                }
+            ],
+            "name": "AddProduct",
+            "type": "event"
+        },
+        "contract_address": "0x27e9080eccce327df5bad0ea590b27a55eb5f3c6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "productId",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_event_AddProduct"
+    }
+}

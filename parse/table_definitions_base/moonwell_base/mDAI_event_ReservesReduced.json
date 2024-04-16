@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "admin",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reduceAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newTotalReserves",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ReservesReduced",
+            "type": "event"
+        },
+        "contract_address": "0x73b06d8d18de422e269645eace15400de7462417",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_base",
+        "schema": [
+            {
+                "description": "",
+                "name": "admin",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "reduceAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newTotalReserves",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "mDAI_event_ReservesReduced"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "0xfff9ce5f71ca6178d3beecedb61e7eff1602950e",
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "unnamedField0",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "requester",
+                    "type": "address"
+                }
+            ],
+            "name": "OrderCancelled",
+            "type": "event"
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "axie",
+        "table_name": "Marketplace_v2_event_OrderCancelled",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "unnamedField0",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "requester",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "depositFee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "SetDepositFee",
+            "type": "event"
+        },
+        "contract_address": "0xfff6d276bc37c61a23f06410dce4a400f66420f8",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "gmx",
+        "schema": [
+            {
+                "description": "",
+                "name": "depositFee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PositionRouter_event_SetDepositFee"
+    }
+}

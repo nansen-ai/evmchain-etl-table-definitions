@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "newDefaultCommunityFee",
+                    "type": "uint8"
+                }
+            ],
+            "name": "DefaultCommunityFee",
+            "type": "event"
+        },
+        "contract_address": "0x1a3c9b1d2f0529d97f2afc5136cc23e58f1fd35b",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "camelot",
+        "schema": [
+            {
+                "description": "",
+                "name": "newDefaultCommunityFee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AlgebraFactory_event_DefaultCommunityFee"
+    }
+}

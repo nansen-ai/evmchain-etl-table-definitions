@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "FactoryDisabled",
+            "type": "event"
+        },
+        "contract_address": "0xef44d6786b2b4d544b7850fe67ce6381626bf2d6",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "balancer",
+        "schema": [],
+        "table_description": "",
+        "table_name": "V2_StablePoolFactory_event_FactoryDisabled"
+    }
+}

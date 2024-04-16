@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract MToken",
+                    "name": "mToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "emissionToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldRewardSpeed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newRewardSpeed",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewSupplyRewardSpeed",
+            "type": "event"
+        },
+        "contract_address": "0xe9005b078701e2a0948d2eac43010d35870ad9d2",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell_base",
+        "schema": [
+            {
+                "description": "",
+                "name": "mToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "emissionToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "oldRewardSpeed",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newRewardSpeed",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MultiRewardDistributor_event_NewSupplyRewardSpeed"
+    }
+}

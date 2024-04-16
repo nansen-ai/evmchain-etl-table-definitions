@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "AddressesProviderUnregistered",
+            "type": "event"
+        },
+        "contract_address": "0x9d36dce6c66e3c206526f5d7b3308fff16c1aa5e",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "radiant",
+        "schema": [
+            {
+                "description": "",
+                "name": "newAddress",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "LendingPoolAddressesProviderRegistry_event_AddressesProviderUnregistered"
+    }
+}

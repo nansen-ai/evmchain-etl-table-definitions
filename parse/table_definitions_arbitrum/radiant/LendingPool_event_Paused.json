@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Paused",
+            "type": "event"
+        },
+        "contract_address": "0xf4b1486dd74d07706052a33d31d7c0aafd0659e1",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "radiant",
+        "schema": [],
+        "table_description": "",
+        "table_name": "LendingPool_event_Paused"
+    }
+}

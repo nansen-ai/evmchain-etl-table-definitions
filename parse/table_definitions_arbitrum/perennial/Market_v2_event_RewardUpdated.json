@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "Token18",
+                    "name": "newReward",
+                    "type": "address"
+                }
+            ],
+            "name": "RewardUpdated",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newReward",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_event_RewardUpdated"
+    }
+}

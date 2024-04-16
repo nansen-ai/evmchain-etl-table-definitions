@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasUsed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed18",
+                    "name": "multiplier",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "buffer",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed18",
+                    "name": "keeperFee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "KeeperCall",
+            "type": "event"
+        },
+        "contract_address": "0x431603567ecbb4aa1ce5a4fdbe5554caea658832",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "gasUsed",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "multiplier",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "buffer",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "keeperFee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MultiInvoker_v2_event_KeeperCall"
+    }
+}

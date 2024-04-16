@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CreateBurnRequest",
+            "type": "event"
+        },
+        "contract_address": "0x0fd0c5984a65e08a86547d3b1c1ea29f0d86e7da",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "logx",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "RewardRouter_event_CreateBurnRequest"
+    }
+}

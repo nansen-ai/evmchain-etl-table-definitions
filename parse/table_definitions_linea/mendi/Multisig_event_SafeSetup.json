@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "initiator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "owners",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "initializer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address"
+                }
+            ],
+            "name": "SafeSetup",
+            "type": "event"
+        },
+        "contract_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "mendi",
+        "schema": [
+            {
+                "description": "",
+                "name": "initiator",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "owners",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "threshold",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "initializer",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "fallbackHandler",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Multisig_event_SafeSetup"
+    }
+}

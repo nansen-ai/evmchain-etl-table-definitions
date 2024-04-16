@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                }
+            ],
+            "name": "RemovedAccess",
+            "type": "event"
+        },
+        "contract_address": "SELECT contract_address FROM ref('view_AccessControlledOffchainAggregator_info') GROUP BY contract_address",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "chainlink",
+        "schema": [
+            {
+                "description": "",
+                "name": "user",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "AccessControlledOffchainAggregator_event_RemovedAccess"
+    }
+}
