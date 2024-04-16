@@ -19,7 +19,7 @@
             "name": "WithdrawReserves",
             "type": "event"
         },
-        "contract_address": "0x2e44e174f7D53F0212823acC11C01A11d58c5bCB",
+        "contract_address": "0x2e44e174f7d53f0212823acc11c01a11d58c5bcb",
         "field_mapping": {},
         "type": "log"
     },
