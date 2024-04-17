@@ -30,7 +30,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "optimism_circle",
+        "dataset_name": "circle",
         "schema": [
             {
                 "description": "",
