@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "mintRecipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "mintToken",
+                    "type": "address"
+                }
+            ],
+            "name": "MintAndWithdraw",
+            "type": "event"
+        },
+        "contract_address": "0x19330d10d9cc8751218eaf51e8885d058642e08a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "circle",
+        "schema": [
+            {
+                "description": "",
+                "name": "mintRecipient",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "mintToken",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "TokenMessenger_event_MintAndWithdraw"
+    }
+}
