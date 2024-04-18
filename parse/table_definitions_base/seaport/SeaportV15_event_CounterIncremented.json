@@ -25,7 +25,7 @@
     },
     "table": {
         "dataset_name": "seaport",
-        "table_name": "SeaportV14_event_CounterIncremented",
+        "table_name": "SeaportV15_event_CounterIncremented",
         "table_description": "",
         "schema": [
             {

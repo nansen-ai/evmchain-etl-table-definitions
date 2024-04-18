@@ -98,7 +98,7 @@
     },
     "table": {
         "dataset_name": "seaport",
-        "table_name": "SeaportV14_event_OrderFulfilled",
+        "table_name": "SeaportV15_event_OrderFulfilled",
         "table_description": "",
         "schema": [
             {
