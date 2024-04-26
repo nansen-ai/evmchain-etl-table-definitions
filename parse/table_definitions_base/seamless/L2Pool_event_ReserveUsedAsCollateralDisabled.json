@@ -19,7 +19,7 @@
             "name": "ReserveUsedAsCollateralDisabled",
             "type": "event"
         },
-        "contract_address": "0x918e3dfabd8c69a54d542cdeea4a3e0616174323",
+        "contract_address": "0x8f44fd754285aa6a2b8b9b97739b79746e0475a7",
         "field_mapping": {},
         "type": "log"
     },
