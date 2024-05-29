@@ -1,0 +1,156 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "UFixed6",
+                            "name": "fundingFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "interestFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "positionFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "oracleFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "riskFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "maxPendingGlobal",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "maxPendingLocal",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "settlementFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "takerCloseAlways",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "makerCloseAlways",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "closed",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "settle",
+                            "type": "bool"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct MarketParameter",
+                    "name": "newParameter",
+                    "type": "tuple"
+                }
+            ],
+            "name": "ParameterUpdated",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "fundingFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "oracleFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "riskFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxPendingGlobal",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "maxPendingLocal",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "settlementFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerCloseAlways",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerCloseAlways",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "closed",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "settle",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "newParameter",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_2_event_ParameterUpdated"
+    }
+}

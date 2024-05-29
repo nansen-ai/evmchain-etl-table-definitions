@@ -1,0 +1,392 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "orderId",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "timestamp",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "orders",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "collateral",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "longPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "longNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "shortPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "shortNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "protection",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerReferral",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerReferral",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Order",
+                    "name": "order",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "UFixed6",
+                            "name": "positionFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "positionFeeMaker",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "positionFeeProtocol",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "positionFeeSubtractive",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "positionFeeExposure",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "positionFeeExposureMaker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "positionFeeExposureProtocol",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "positionFeeImpact",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "fundingMaker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "fundingLong",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "fundingShort",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "fundingFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "interestMaker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "interestLong",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "interestShort",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "interestFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "pnlMaker",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "pnlLong",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "pnlShort",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "settlementFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "liquidationFee",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct VersionAccumulationResult",
+                    "name": "accumulationResult",
+                    "type": "tuple"
+                }
+            ],
+            "name": "PositionProcessed",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "orderId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "timestamp",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "orders",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "collateral",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "longPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "longNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "shortPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "shortNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "protection",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerReferral",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerReferral",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "order",
+                "type": "RECORD"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "positionFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeProtocol",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeSubtractive",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeExposure",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeExposureMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeExposureProtocol",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "positionFeeImpact",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingShort",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "fundingFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestShort",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "interestFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "pnlMaker",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "pnlLong",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "pnlShort",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "settlementFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "liquidationFee",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "accumulationResult",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_2_event_PositionProcessed"
+    }
+}
