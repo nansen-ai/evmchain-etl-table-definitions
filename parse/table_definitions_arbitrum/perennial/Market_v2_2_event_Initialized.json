@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Initialized",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "version",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_2_event_Initialized"
+    }
+}

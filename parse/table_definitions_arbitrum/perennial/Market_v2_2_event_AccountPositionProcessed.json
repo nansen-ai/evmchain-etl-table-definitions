@@ -1,0 +1,263 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "orderId",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "timestamp",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "orders",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "collateral",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "longPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "longNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "shortPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "shortNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "protection",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerReferral",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerReferral",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Order",
+                    "name": "order",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "Fixed6",
+                            "name": "collateral",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "linearFee",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "proportionalFee",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "adiabaticFee",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "settlementFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "liquidationFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "subtractiveFee",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct CheckpointAccumulationResult",
+                    "name": "accumulationResult",
+                    "type": "tuple"
+                }
+            ],
+            "name": "AccountPositionProcessed",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "orderId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "timestamp",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "orders",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "collateral",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "longPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "longNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "shortPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "shortNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "protection",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerReferral",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerReferral",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "order",
+                "type": "RECORD"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "collateral",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "linearFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "proportionalFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "adiabaticFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "settlementFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "liquidationFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "subtractiveFee",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "accumulationResult",
+                "type": "RECORD"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_2_event_AccountPositionProcessed"
+    }
+}

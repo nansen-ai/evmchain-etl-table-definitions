@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "referrer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed6",
+                    "name": "newFee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ReferralFeeUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x3dd09c846149e50d412cdce968e1d912117ff937",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "referrer",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newFee",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketFactory_v2_2_event_ReferralFeeUpdated"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newPauser",
+                    "type": "address"
+                }
+            ],
+            "name": "PauserUpdated",
+            "type": "event"
+        },
+        "contract_address": "0x3dd09c846149e50d412cdce968e1d912117ff937",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "newPauser",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketFactory_v2_2_event_PauserUpdated"
+    }
+}
