@@ -7,67 +7,47 @@
                     "components": [
                         {
                             "internalType": "UFixed6",
-                            "name": "fundingFee",
+                            "name": "protocolFee",
                             "type": "uint256"
                         },
                         {
                             "internalType": "UFixed6",
-                            "name": "interestFee",
+                            "name": "maxFee",
                             "type": "uint256"
                         },
                         {
                             "internalType": "UFixed6",
-                            "name": "positionFee",
+                            "name": "maxFeeAbsolute",
                             "type": "uint256"
                         },
                         {
                             "internalType": "UFixed6",
-                            "name": "oracleFee",
+                            "name": "maxCut",
                             "type": "uint256"
                         },
                         {
                             "internalType": "UFixed6",
-                            "name": "riskFee",
-                            "type": "uint256"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "maxPendingGlobal",
-                            "type": "uint256"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "maxPendingLocal",
+                            "name": "maxRate",
                             "type": "uint256"
                         },
                         {
                             "internalType": "UFixed6",
-                            "name": "settlementFee",
+                            "name": "minMaintenance",
                             "type": "uint256"
                         },
                         {
-                            "internalType": "bool",
-                            "name": "takerCloseAlways",
-                            "type": "bool"
+                            "internalType": "UFixed6",
+                            "name": "minEfficiency",
+                            "type": "uint256"
                         },
                         {
-                            "internalType": "bool",
-                            "name": "makerCloseAlways",
-                            "type": "bool"
-                        },
-                        {
-                            "internalType": "bool",
-                            "name": "closed",
-                            "type": "bool"
-                        },
-                        {
-                            "internalType": "bool",
-                            "name": "settle",
-                            "type": "bool"
+                            "internalType": "UFixed6",
+                            "name": "referralFee",
+                            "type": "uint256"
                         }
                     ],
                     "indexed": false,
-                    "internalType": "struct MarketParameter",
+                    "internalType": "struct ProtocolParameter",
                     "name": "newParameter",
                     "type": "tuple"
                 }
@@ -75,7 +55,7 @@
             "name": "ParameterUpdated",
             "type": "event"
         },
-        "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
+        "contract_address": "0x3dd09c846149e50d412cdce968e1d912117ff937",
         "field_mapping": {},
         "type": "log"
     },
@@ -87,62 +67,42 @@
                 "fields": [
                     {
                         "description": "",
-                        "name": "fundingFee",
+                        "name": "protocolFee",
                         "type": "STRING"
                     },
                     {
                         "description": "",
-                        "name": "interestFee",
+                        "name": "maxFee",
                         "type": "STRING"
                     },
                     {
                         "description": "",
-                        "name": "positionFee",
+                        "name": "maxFeeAbsolute",
                         "type": "STRING"
                     },
                     {
                         "description": "",
-                        "name": "oracleFee",
+                        "name": "maxCut",
                         "type": "STRING"
                     },
                     {
                         "description": "",
-                        "name": "riskFee",
+                        "name": "maxRate",
                         "type": "STRING"
                     },
                     {
                         "description": "",
-                        "name": "maxPendingGlobal",
+                        "name": "minMaintenance",
                         "type": "STRING"
                     },
                     {
                         "description": "",
-                        "name": "maxPendingLocal",
+                        "name": "minEfficiency",
                         "type": "STRING"
                     },
                     {
                         "description": "",
-                        "name": "settlementFee",
-                        "type": "STRING"
-                    },
-                    {
-                        "description": "",
-                        "name": "takerCloseAlways",
-                        "type": "STRING"
-                    },
-                    {
-                        "description": "",
-                        "name": "makerCloseAlways",
-                        "type": "STRING"
-                    },
-                    {
-                        "description": "",
-                        "name": "closed",
-                        "type": "STRING"
-                    },
-                    {
-                        "description": "",
-                        "name": "settle",
+                        "name": "referralFee",
                         "type": "STRING"
                     }
                 ],
@@ -151,6 +111,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Market_v2_2_event_ParameterUpdated"
+        "table_name": "MarketFactory_v2_2_event_ParameterUpdated"
     }
 }

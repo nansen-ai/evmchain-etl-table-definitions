@@ -5,15 +5,15 @@
             "inputs": [
                 {
                     "indexed": false,
-                    "internalType": "contract IOracleProvider",
-                    "name": "newOracle",
-                    "type": "address"
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
                 }
             ],
-            "name": "OracleUpdated",
+            "name": "Initialized",
             "type": "event"
         },
-        "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
+        "contract_address": "0x3dd09c846149e50d412cdce968e1d912117ff937",
         "field_mapping": {},
         "type": "log"
     },
@@ -22,11 +22,11 @@
         "schema": [
             {
                 "description": "",
-                "name": "newOracle",
+                "name": "version",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Market_v2_2_event_OracleUpdated"
+        "table_name": "MarketFactory_v2_2_event_Initialized"
     }
 }

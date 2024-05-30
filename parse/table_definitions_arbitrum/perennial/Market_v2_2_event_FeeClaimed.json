@@ -11,12 +11,12 @@
                 },
                 {
                     "indexed": false,
-                    "internalType": "Fixed6",
+                    "internalType": "UFixed6",
                     "name": "amount",
-                    "type": "int256"
+                    "type": "uint256"
                 }
             ],
-            "name": "ExposureClaimed",
+            "name": "FeeClaimed",
             "type": "event"
         },
         "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
@@ -38,6 +38,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "Market_v2_2_event_ExposureClaimed"
+        "table_name": "Market_v2_2_event_FeeClaimed"
     }
 }

@@ -4,19 +4,13 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "account",
-                    "type": "address"
-                },
-                {
                     "indexed": false,
-                    "internalType": "Fixed6",
-                    "name": "amount",
-                    "type": "int256"
+                    "internalType": "address",
+                    "name": "newBeneficiary",
+                    "type": "address"
                 }
             ],
-            "name": "ExposureClaimed",
+            "name": "BeneficiaryUpdated",
             "type": "event"
         },
         "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
@@ -28,16 +22,11 @@
         "schema": [
             {
                 "description": "",
-                "name": "account",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "amount",
+                "name": "newBeneficiary",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Market_v2_2_event_ExposureClaimed"
+        "table_name": "Market_v2_2_event_BeneficiaryUpdated"
     }
 }

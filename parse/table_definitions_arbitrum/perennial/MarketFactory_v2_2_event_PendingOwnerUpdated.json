@@ -4,16 +4,16 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
-                    "internalType": "contract IOracleProvider",
-                    "name": "newOracle",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newPendingOwner",
                     "type": "address"
                 }
             ],
-            "name": "OracleUpdated",
+            "name": "PendingOwnerUpdated",
             "type": "event"
         },
-        "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
+        "contract_address": "0x3dd09c846149e50d412cdce968e1d912117ff937",
         "field_mapping": {},
         "type": "log"
     },
@@ -22,11 +22,11 @@
         "schema": [
             {
                 "description": "",
-                "name": "newOracle",
+                "name": "newPendingOwner",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Market_v2_2_event_OracleUpdated"
+        "table_name": "MarketFactory_v2_2_event_PendingOwnerUpdated"
     }
 }

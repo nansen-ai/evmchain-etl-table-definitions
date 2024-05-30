@@ -6,20 +6,20 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "account",
+                    "name": "referrer",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "Fixed6",
-                    "name": "amount",
-                    "type": "int256"
+                    "internalType": "UFixed6",
+                    "name": "newFee",
+                    "type": "uint256"
                 }
             ],
-            "name": "ExposureClaimed",
+            "name": "ReferralFeeUpdated",
             "type": "event"
         },
-        "contract_address": "SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
+        "contract_address": "0x3dd09c846149e50d412cdce968e1d912117ff937",
         "field_mapping": {},
         "type": "log"
     },
@@ -28,16 +28,16 @@
         "schema": [
             {
                 "description": "",
-                "name": "account",
+                "name": "referrer",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "newFee",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Market_v2_2_event_ExposureClaimed"
+        "table_name": "MarketFactory_v2_2_event_ReferralFeeUpdated"
     }
 }
