@@ -13,7 +13,7 @@
             "name": "NewCreditManagerAdded",
             "type": "event"
         },
-        "contract_address": "0xc3e00cda97d5779bfc8f17588d55b4544c8a6c47",
+        "contract_address": "0x949f9899bdadcc7831ca422f115fe61f4211a30b",
         "field_mapping": {},
         "type": "log"
     },
