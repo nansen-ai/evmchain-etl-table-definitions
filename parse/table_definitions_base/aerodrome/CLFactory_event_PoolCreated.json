@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token0",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token1",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "tickSpacing",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "pool",
+                    "type": "address"
+                }
+            ],
+            "name": "PoolCreated",
+            "type": "event"
+        },
+        "contract_address": "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "token0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "token1",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tickSpacing",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "pool",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "CLFactory_event_PoolCreated"
+    }
+}
