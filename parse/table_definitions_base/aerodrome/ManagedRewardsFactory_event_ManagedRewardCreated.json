@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "voter",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lockedManagedReward",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "freeManagedReward",
+                    "type": "address"
+                }
+            ],
+            "name": "ManagedRewardCreated",
+            "type": "event"
+        },
+        "contract_address": "0xfda1fb5a2a5b23638c7017950506a36dcfd2bdc3",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "voter",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "lockedManagedReward",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "freeManagedReward",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ManagedRewardsFactory_event_ManagedRewardCreated"
+    }
+}
