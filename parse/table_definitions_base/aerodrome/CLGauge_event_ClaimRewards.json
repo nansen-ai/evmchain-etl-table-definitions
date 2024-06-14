@@ -6,14 +6,20 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "gauge",
+                    "name": "from",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
                 }
             ],
-            "name": "GaugeKilled",
+            "name": "ClaimRewards",
             "type": "event"
         },
-        "contract_address": "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+        "contract_address": "0xf5601f95708256a118ef5971820327f362442d2d",
         "field_mapping": {},
         "type": "log"
     },
@@ -22,11 +28,16 @@
         "schema": [
             {
                 "description": "",
-                "name": "gauge",
+                "name": "from",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Voter_event_GaugeKilled"
+        "table_name": "CLGauge_event_ClaimRewards"
     }
 }

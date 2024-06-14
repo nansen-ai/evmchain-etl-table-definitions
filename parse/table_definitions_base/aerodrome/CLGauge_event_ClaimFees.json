@@ -6,26 +6,26 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "whitelister",
+                    "name": "from",
                     "type": "address"
                 },
                 {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "token",
-                    "type": "address"
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimed0",
+                    "type": "uint256"
                 },
                 {
-                    "indexed": true,
-                    "internalType": "bool",
-                    "name": "_bool",
-                    "type": "bool"
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimed1",
+                    "type": "uint256"
                 }
             ],
-            "name": "WhitelistToken",
+            "name": "ClaimFees",
             "type": "event"
         },
-        "contract_address": "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+        "contract_address": "0xf5601f95708256a118ef5971820327f362442d2d",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +34,21 @@
         "schema": [
             {
                 "description": "",
-                "name": "whitelister",
+                "name": "from",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "token",
+                "name": "claimed0",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "_bool",
+                "name": "claimed1",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Voter_event_WhitelistToken"
+        "table_name": "CLGauge_event_ClaimFees"
     }
 }
