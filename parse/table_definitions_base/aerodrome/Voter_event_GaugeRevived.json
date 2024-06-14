@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "gauge",
+                    "type": "address"
+                }
+            ],
+            "name": "GaugeRevived",
+            "type": "event"
+        },
+        "contract_address": "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "gauge",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Voter_event_GaugeRevived"
+    }
+}

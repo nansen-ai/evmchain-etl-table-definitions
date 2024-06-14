@@ -1,0 +1,109 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "poolFactory",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "votingRewardsFactory",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "gaugeFactory",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "pool",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "bribeVotingReward",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "feeVotingReward",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "gauge",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "creator",
+                    "type": "address"
+                }
+            ],
+            "name": "GaugeCreated",
+            "type": "event"
+        },
+        "contract_address": "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "poolFactory",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "votingRewardsFactory",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "gaugeFactory",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "pool",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "bribeVotingReward",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "feeVotingReward",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "gauge",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "creator",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Voter_event_GaugeCreated"
+    }
+}
