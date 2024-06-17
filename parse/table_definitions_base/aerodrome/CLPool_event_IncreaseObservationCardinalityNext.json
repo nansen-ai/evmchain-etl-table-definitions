@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "observationCardinalityNextOld",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "observationCardinalityNextNew",
+                    "type": "uint16"
+                }
+            ],
+            "name": "IncreaseObservationCardinalityNext",
+            "type": "event"
+        },
+        "contract_address": "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "observationCardinalityNextOld",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "observationCardinalityNextNew",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "CLPool_event_IncreaseObservationCardinalityNext"
+    }
+}

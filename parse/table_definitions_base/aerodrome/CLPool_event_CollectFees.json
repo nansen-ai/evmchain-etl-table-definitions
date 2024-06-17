@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "amount0",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "amount1",
+                    "type": "uint128"
+                }
+            ],
+            "name": "CollectFees",
+            "type": "event"
+        },
+        "contract_address": "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "recipient",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount1",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "CLPool_event_CollectFees"
+    }
+}
