@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                }
+            ],
+            "name": "PriceFetched",
+            "type": "event"
+        },
+        "contract_address": "0x593d092bb28ccefe33bfdd3d9457e77bd3084271",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "price",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PriceFetcher_event_PriceFetched"
+    }
+}
