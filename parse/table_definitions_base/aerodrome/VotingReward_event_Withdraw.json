@@ -25,7 +25,7 @@
             "name": "Withdraw",
             "type": "event"
         },
-        "contract_address": "SELECT DISTINCT bribeVotingReward AS votingReward FROM ref('Voter_event_GaugeCreated') WHERE bribeVotingReward IS NOT NULL UNION SELECT DISTINCT feeVotingReward AS votingReward FROM ref('Voter_event_GaugeCreated') WHERE feeVotingReward IS NOT NULL",
+        "contract_address": "SELECT DISTINCT bribeVotingReward AS votingReward FROM ref('Voter_event_GaugeCreated') WHERE bribeVotingReward IS NOT NULL UNION ALL SELECT DISTINCT feeVotingReward AS votingReward FROM ref('Voter_event_GaugeCreated') WHERE feeVotingReward IS NOT NULL",
         "field_mapping": {},
         "type": "log"
     },
