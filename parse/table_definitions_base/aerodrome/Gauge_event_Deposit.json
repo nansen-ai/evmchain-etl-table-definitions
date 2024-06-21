@@ -6,26 +6,26 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "user",
+                    "name": "from",
                     "type": "address"
                 },
                 {
                     "indexed": true,
-                    "internalType": "uint256",
-                    "name": "tokenId",
-                    "type": "uint256"
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
                 },
                 {
-                    "indexed": true,
-                    "internalType": "uint128",
-                    "name": "liquidityToStake",
-                    "type": "uint128"
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
                 }
             ],
             "name": "Deposit",
             "type": "event"
         },
-        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('CLFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
+        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('PoolFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +34,21 @@
         "schema": [
             {
                 "description": "",
-                "name": "user",
+                "name": "from",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "tokenId",
+                "name": "to",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "liquidityToStake",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "CLGauge_event_Deposit"
+        "table_name": "Gauge_event_Deposit"
     }
 }
