@@ -1,0 +1,58 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "collateral_",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "quote_",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "interestRate_",
+                    "type": "uint256"
+                }
+            ],
+            "name": "deployPool",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "pool_",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        "contract_address": "0x6146dd43c5622bb6d12a5240ab9cf4de14edc625",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "anja_v2",
+        "schema": [
+            {
+                "description": "",
+                "name": "collateral_",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "quote_",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "interestRate_",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ERC20PoolFactory_call_deployPool"
+    }
+}

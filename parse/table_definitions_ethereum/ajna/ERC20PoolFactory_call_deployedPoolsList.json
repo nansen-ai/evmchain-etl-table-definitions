@@ -1,0 +1,38 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "deployedPoolsList",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        "contract_address": "0x6146dd43c5622bb6d12a5240ab9cf4de14edc625",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "anja_v2",
+        "schema": [
+            {
+                "description": "",
+                "name": "",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "ERC20PoolFactory_call_deployedPoolsList"
+    }
+}
