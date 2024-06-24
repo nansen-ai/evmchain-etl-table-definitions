@@ -10,27 +10,33 @@
                     "type": "address"
                 },
                 {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "claimed0",
-                    "type": "uint256"
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "dst",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "claimed1",
+                    "name": "amount",
                     "type": "uint256"
                 }
             ],
-            "name": "ClaimFees",
+            "name": "SupplyCollateral",
             "type": "event"
         },
-        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('CLFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
+        "contract_address": "0x995e394b8b2437ac8ce61ee0bc610d617962b214",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "aerodrome",
+        "dataset_name": "compound",
         "schema": [
             {
                 "description": "",
@@ -39,16 +45,21 @@
             },
             {
                 "description": "",
-                "name": "claimed0",
+                "name": "dst",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "claimed1",
+                "name": "asset",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "CLGauge_event_ClaimFees"
+        "table_name": "cUSDTv3_event_SupplyCollateral"
     }
 }

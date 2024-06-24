@@ -6,26 +6,26 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "user",
+                    "name": "from",
                     "type": "address"
                 },
                 {
-                    "indexed": true,
+                    "indexed": false,
                     "internalType": "uint256",
-                    "name": "tokenId",
+                    "name": "claimed0",
                     "type": "uint256"
                 },
                 {
-                    "indexed": true,
-                    "internalType": "uint128",
-                    "name": "liquidityToStake",
-                    "type": "uint128"
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimed1",
+                    "type": "uint256"
                 }
             ],
-            "name": "Deposit",
+            "name": "ClaimFees",
             "type": "event"
         },
-        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('CLFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
+        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('PoolFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +34,21 @@
         "schema": [
             {
                 "description": "",
-                "name": "user",
+                "name": "from",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "tokenId",
+                "name": "claimed0",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "liquidityToStake",
+                "name": "claimed1",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "CLGauge_event_Deposit"
+        "table_name": "Gauge_event_ClaimFees"
     }
 }

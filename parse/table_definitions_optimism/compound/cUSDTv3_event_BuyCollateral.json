@@ -6,49 +6,60 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "user",
+                    "name": "buyer",
                     "type": "address"
                 },
                 {
                     "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
                     "internalType": "uint256",
-                    "name": "tokenId",
+                    "name": "baseAmount",
                     "type": "uint256"
                 },
                 {
-                    "indexed": true,
-                    "internalType": "uint128",
-                    "name": "liquidityToStake",
-                    "type": "uint128"
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateralAmount",
+                    "type": "uint256"
                 }
             ],
-            "name": "Deposit",
+            "name": "BuyCollateral",
             "type": "event"
         },
-        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('CLFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
+        "contract_address": "0x995e394b8b2437ac8ce61ee0bc610d617962b214",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "aerodrome",
+        "dataset_name": "compound",
         "schema": [
             {
                 "description": "",
-                "name": "user",
+                "name": "buyer",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "tokenId",
+                "name": "asset",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "liquidityToStake",
+                "name": "baseAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralAmount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "CLGauge_event_Deposit"
+        "table_name": "cUSDTv3_event_BuyCollateral"
     }
 }
