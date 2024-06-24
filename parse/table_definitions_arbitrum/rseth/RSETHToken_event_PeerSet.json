@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "eid",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "peer",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "PeerSet",
+            "type": "event"
+        },
+        "contract_address": "0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "rseth",
+        "schema": [
+            {
+                "description": "",
+                "name": "eid",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "peer",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "RSETHToken_event_PeerSet"
+    }
+}

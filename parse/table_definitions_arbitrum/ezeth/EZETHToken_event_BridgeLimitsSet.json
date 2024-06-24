@@ -1,0 +1,54 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_mintingLimit",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_burningLimit",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_bridge",
+                    "type": "address"
+                }
+            ],
+            "name": "BridgeLimitsSet",
+            "type": "event"
+        },
+        "contract_address": "0x2416092f143378750bb29b79ed961ab195cceea5",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "ezeth",
+        "schema": [
+            {
+                "description": "",
+                "name": "_mintingLimit",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_burningLimit",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_bridge",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "EZETHToken_event_BridgeLimitsSet"
+    }
+}
