@@ -19,7 +19,7 @@
             "name": "Initialize",
             "type": "event"
         },
-        "contract_address": "SELECT pool from ref('CLFactory_event_PoolCreated') WHERE pool IS NOT NULL",
+        "contract_address": "SELECT pool from ref('CLFactory_event_PoolCreated')",
         "field_mapping": {},
         "type": "log"
     },
