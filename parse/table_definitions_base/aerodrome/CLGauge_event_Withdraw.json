@@ -25,7 +25,7 @@
             "name": "Withdraw",
             "type": "event"
         },
-        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('CLFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
+        "contract_address": "0xf5601f95708256a118ef5971820327f362442d2d",
         "field_mapping": {},
         "type": "log"
     },
