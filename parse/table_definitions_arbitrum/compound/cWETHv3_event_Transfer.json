@@ -6,26 +6,26 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "cometProxy",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint64",
-                    "name": "oldBaseTrackingSupplySpeed",
-                    "type": "uint64"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint64",
-                    "name": "newBaseTrackingSupplySpeed",
-                    "type": "uint64"
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
                 }
             ],
-            "name": "SetBaseTrackingSupplySpeed",
+            "name": "Transfer",
             "type": "event"
         },
-        "contract_address": "0xb21b06d71c75973babde35b49ffdac3f82ad3775",
+        "contract_address": "0x6f7d514bbd4aff3bcd1140b7344b32f063dee486",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +34,21 @@
         "schema": [
             {
                 "description": "",
-                "name": "cometProxy",
+                "name": "from",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "oldBaseTrackingSupplySpeed",
+                "name": "to",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "newBaseTrackingSupplySpeed",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Configurator_v3_event_SetBaseTrackingSupplySpeed"
+        "table_name": "cWETHv3_event_Transfer"
     }
 }

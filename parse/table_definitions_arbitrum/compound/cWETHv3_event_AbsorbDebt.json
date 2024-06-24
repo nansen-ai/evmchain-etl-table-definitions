@@ -6,26 +6,32 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "cometProxy",
+                    "name": "absorber",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint64",
-                    "name": "oldBaseTrackingSupplySpeed",
-                    "type": "uint64"
+                    "internalType": "uint256",
+                    "name": "basePaidOut",
+                    "type": "uint256"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint64",
-                    "name": "newBaseTrackingSupplySpeed",
-                    "type": "uint64"
+                    "internalType": "uint256",
+                    "name": "usdValue",
+                    "type": "uint256"
                 }
             ],
-            "name": "SetBaseTrackingSupplySpeed",
+            "name": "AbsorbDebt",
             "type": "event"
         },
-        "contract_address": "0xb21b06d71c75973babde35b49ffdac3f82ad3775",
+        "contract_address": "0x6f7d514bbd4aff3bcd1140b7344b32f063dee486",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +40,26 @@
         "schema": [
             {
                 "description": "",
-                "name": "cometProxy",
+                "name": "absorber",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "oldBaseTrackingSupplySpeed",
+                "name": "borrower",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "newBaseTrackingSupplySpeed",
+                "name": "basePaidOut",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "usdValue",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Configurator_v3_event_SetBaseTrackingSupplySpeed"
+        "table_name": "cWETHv3_event_AbsorbDebt"
     }
 }

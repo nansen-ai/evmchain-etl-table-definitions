@@ -25,7 +25,7 @@
             "name": "SetPauseGuardian",
             "type": "event"
         },
-        "contract_address": "0x8495af03fb797e2965bcb42cb0693e1c15614798",
+        "contract_address": "0xb21b06d71c75973babde35b49ffdac3f82ad3775",
         "field_mapping": {},
         "type": "log"
     },

@@ -6,26 +6,20 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "cometProxy",
+                    "name": "to",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint64",
-                    "name": "oldKink",
-                    "type": "uint64"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint64",
-                    "name": "newKink",
-                    "type": "uint64"
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
                 }
             ],
-            "name": "SetBorrowKink",
+            "name": "WithdrawReserves",
             "type": "event"
         },
-        "contract_address": "0xb21b06d71c75973babde35b49ffdac3f82ad3775",
+        "contract_address": "0x6f7d514bbd4aff3bcd1140b7344b32f063dee486",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +28,16 @@
         "schema": [
             {
                 "description": "",
-                "name": "cometProxy",
+                "name": "to",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "oldKink",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "newKink",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Configurator_v3_event_SetBorrowKink"
+        "table_name": "cWETHv3_event_WithdrawReserves"
     }
 }

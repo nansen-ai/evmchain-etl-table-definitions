@@ -6,26 +6,32 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "cometProxy",
+                    "name": "from",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "oldGovernor",
+                    "name": "to",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "newGovernor",
+                    "name": "asset",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
                 }
             ],
-            "name": "SetGovernor",
+            "name": "TransferCollateral",
             "type": "event"
         },
-        "contract_address": "0xb21b06d71c75973babde35b49ffdac3f82ad3775",
+        "contract_address": "0x6f7d514bbd4aff3bcd1140b7344b32f063dee486",
         "field_mapping": {},
         "type": "log"
     },
@@ -34,21 +40,26 @@
         "schema": [
             {
                 "description": "",
-                "name": "cometProxy",
+                "name": "from",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "oldGovernor",
+                "name": "to",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "newGovernor",
+                "name": "asset",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "Configurator_v3_event_SetGovernor"
+        "table_name": "cWETHv3_event_TransferCollateral"
     }
 }
