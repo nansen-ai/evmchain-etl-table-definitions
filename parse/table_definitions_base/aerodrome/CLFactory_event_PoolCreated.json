@@ -31,7 +31,7 @@
             "name": "PoolCreated",
             "type": "event"
         },
-        "contract_address": "SELECT b.pool FROM ref('Voter_event_GaugeCreated') a JOIN ref('CLFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
+        "contract_address": "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
         "field_mapping": {},
         "type": "log"
     },
