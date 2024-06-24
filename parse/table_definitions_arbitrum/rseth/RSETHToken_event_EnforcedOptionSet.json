@@ -1,0 +1,49 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "eid",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "msgType",
+                            "type": "uint16"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "options",
+                            "type": "bytes"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct EnforcedOptionParam[]",
+                    "name": "_enforcedOptions",
+                    "type": "tuple[]"
+                }
+            ],
+            "name": "EnforcedOptionSet",
+            "type": "event"
+        },
+        "contract_address": "0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "rseth",
+        "schema": [
+            {
+                "description": "",
+                "name": "_enforcedOptions",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "RSETHToken_event_EnforcedOptionSet"
+    }
+}
