@@ -31,7 +31,7 @@
             "name": "SetFeeProtocol",
             "type": "event"
         },
-        "contract_address": "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+        "contract_address": "SELECT pool from ref('CLFactory_event_PoolCreated') WHERE pool IS NOT NULL",
         "field_mapping": {},
         "type": "log"
     },
