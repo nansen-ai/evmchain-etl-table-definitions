@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lmPoolDeployer",
+                    "type": "address"
+                }
+            ],
+            "name": "SetLmPoolDeployer",
+            "type": "event"
+        },
+        "contract_address": "0x0bfbcf9fa4f9c56b0f40a671ad40e0805a091865",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "pancakeswap",
+        "schema": [
+            {
+                "description": "",
+                "name": "lmPoolDeployer",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "UniswapV3Factory_event_SetLmPoolDeployer"
+    }
+}
