@@ -25,7 +25,7 @@
             "name": "Deposit",
             "type": "event"
         },
-        "contract_address": "SELECT a.gauge FROM ref('Voter_event_GaugeCreated') a JOIN ref('PoolFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
+        "contract_address": "SELECT b.gauge FROM ref('Voter_event_GaugeCreated') a JOIN ref('PoolFactory_event_PoolCreated') b ON a.pool = b.pool WHERE a.pool IS NOT NULL",
         "field_mapping": {},
         "type": "log"
     },
