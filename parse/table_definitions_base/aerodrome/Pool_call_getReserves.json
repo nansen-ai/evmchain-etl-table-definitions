@@ -1,0 +1,36 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [],
+            "name": "getReserves",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_reserve0",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_reserve1",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_blockTimestampLast",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        "contract_address": "SELECT pool FROM ref('PoolFactory_event_PoolCreated')",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [],
+        "table_description": "",
+        "table_name": "Pool_call_getReserves"
+    }
+}

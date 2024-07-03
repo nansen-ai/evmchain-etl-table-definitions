@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "preCrimeAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "PreCrimeSet",
+            "type": "event"
+        },
+        "contract_address": "0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "rseth",
+        "schema": [
+            {
+                "description": "",
+                "name": "preCrimeAddress",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "RSETHToken_event_PreCrimeSet"
+    }
+}
