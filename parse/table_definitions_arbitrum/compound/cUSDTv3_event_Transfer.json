@@ -30,7 +30,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "arbitrum_compound",
+        "dataset_name": "compound",
         "schema": [
             {
                 "description": "",
