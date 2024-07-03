@@ -24,13 +24,58 @@
             "type": "function"
         },
         "contract_address": "SELECT pool FROM ref('PoolFactory_event_PoolCreated')",
-        "field_mapping": {},
+        "field_mapping": {
+            "_reserve0": "reserve0",
+            "_reserve1": "reserve1",
+            "_blockTimestampLast": "blockTimestampLast"
+        },
         "type": "trace"
     },
     "table": {
         "dataset_name": "aerodrome",
-        "schema": [],
-        "table_description": "",
+        "schema": [
+            {
+                "name": "block_timestamp",
+                "type": "TIMESTAMP"
+            },
+            {
+                "name": "block_number",
+                "type": "INTEGER"
+            },
+            {
+                "name": "transaction_hash",
+                "type": "STRING"
+            },
+            {
+                "name": "transaction_index",
+                "type": "INTEGER"
+            },
+            {
+                "name": "trace_address",
+                "type": "STRING"
+            },
+            {
+                "name": "to_address",
+                "type": "STRING"
+            },
+            {
+                "name": "status",
+                "type": "INTEGER"
+            },
+            {
+                "name": "reserve0",
+                "type": "STRING"
+            },
+            {
+                "name": "reserve1",
+                "type": "STRING"
+            },
+            {
+                "name": "blockTimestampLast",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "Table containing the reserves of the pool",
         "table_name": "Pool_call_getReserves"
     }
 }
