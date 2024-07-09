@@ -43,7 +43,7 @@
             "name": "Collect",
             "type": "event"
         },
-        "contract_address": "0xedc7f0dfd9751ef95bb8786a3b130f490743bb0e",
+        "contract_address": "SELECT pool FROM ref('UniswapV3Factory_event_PoolCreated')",
         "field_mapping": {},
         "type": "log"
     },
