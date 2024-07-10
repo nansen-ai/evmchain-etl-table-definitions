@@ -29,7 +29,7 @@ To make it super efficient to query the data you are looking for instead of havi
 
 ## Debugging Table Defenition Files
 
-A utility script for debugging and verifying contract parsing in Ethereum data processing pipelines is available. You can simply run 
+A utility script for debugging and verifying contract parsing in EVM chains data processing pipelines is available. You can simply run 
 
 ```
 python3 generate_parse_sql.py <path_to_table_definition_file> <date>
