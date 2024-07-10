@@ -55,3 +55,4 @@ geckodriver.log
 voxometadata/secrets
 # Env vars
 .env
+.venv 
