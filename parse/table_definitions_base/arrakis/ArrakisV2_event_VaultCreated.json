@@ -19,7 +19,7 @@
             "name": "VaultCreated",
             "type": "event"
         },
-        "contract_address": "0xf90aafabb1a4c0ce318be12da73f0f31fabe865d",
+        "contract_address": "0xecb8ffcb2369ef188a082a662f496126f66c8288",
         "field_mapping": {},
         "type": "log"
     },
