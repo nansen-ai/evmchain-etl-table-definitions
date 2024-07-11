@@ -26,6 +26,23 @@ To make it super efficient to query the data you are looking for instead of havi
 6. Wait for it to be reviewed and merged, your BigQuery tables should show up shortly under the \_\_ project.
 7. Now you can query your newly parsed tables more efficiently and for a smaller cost.
 
+
+## Debugging Table Defenition Files
+
+A utility script for debugging and verifying contract parsing in EVM chains data processing pipelines is available. You can simply run 
+
+```
+python3 generate_parse_sql.py <path_to_table_definition_file> <date>
+```
+
+This will output some example SQL that can be used to debug if the generated json files from the contract parser are correct. 
+
+NOTE: certain files may not have the `contract_address` field specified as a valid address [AToken_v3_event_Approval](parse/table_definitions_arbitrum/aave/AToken_v3_event_Approval.json) but use a select statement on another table instead. For these you can simply pass the contract address yourself like below:
+
+```
+python3 generate_parse_sql.py <path_to_table_definition_file> <date> --contract_address <contract_address>
+```
+
 ## My Dataset doesn't show up?
 
 Certain datasets are currently private while others are public.
