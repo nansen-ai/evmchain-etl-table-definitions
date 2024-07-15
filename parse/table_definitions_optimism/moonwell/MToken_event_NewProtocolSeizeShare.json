@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldProtocolSeizeShareMantissa",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newProtocolSeizeShareMantissa",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewProtocolSeizeShare",
+            "type": "event"
+        },
+        "contract_address": "SELECT mToken FROM ref('Comptroller_event_MarketListed') group by mToken",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldProtocolSeizeShareMantissa",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newProtocolSeizeShareMantissa",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MToken_event_NewProtocolSeizeShare"
+    }
+}
