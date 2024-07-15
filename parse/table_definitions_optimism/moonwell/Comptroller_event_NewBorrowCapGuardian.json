@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldBorrowCapGuardian",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newBorrowCapGuardian",
+                    "type": "address"
+                }
+            ],
+            "name": "NewBorrowCapGuardian",
+            "type": "event"
+        },
+        "contract_address": "0xca889f40aae37fff165bccf69aef1e82b5c511b9",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldBorrowCapGuardian",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newBorrowCapGuardian",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Comptroller_event_NewBorrowCapGuardian"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract MToken",
+                    "name": "mToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "emissionToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "supplySpeed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "borrowSpeed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "endTime",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewConfigCreated",
+            "type": "event"
+        },
+        "contract_address": "0xf9524bfa18c19c3e605fbfe8dfd05c6e967574aa",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell",
+        "schema": [
+            {
+                "description": "",
+                "name": "mToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "owner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "emissionToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "supplySpeed",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "borrowSpeed",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "endTime",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MultiRewardDistributor_event_NewConfigCreated"
+    }
+}

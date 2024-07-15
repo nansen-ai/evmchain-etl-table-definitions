@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract MToken",
+                    "name": "mToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newSupplyCap",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewSupplyCap",
+            "type": "event"
+        },
+        "contract_address": "0xca889f40aae37fff165bccf69aef1e82b5c511b9",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell",
+        "schema": [
+            {
+                "description": "",
+                "name": "mToken",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newSupplyCap",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Comptroller_event_NewSupplyCap"
+    }
+}

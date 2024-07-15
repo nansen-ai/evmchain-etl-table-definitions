@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract MToken",
+                    "name": "mToken",
+                    "type": "address"
+                }
+            ],
+            "name": "MarketListed",
+            "type": "event"
+        },
+        "contract_address": "0xca889f40aae37fff165bccf69aef1e82b5c511b9",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell",
+        "schema": [
+            {
+                "description": "",
+                "name": "mToken",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Comptroller_event_MarketListed"
+    }
+}

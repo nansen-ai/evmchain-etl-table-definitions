@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldEmissionCap",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newEmissionCap",
+                    "type": "uint256"
+                }
+            ],
+            "name": "NewEmissionCap",
+            "type": "event"
+        },
+        "contract_address": "0xf9524bfa18c19c3e605fbfe8dfd05c6e967574aa",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "moonwell",
+        "schema": [
+            {
+                "description": "",
+                "name": "oldEmissionCap",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newEmissionCap",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MultiRewardDistributor_event_NewEmissionCap"
+    }
+}
