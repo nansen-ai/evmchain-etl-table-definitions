@@ -6,7 +6,7 @@
             "name": "Paused",
             "type": "event"
         },
-        "contract_address": "0x3dd09c846149e50d412cdce968e1d912117ff937",
+        "contract_address": "0xdad8a103473dfd47f90168a0e46766ed48e26ec7",
         "field_mapping": {},
         "type": "log"
     },
