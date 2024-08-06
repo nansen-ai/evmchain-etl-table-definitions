@@ -1,0 +1,156 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "productId",
+                    "type": "uint32"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "quoteId",
+                    "type": "uint32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "book",
+                    "type": "address"
+                },
+                {
+                    "internalType": "int128",
+                    "name": "sizeIncrement",
+                    "type": "int128"
+                },
+                {
+                    "internalType": "int128",
+                    "name": "minSize",
+                    "type": "int128"
+                },
+                {
+                    "internalType": "int128",
+                    "name": "lpSpreadX18",
+                    "type": "int128"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "token",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "interestInflectionUtilX18",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "interestFloorX18",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "interestSmallCapX18",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "interestLargeCapX18",
+                            "type": "int128"
+                        }
+                    ],
+                    "internalType": "struct ISpotEngine.Config",
+                    "name": "config",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "int32",
+                            "name": "longWeightInitial",
+                            "type": "int32"
+                        },
+                        {
+                            "internalType": "int32",
+                            "name": "shortWeightInitial",
+                            "type": "int32"
+                        },
+                        {
+                            "internalType": "int32",
+                            "name": "longWeightMaintenance",
+                            "type": "int32"
+                        },
+                        {
+                            "internalType": "int32",
+                            "name": "shortWeightMaintenance",
+                            "type": "int32"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "priceX18",
+                            "type": "int128"
+                        }
+                    ],
+                    "internalType": "struct RiskHelper.RiskStore",
+                    "name": "riskStore",
+                    "type": "tuple"
+                }
+            ],
+            "name": "addProduct",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        "contract_address": "0x6b1c769887e51393e2f727db0ea7aa0a2f8adabb",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "productId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "quoteId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "book",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "sizeIncrement",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "minSize",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "lpSpreadX18",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "config",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "riskStore",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_call_addProduct"
+    }
+}

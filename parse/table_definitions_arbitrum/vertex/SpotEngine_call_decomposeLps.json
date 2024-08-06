@@ -1,0 +1,58 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "isoGroup",
+                    "type": "uint32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "liquidatee",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "liquidator",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "decomposeLps",
+            "outputs": [
+                {
+                    "internalType": "int128",
+                    "name": "liquidationFees",
+                    "type": "int128"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        "contract_address": "0x6b1c769887e51393e2f727db0ea7aa0a2f8adabb",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "isoGroup",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "liquidatee",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "liquidator",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_call_decomposeLps"
+    }
+}

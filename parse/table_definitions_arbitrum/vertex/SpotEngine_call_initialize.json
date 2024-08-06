@@ -1,0 +1,72 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_clearinghouse",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_offchainExchange",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_quote",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_endpoint",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_admin",
+                    "type": "address"
+                }
+            ],
+            "name": "initialize",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        "contract_address": "0x6b1c769887e51393e2f727db0ea7aa0a2f8adabb",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "_clearinghouse",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_offchainExchange",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_quote",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_endpoint",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_admin",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_call_initialize"
+    }
+}
