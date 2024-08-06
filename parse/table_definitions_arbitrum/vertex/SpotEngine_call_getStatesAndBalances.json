@@ -1,0 +1,145 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "productId",
+                    "type": "uint32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "subaccount",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "getStatesAndBalances",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "int128",
+                            "name": "supply",
+                            "type": "int128"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "int128",
+                                    "name": "amount",
+                                    "type": "int128"
+                                },
+                                {
+                                    "internalType": "int128",
+                                    "name": "lastCumulativeMultiplierX18",
+                                    "type": "int128"
+                                }
+                            ],
+                            "internalType": "struct ISpotEngine.Balance",
+                            "name": "quote",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "int128",
+                                    "name": "amount",
+                                    "type": "int128"
+                                },
+                                {
+                                    "internalType": "int128",
+                                    "name": "lastCumulativeMultiplierX18",
+                                    "type": "int128"
+                                }
+                            ],
+                            "internalType": "struct ISpotEngine.Balance",
+                            "name": "base",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct ISpotEngine.LpState",
+                    "name": "",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "int128",
+                            "name": "amount",
+                            "type": "int128"
+                        }
+                    ],
+                    "internalType": "struct ISpotEngine.LpBalance",
+                    "name": "",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "int128",
+                            "name": "cumulativeDepositsMultiplierX18",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "cumulativeBorrowsMultiplierX18",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "totalDepositsNormalized",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "totalBorrowsNormalized",
+                            "type": "int128"
+                        }
+                    ],
+                    "internalType": "struct ISpotEngine.State",
+                    "name": "",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "int128",
+                            "name": "amount",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "lastCumulativeMultiplierX18",
+                            "type": "int128"
+                        }
+                    ],
+                    "internalType": "struct ISpotEngine.Balance",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        "contract_address": "0x6b1c769887e51393e2f727db0ea7aa0a2f8adabb",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "productId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "subaccount",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_call_getStatesAndBalances"
+    }
+}

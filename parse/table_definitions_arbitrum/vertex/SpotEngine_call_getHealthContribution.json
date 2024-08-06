@@ -1,0 +1,48 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "subaccount",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "enum IProductEngine.HealthType",
+                    "name": "healthType",
+                    "type": "uint8"
+                }
+            ],
+            "name": "getHealthContribution",
+            "outputs": [
+                {
+                    "internalType": "int128",
+                    "name": "health",
+                    "type": "int128"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        "contract_address": "0x6b1c769887e51393e2f727db0ea7aa0a2f8adabb",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "subaccount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "healthType",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_call_getHealthContribution"
+    }
+}

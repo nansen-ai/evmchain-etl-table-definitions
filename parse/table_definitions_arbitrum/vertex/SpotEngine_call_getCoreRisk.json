@@ -1,0 +1,75 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "subaccount",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "productId",
+                    "type": "uint32"
+                },
+                {
+                    "internalType": "enum IProductEngine.HealthType",
+                    "name": "healthType",
+                    "type": "uint8"
+                }
+            ],
+            "name": "getCoreRisk",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "int128",
+                            "name": "amount",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "price",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "longWeight",
+                            "type": "int128"
+                        }
+                    ],
+                    "internalType": "struct IProductEngine.CoreRisk",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        "contract_address": "0x6b1c769887e51393e2f727db0ea7aa0a2f8adabb",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "subaccount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "productId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "healthType",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_call_getCoreRisk"
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "parser": {
+        "abi": {
+            "inputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "productId",
+                    "type": "uint32"
+                },
+                {
+                    "internalType": "int128",
+                    "name": "baseDelta",
+                    "type": "int128"
+                },
+                {
+                    "internalType": "int128",
+                    "name": "quoteDelta",
+                    "type": "int128"
+                }
+            ],
+            "name": "swapLp",
+            "outputs": [
+                {
+                    "internalType": "int128",
+                    "name": "",
+                    "type": "int128"
+                },
+                {
+                    "internalType": "int128",
+                    "name": "",
+                    "type": "int128"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        "contract_address": "0x6b1c769887e51393e2f727db0ea7aa0a2f8adabb",
+        "field_mapping": {},
+        "type": "trace"
+    },
+    "table": {
+        "dataset_name": "vertex",
+        "schema": [
+            {
+                "description": "",
+                "name": "productId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "baseDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "quoteDelta",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "SpotEngine_call_swapLp"
+    }
+}
