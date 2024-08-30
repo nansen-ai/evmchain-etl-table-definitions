@@ -30,7 +30,7 @@
             "name": "ModelSet",
             "type": "event"
         },
-        "contract_address": "SELECT interestRateCalculator FROM ref('AssetRegistry_event_AssetRegistered') group by interestRateCalculator",
+        "contract_address": "SELECT interestRateCalculator FROM ref('AssetRegistry_event_SetAssetParams') GROUP BY interestRateCalculator",
         "field_mapping": {},
         "type": "log"
     },
