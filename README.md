@@ -1,6 +1,6 @@
 # EVM Chain ETL Table Definitions
 
-This repo contains table definitions for certain EVM compatible blockchains.
+This repo contains table definitions for certain Ethereum Virtual Machine (EVM) compatible blockchains.
 
 If you want to parse certain events on these blockchains and make them cheaper to query on BigQuery, feel free to submit a PR with your new table definitions.
 
