@@ -46,7 +46,7 @@ python3 generate_parse_sql.py <path_to_table_definition_file> <date> --contract_
 ## My Dataset doesn't show up?
 
 Certain datasets are currently private while others are public.
-If your blockchain is considered private, please sign up for a Nansen Query Plan with your google cloud account.
+If your blockchain is considered private, please sign up for a [Nansen](https://www.nansen.ai/) Query Plan with your google cloud account.
 You will then be able to access theses private datasets.
 
 ## Public vs Private
