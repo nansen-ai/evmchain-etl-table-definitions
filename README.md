@@ -2,7 +2,7 @@
 
 This repo contains table definitions for certain EVM compatible blockchains.
 
-If you want to parse certain events on these blockchains and make them cheaper to query on BigQuery, feel free to submit a PR with your new table definitions.
+If you want to parse certain events on these blockchains and make them cheaper to query on [BigQuery](https://cloud.google.com/bigquery), feel free to submit a PR with your new table definitions.
 
 ## What
 
