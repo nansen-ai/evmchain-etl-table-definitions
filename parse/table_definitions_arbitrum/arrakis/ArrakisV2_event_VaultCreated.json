@@ -39,5 +39,6 @@
         ],
         "table_description": "",
         "table_name": "ArrakisV2_event_VaultCreated"
-    }
+    },
+    "version": "1"
 }
