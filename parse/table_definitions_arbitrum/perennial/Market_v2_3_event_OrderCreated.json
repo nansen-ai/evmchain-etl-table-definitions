@@ -1,0 +1,275 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "timestamp",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "orders",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "collateral",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "longPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "longNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "shortPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "shortNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "protection",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "makerReferral",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerReferral",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Order",
+                    "name": "order",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "orders",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "Fixed6",
+                            "name": "notional",
+                            "type": "int256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerPos",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerNeg",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "takerFee",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "UFixed6",
+                            "name": "referral",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Guarantee",
+                    "name": "guarantee",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "liquidator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "orderReferrer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "guaranteeReferrer",
+                    "type": "address"
+                }
+            ],
+            "name": "OrderCreated",
+            "type": "event"
+        },
+        "contract_address": "SELECT market FROM ref('MarketFactory_v2_event_MarketCreated') GROUP BY market UNION ALL SELECT market FROM ref('MarketFactory_v2_2_event_MarketCreated') GROUP BY market",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "perennial",
+        "schema": [
+            {
+                "description": "",
+                "name": "account",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "timestamp",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "orders",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "collateral",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "longPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "longNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "shortPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "shortNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "protection",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "makerReferral",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerReferral",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "order",
+                "type": "RECORD"
+            },
+            {
+                "description": "",
+                "fields": [
+                    {
+                        "description": "",
+                        "name": "orders",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "notional",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerPos",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerNeg",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "takerFee",
+                        "type": "STRING"
+                    },
+                    {
+                        "description": "",
+                        "name": "referral",
+                        "type": "STRING"
+                    }
+                ],
+                "name": "guarantee",
+                "type": "RECORD"
+            },
+            {
+                "description": "",
+                "name": "liquidator",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "orderReferrer",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "guaranteeReferrer",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "Market_v2_3_event_OrderCreated"
+    }
+}
