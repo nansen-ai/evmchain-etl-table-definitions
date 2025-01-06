@@ -60,4 +60,4 @@ You will then be able to access theses private datasets.
 - bsc
 - ronin
 - arbitrum
-- fantom
+- sonic (formerly fantom)
