@@ -1,0 +1,19 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Genesis",
+            "type": "event"
+        },
+        "contract_address": "0x7f321498a801a191a93c840750ed637149ddf8d0",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "euler_v2",
+        "schema": [],
+        "table_description": "",
+        "table_name": "GenericFactory_event_Genesis"
+    }
+}
