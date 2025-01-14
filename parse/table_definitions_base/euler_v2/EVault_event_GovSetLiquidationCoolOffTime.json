@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "newCoolOffTime",
+                    "type": "uint16"
+                }
+            ],
+            "name": "GovSetLiquidationCoolOffTime",
+            "type": "event"
+        },
+        "contract_address": "SELECT proxy FROM ref('GenericFactory_event_ProxyCreated') WHERE implementation = '0x30a9a9654804f1e5b3291a86e83eded7cf281618'",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "euler_v2",
+        "schema": [
+            {
+                "description": "",
+                "name": "newCoolOffTime",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "EVault_event_GovSetLiquidationCoolOffTime"
+    }
+}
