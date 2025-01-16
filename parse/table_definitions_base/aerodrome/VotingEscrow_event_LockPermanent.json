@@ -1,0 +1,65 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_ts",
+                    "type": "uint256"
+                }
+            ],
+            "name": "LockPermanent",
+            "type": "event"
+        },
+        "contract_address": "0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "_owner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_tokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_ts",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "VotingEscrow_event_LockPermanent"
+    }
+}

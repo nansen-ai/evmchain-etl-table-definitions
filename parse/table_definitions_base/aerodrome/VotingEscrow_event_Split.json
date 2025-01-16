@@ -1,0 +1,109 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_from",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId1",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId2",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_splitAmount1",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_splitAmount2",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_locktime",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_ts",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Split",
+            "type": "event"
+        },
+        "contract_address": "0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "_from",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_tokenId1",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_tokenId2",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_splitAmount1",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_splitAmount2",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_locktime",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_ts",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "VotingEscrow_event_Split"
+    }
+}
