@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_fromTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_toTokenId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "BatchMetadataUpdate",
+            "type": "event"
+        },
+        "contract_address": "0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "_fromTokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_toTokenId",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "VotingEscrow_event_BatchMetadataUpdate"
+    }
+}

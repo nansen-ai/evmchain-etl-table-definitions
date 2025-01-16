@@ -1,0 +1,76 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_mTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_weight",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_ts",
+                    "type": "uint256"
+                }
+            ],
+            "name": "DepositManaged",
+            "type": "event"
+        },
+        "contract_address": "0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "aerodrome",
+        "schema": [
+            {
+                "description": "",
+                "name": "_owner",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_tokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_mTokenId",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_weight",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "_ts",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "VotingEscrow_event_DepositManaged"
+    }
+}
