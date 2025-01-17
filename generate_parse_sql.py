@@ -7,7 +7,7 @@ import os
 
 # Define BigQuery project and dataset for each chain
 CHAIN_BQ_REFS = {
-    'unknown': '`notfound.notfond`',
+    'unknown': '`notfound.notfound`',
     'bsc': '`nansen-datasets-prod.crypto_bsc_v2`',
     'optimism': '`nansen-datasets-prod.crypto_optimism_v2`',
     'arbitrum': '`nansen-datasets-prod.crypto_arbitrum_v2`',
