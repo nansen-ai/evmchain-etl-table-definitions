@@ -4,22 +4,22 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "caller",
-                    "type": "address"
+                    "indexed": true,
+                    "internalType": "Id",
+                    "name": "id",
+                    "type": "bytes32"
                 },
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "oracle",
-                    "type": "address"
+                    "internalType": "uint256",
+                    "name": "newFee",
+                    "type": "uint256"
                 }
             ],
-            "name": "CreateMorphoChainlinkOracleV2",
+            "name": "SetFee",
             "type": "event"
         },
-        "contract_address": "0x98ce5d183dc0c176f54d37162f87e7ed7f2e41b5",
+        "contract_address": "0x1bf0c2541f820e775182832f06c0b7fc27a25f67",
         "field_mapping": {},
         "type": "log"
     },
@@ -28,16 +28,16 @@
         "schema": [
             {
                 "description": "",
-                "name": "caller",
+                "name": "id",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "oracle",
+                "name": "newFee",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "MorphoChainlinkOracleV2Factory_event_CreateMorphoChainlinkOracleV2"
+        "table_name": "Morpho_event_SetFee"
     }
 }

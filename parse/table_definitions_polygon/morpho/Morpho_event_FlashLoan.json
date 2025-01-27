@@ -4,22 +4,28 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
                     "name": "caller",
                     "type": "address"
                 },
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "oracle",
+                    "name": "token",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "assets",
+                    "type": "uint256"
                 }
             ],
-            "name": "CreateMorphoChainlinkOracleV2",
+            "name": "FlashLoan",
             "type": "event"
         },
-        "contract_address": "0x98ce5d183dc0c176f54d37162f87e7ed7f2e41b5",
+        "contract_address": "0x1bf0c2541f820e775182832f06c0b7fc27a25f67",
         "field_mapping": {},
         "type": "log"
     },
@@ -33,11 +39,16 @@
             },
             {
                 "description": "",
-                "name": "oracle",
+                "name": "token",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "assets",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "MorphoChainlinkOracleV2Factory_event_CreateMorphoChainlinkOracleV2"
+        "table_name": "Morpho_event_FlashLoan"
     }
 }

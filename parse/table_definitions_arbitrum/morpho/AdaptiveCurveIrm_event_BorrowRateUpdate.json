@@ -25,7 +25,7 @@
             "name": "BorrowRateUpdate",
             "type": "event"
         },
-        "contract_address": "0x66F30587FB8D4206918deb78ecA7d5eBbafD06DA",
+        "contract_address": "0x66f30587fb8d4206918deb78eca7d5ebbafd06da",
         "field_mapping": {},
         "type": "log"
     },

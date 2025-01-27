@@ -16,22 +16,22 @@
                     "type": "address"
                 },
                 {
-                    "indexed": true,
-                    "internalType": "Id",
-                    "name": "supplyMarketId",
-                    "type": "bytes32"
-                },
-                {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "suppliedAssets",
+                    "name": "amount",
                     "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "feeRecipient",
+                    "type": "address"
                 }
             ],
-            "name": "PublicReallocateTo",
+            "name": "TransferFee",
             "type": "event"
         },
-        "contract_address": "0x769583af5e9d03589f159ebec31cc2c23e8c355e",
+        "contract_address": "0xfac15aff53add2ff80c2962127c434e8615df0d3",
         "field_mapping": {},
         "type": "log"
     },
@@ -50,16 +50,16 @@
             },
             {
                 "description": "",
-                "name": "supplyMarketId",
+                "name": "amount",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "suppliedAssets",
+                "name": "feeRecipient",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PublicAllocator_event_PublicReallocateTo"
+        "table_name": "PublicAllocator_event_TransferFee"
     }
 }

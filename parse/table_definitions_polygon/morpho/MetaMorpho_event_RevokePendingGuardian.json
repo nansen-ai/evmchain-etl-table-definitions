@@ -4,22 +4,16 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
                     "name": "caller",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "oracle",
-                    "type": "address"
                 }
             ],
-            "name": "CreateMorphoChainlinkOracleV2",
+            "name": "RevokePendingGuardian",
             "type": "event"
         },
-        "contract_address": "0x98ce5d183dc0c176f54d37162f87e7ed7f2e41b5",
+        "contract_address": "SELECT metaMorpho FROM ref('MetaMorphoFactory_event_CreateMetaMorpho') group by metaMorpho",
         "field_mapping": {},
         "type": "log"
     },
@@ -30,14 +24,9 @@
                 "description": "",
                 "name": "caller",
                 "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "oracle",
-                "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "MorphoChainlinkOracleV2Factory_event_CreateMorphoChainlinkOracleV2"
+        "table_name": "MetaMorpho_event_RevokePendingGuardian"
     }
 }

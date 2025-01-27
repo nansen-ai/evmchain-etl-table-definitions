@@ -4,22 +4,28 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
+                    "indexed": true,
                     "internalType": "address",
-                    "name": "caller",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "vault",
                     "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "address",
-                    "name": "oracle",
+                    "name": "admin",
                     "type": "address"
                 }
             ],
-            "name": "CreateMorphoChainlinkOracleV2",
+            "name": "SetAdmin",
             "type": "event"
         },
-        "contract_address": "0x98ce5d183dc0c176f54d37162f87e7ed7f2e41b5",
+        "contract_address": "0xfac15aff53add2ff80c2962127c434e8615df0d3",
         "field_mapping": {},
         "type": "log"
     },
@@ -28,16 +34,21 @@
         "schema": [
             {
                 "description": "",
-                "name": "caller",
+                "name": "sender",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "oracle",
+                "name": "vault",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "admin",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "MorphoChainlinkOracleV2Factory_event_CreateMorphoChainlinkOracleV2"
+        "table_name": "PublicAllocator_event_SetAdmin"
     }
 }

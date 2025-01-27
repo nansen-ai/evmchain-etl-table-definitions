@@ -5,33 +5,33 @@
             "inputs": [
                 {
                     "indexed": true,
-                    "internalType": "address",
-                    "name": "sender",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "vault",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
                     "internalType": "Id",
-                    "name": "supplyMarketId",
+                    "name": "id",
                     "type": "bytes32"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "suppliedAssets",
+                    "name": "prevBorrowRate",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "interest",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feeShares",
                     "type": "uint256"
                 }
             ],
-            "name": "PublicReallocateTo",
+            "name": "AccrueInterest",
             "type": "event"
         },
-        "contract_address": "0x769583af5e9d03589f159ebec31cc2c23e8c355e",
+        "contract_address": "0x1bf0c2541f820e775182832f06c0b7fc27a25f67",
         "field_mapping": {},
         "type": "log"
     },
@@ -40,26 +40,26 @@
         "schema": [
             {
                 "description": "",
-                "name": "sender",
+                "name": "id",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "vault",
+                "name": "prevBorrowRate",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "supplyMarketId",
+                "name": "interest",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "suppliedAssets",
+                "name": "feeShares",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PublicAllocator_event_PublicReallocateTo"
+        "table_name": "Morpho_event_AccrueInterest"
     }
 }

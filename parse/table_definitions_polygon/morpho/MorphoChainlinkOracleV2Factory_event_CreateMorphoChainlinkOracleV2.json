@@ -19,7 +19,7 @@
             "name": "CreateMorphoChainlinkOracleV2",
             "type": "event"
         },
-        "contract_address": "0x98ce5d183dc0c176f54d37162f87e7ed7f2e41b5",
+        "contract_address": "0x1ff7895eb842794c5d07c4c547b6730e61295215",
         "field_mapping": {},
         "type": "log"
     },

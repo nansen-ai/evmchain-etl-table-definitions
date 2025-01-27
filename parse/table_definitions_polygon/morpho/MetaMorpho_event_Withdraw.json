@@ -12,26 +12,32 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "vault",
+                    "name": "receiver",
                     "type": "address"
                 },
                 {
                     "indexed": true,
-                    "internalType": "Id",
-                    "name": "supplyMarketId",
-                    "type": "bytes32"
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "suppliedAssets",
+                    "name": "assets",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "shares",
                     "type": "uint256"
                 }
             ],
-            "name": "PublicReallocateTo",
+            "name": "Withdraw",
             "type": "event"
         },
-        "contract_address": "0x769583af5e9d03589f159ebec31cc2c23e8c355e",
+        "contract_address": "SELECT metaMorpho FROM ref('MetaMorphoFactory_event_CreateMetaMorpho') group by metaMorpho",
         "field_mapping": {},
         "type": "log"
     },
@@ -45,21 +51,26 @@
             },
             {
                 "description": "",
-                "name": "vault",
+                "name": "receiver",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "supplyMarketId",
+                "name": "owner",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "suppliedAssets",
+                "name": "assets",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "shares",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PublicAllocator_event_PublicReallocateTo"
+        "table_name": "MetaMorpho_event_Withdraw"
     }
 }

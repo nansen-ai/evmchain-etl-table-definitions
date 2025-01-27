@@ -6,19 +6,13 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "sender",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "vault",
+                    "name": "caller",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "Id",
-                    "name": "supplyMarketId",
+                    "name": "id",
                     "type": "bytes32"
                 },
                 {
@@ -26,12 +20,18 @@
                     "internalType": "uint256",
                     "name": "suppliedAssets",
                     "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "suppliedShares",
+                    "type": "uint256"
                 }
             ],
-            "name": "PublicReallocateTo",
+            "name": "ReallocateSupply",
             "type": "event"
         },
-        "contract_address": "0x769583af5e9d03589f159ebec31cc2c23e8c355e",
+        "contract_address": "SELECT metaMorpho FROM ref('MetaMorphoFactory_event_CreateMetaMorpho') group by metaMorpho",
         "field_mapping": {},
         "type": "log"
     },
@@ -40,26 +40,26 @@
         "schema": [
             {
                 "description": "",
-                "name": "sender",
+                "name": "caller",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "vault",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "supplyMarketId",
+                "name": "id",
                 "type": "STRING"
             },
             {
                 "description": "",
                 "name": "suppliedAssets",
                 "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "suppliedShares",
+                "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PublicAllocator_event_PublicReallocateTo"
+        "table_name": "MetaMorpho_event_ReallocateSupply"
     }
 }

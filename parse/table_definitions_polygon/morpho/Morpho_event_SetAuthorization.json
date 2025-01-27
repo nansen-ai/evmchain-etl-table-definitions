@@ -6,32 +6,32 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "sender",
+                    "name": "caller",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "vault",
+                    "name": "authorizer",
                     "type": "address"
                 },
                 {
                     "indexed": true,
-                    "internalType": "Id",
-                    "name": "supplyMarketId",
-                    "type": "bytes32"
+                    "internalType": "address",
+                    "name": "authorized",
+                    "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint256",
-                    "name": "suppliedAssets",
-                    "type": "uint256"
+                    "internalType": "bool",
+                    "name": "newIsAuthorized",
+                    "type": "bool"
                 }
             ],
-            "name": "PublicReallocateTo",
+            "name": "SetAuthorization",
             "type": "event"
         },
-        "contract_address": "0x769583af5e9d03589f159ebec31cc2c23e8c355e",
+        "contract_address": "0x1bf0c2541f820e775182832f06c0b7fc27a25f67",
         "field_mapping": {},
         "type": "log"
     },
@@ -40,26 +40,26 @@
         "schema": [
             {
                 "description": "",
-                "name": "sender",
+                "name": "caller",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "vault",
+                "name": "authorizer",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "supplyMarketId",
+                "name": "authorized",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "suppliedAssets",
+                "name": "newIsAuthorized",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PublicAllocator_event_PublicReallocateTo"
+        "table_name": "Morpho_event_SetAuthorization"
     }
 }

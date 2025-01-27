@@ -31,7 +31,7 @@
             "name": "TransferFee",
             "type": "event"
         },
-        "contract_address": "0x769583af5e9D03589f159ebec31cc2c23e8c355e",
+        "contract_address": "0x769583af5e9d03589f159ebec31cc2c23e8c355e",
         "field_mapping": {},
         "type": "log"
     },
