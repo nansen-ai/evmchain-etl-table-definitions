@@ -31,7 +31,7 @@
             "name": "AccrueInterest",
             "type": "event"
         },
-        "contract_address": "0x6c247b1f6182318877311737bac0844baa518F5e",
+        "contract_address": "0x6c247b1f6182318877311737bac0844baa518f5e",
         "field_mapping": {},
         "type": "log"
     },
