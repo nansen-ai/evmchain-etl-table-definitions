@@ -25,7 +25,7 @@
             "name": "SetFee",
             "type": "event"
         },
-        "contract_address": "",
+        "contract_address": "0x769583af5e9d03589f159ebec31cc2c23e8c355e",
         "field_mapping": {},
         "type": "log"
     },
