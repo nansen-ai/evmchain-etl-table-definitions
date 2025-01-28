@@ -1,0 +1,43 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oracle",
+                    "type": "address"
+                }
+            ],
+            "name": "CreateMorphoChainlinkOracleV2",
+            "type": "event"
+        },
+        "contract_address": "0x1ec408d4131686f727f3fd6245cf85bc5c9dad70",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "morpho",
+        "schema": [
+            {
+                "description": "",
+                "name": "caller",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "oracle",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MorphoChainlinkOracleV2Factory_event_CreateMorphoChainlinkOracleV2"
+    }
+}
