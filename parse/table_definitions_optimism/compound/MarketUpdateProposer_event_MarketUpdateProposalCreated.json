@@ -1,0 +1,98 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "proposer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "targets",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string[]",
+                    "name": "signatures",
+                    "type": "string[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes[]",
+                    "name": "calldatas",
+                    "type": "bytes[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                }
+            ],
+            "name": "MarketUpdateProposalCreated",
+            "type": "event"
+        },
+        "contract_address": "0xb6ef3ac71e9bacf1f4b9426c149d855bfc4415f9",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "compound",
+        "schema": [
+            {
+                "description": "",
+                "name": "id",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "proposer",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "targets",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "values",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "signatures",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "calldatas",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "description",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "MarketUpdateProposer_event_MarketUpdateProposalCreated"
+    }
+}
