@@ -60,7 +60,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
@@ -104,6 +104,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Initialize"
+        "table_name": "UniswapV4PoolManager_event_Initialize"
     }
 }

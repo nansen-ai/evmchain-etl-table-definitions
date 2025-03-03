@@ -25,12 +25,12 @@
             "name": "OperatorSet",
             "type": "event"
         },
-        "contract_address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
+        "contract_address": "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
@@ -49,6 +49,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_OperatorSet"
+        "table_name": "UniswapV4PoolManager_event_OperatorSet"
     }
 }

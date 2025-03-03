@@ -43,12 +43,12 @@
             "name": "ModifyLiquidity",
             "type": "event"
         },
-        "contract_address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
+        "contract_address": "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
@@ -82,6 +82,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_ModifyLiquidity"
+        "table_name": "UniswapV4PoolManager_event_ModifyLiquidity"
     }
 }

@@ -4,37 +4,31 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "caller",
-                    "type": "address"
-                },
-                {
                     "indexed": true,
-                    "internalType": "address",
-                    "name": "from",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "to",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "uint256",
+                    "internalType": "PoolId",
                     "name": "id",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0",
                     "type": "uint256"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "amount",
+                    "name": "amount1",
                     "type": "uint256"
                 }
             ],
-            "name": "Transfer",
+            "name": "Donate",
             "type": "event"
         },
         "contract_address": "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
@@ -42,23 +36,8 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
-            {
-                "description": "",
-                "name": "caller",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "from",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "to",
-                "type": "STRING"
-            },
             {
                 "description": "",
                 "name": "id",
@@ -66,11 +45,21 @@
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount1",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Transfer"
+        "table_name": "UniswapV4PoolManager_event_Donate"
     }
 }

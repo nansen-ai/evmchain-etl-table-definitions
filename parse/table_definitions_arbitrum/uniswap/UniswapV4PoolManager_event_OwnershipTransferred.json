@@ -6,11 +6,17 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "protocolFeeController",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
                     "type": "address"
                 }
             ],
-            "name": "ProtocolFeeControllerUpdated",
+            "name": "OwnershipTransferred",
             "type": "event"
         },
         "contract_address": "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
@@ -18,15 +24,20 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
-                "name": "protocolFeeController",
+                "name": "user",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "newOwner",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_ProtocolFeeControllerUpdated"
+        "table_name": "UniswapV4PoolManager_event_OwnershipTransferred"
     }
 }

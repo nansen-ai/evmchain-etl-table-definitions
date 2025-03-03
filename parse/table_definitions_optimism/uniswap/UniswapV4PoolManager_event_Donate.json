@@ -5,49 +5,39 @@
             "inputs": [
                 {
                     "indexed": true,
-                    "internalType": "address",
-                    "name": "owner",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "spender",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "uint256",
+                    "internalType": "PoolId",
                     "name": "id",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0",
                     "type": "uint256"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "amount",
+                    "name": "amount1",
                     "type": "uint256"
                 }
             ],
-            "name": "Approval",
+            "name": "Donate",
             "type": "event"
         },
-        "contract_address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
+        "contract_address": "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
-            {
-                "description": "",
-                "name": "owner",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "spender",
-                "type": "STRING"
-            },
             {
                 "description": "",
                 "name": "id",
@@ -55,11 +45,21 @@
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "sender",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount0",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "amount1",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Approval"
+        "table_name": "UniswapV4PoolManager_event_Donate"
     }
 }

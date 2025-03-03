@@ -11,21 +11,33 @@
                 },
                 {
                     "indexed": true,
-                    "internalType": "address",
-                    "name": "sender",
+                    "internalType": "Currency",
+                    "name": "currency0",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "Currency",
+                    "name": "currency1",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "int128",
-                    "name": "amount0",
-                    "type": "int128"
+                    "internalType": "uint24",
+                    "name": "fee",
+                    "type": "uint24"
                 },
                 {
                     "indexed": false,
-                    "internalType": "int128",
-                    "name": "amount1",
-                    "type": "int128"
+                    "internalType": "int24",
+                    "name": "tickSpacing",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IHooks",
+                    "name": "hooks",
+                    "type": "address"
                 },
                 {
                     "indexed": false,
@@ -35,24 +47,12 @@
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint128",
-                    "name": "liquidity",
-                    "type": "uint128"
-                },
-                {
-                    "indexed": false,
                     "internalType": "int24",
                     "name": "tick",
                     "type": "int24"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint24",
-                    "name": "fee",
-                    "type": "uint24"
                 }
             ],
-            "name": "Swap",
+            "name": "Initialize",
             "type": "event"
         },
         "contract_address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
@@ -60,7 +60,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
@@ -69,17 +69,27 @@
             },
             {
                 "description": "",
-                "name": "sender",
+                "name": "currency0",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount0",
+                "name": "currency1",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount1",
+                "name": "fee",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "tickSpacing",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "hooks",
                 "type": "STRING"
             },
             {
@@ -89,21 +99,11 @@
             },
             {
                 "description": "",
-                "name": "liquidity",
-                "type": "STRING"
-            },
-            {
-                "description": "",
                 "name": "tick",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "fee",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Swap"
+        "table_name": "UniswapV4PoolManager_event_Initialize"
     }
 }

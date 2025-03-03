@@ -17,50 +17,38 @@
                 },
                 {
                     "indexed": false,
-                    "internalType": "int128",
-                    "name": "amount0",
-                    "type": "int128"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "int128",
-                    "name": "amount1",
-                    "type": "int128"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint160",
-                    "name": "sqrtPriceX96",
-                    "type": "uint160"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint128",
-                    "name": "liquidity",
-                    "type": "uint128"
-                },
-                {
-                    "indexed": false,
                     "internalType": "int24",
-                    "name": "tick",
+                    "name": "tickLower",
                     "type": "int24"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint24",
-                    "name": "fee",
-                    "type": "uint24"
+                    "internalType": "int24",
+                    "name": "tickUpper",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "liquidityDelta",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32"
                 }
             ],
-            "name": "Swap",
+            "name": "ModifyLiquidity",
             "type": "event"
         },
-        "contract_address": "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
+        "contract_address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
@@ -74,36 +62,26 @@
             },
             {
                 "description": "",
-                "name": "amount0",
+                "name": "tickLower",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount1",
+                "name": "tickUpper",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "sqrtPriceX96",
+                "name": "liquidityDelta",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "liquidity",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "tick",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "fee",
+                "name": "salt",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Swap"
+        "table_name": "UniswapV4PoolManager_event_ModifyLiquidity"
     }
 }

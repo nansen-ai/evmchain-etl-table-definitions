@@ -17,26 +17,38 @@
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount0",
-                    "type": "uint256"
+                    "internalType": "int24",
+                    "name": "tickLower",
+                    "type": "int24"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount1",
-                    "type": "uint256"
+                    "internalType": "int24",
+                    "name": "tickUpper",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "liquidityDelta",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "salt",
+                    "type": "bytes32"
                 }
             ],
-            "name": "Donate",
+            "name": "ModifyLiquidity",
             "type": "event"
         },
-        "contract_address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
+        "contract_address": "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
         "field_mapping": {},
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
@@ -50,16 +62,26 @@
             },
             {
                 "description": "",
-                "name": "amount0",
+                "name": "tickLower",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "amount1",
+                "name": "tickUpper",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "liquidityDelta",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "salt",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Donate"
+        "table_name": "UniswapV4PoolManager_event_ModifyLiquidity"
     }
 }
