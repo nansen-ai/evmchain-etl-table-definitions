@@ -71,6 +71,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Transfer"
+        "table_name": "UniswapV4PoolManager_event_Transfer"
     }
 }

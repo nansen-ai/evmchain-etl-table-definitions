@@ -27,6 +27,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_ProtocolFeeControllerUpdated"
+        "table_name": "UniswapV4PoolManager_event_ProtocolFeeControllerUpdated"
     }
 }

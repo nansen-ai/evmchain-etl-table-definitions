@@ -38,6 +38,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_ProtocolFeeUpdated"
+        "table_name": "UniswapV4PoolManager_event_ProtocolFeeUpdated"
     }
 }

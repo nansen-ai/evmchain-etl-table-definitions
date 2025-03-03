@@ -82,6 +82,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_ModifyLiquidity"
+        "table_name": "UniswapV4PoolManager_event_ModifyLiquidity"
     }
 }
