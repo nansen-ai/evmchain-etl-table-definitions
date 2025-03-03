@@ -6,23 +6,17 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "owner",
+                    "name": "user",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "operator",
+                    "name": "newOwner",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "bool",
-                    "name": "approved",
-                    "type": "bool"
                 }
             ],
-            "name": "OperatorSet",
+            "name": "OwnershipTransferred",
             "type": "event"
         },
         "contract_address": "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
@@ -30,25 +24,20 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "",
         "schema": [
             {
                 "description": "",
-                "name": "owner",
+                "name": "user",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "operator",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "approved",
+                "name": "newOwner",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_OperatorSet"
+        "table_name": "PoolManager_event_OwnershipTransferred"
     }
 }

@@ -4,15 +4,21 @@
             "anonymous": false,
             "inputs": [
                 {
-                    "indexed": true,
+                    "indexed": false,
                     "internalType": "address",
-                    "name": "owner",
+                    "name": "caller",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "spender",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
                     "type": "address"
                 },
                 {
@@ -28,7 +34,7 @@
                     "type": "uint256"
                 }
             ],
-            "name": "Approval",
+            "name": "Transfer",
             "type": "event"
         },
         "contract_address": "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
@@ -36,16 +42,21 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "uniswapv4",
+        "dataset_name": "",
         "schema": [
             {
                 "description": "",
-                "name": "owner",
+                "name": "caller",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "spender",
+                "name": "from",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "to",
                 "type": "STRING"
             },
             {
@@ -60,6 +71,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "PoolManager_event_Approval"
+        "table_name": "PoolManager_event_Transfer"
     }
 }
