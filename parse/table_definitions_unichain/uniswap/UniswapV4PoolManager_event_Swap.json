@@ -60,7 +60,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "",
+        "dataset_name": "uniswap",
         "schema": [
             {
                 "description": "",
