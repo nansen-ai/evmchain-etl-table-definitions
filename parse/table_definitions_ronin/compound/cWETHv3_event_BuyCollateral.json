@@ -6,13 +6,7 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "from",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "to",
+                    "name": "buyer",
                     "type": "address"
                 },
                 {
@@ -24,11 +18,17 @@
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "amount",
+                    "name": "baseAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateralAmount",
                     "type": "uint256"
                 }
             ],
-            "name": "TransferCollateral",
+            "name": "BuyCollateral",
             "type": "event"
         },
         "contract_address": "0x4006ed4097ee51c09a04c3b0951d28ccf19e6dfe",
@@ -40,12 +40,7 @@
         "schema": [
             {
                 "description": "",
-                "name": "from",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "to",
+                "name": "buyer",
                 "type": "STRING"
             },
             {
@@ -55,11 +50,16 @@
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "baseAmount",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "collateralAmount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_TransferCollateral"
+        "table_name": "cWETHv3_event_BuyCollateral"
     }
 }

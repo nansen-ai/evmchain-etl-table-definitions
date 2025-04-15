@@ -6,13 +6,13 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "from",
+                    "name": "src",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "dst",
+                    "name": "to",
                     "type": "address"
                 },
                 {
@@ -22,7 +22,7 @@
                     "type": "uint256"
                 }
             ],
-            "name": "Supply",
+            "name": "Withdraw",
             "type": "event"
         },
         "contract_address": "0x4006ed4097ee51c09a04c3b0951d28ccf19e6dfe",
@@ -34,12 +34,12 @@
         "schema": [
             {
                 "description": "",
-                "name": "from",
+                "name": "src",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "dst",
+                "name": "to",
                 "type": "STRING"
             },
             {
@@ -49,6 +49,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_Supply"
+        "table_name": "cWETHv3_event_Withdraw"
     }
 }
