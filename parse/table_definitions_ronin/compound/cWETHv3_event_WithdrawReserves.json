@@ -38,6 +38,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_WithdrawReserves"
+        "table_name": "cWETHv3_event_WithdrawReserves"
     }
 }

@@ -6,29 +6,29 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "buyer",
+                    "name": "absorber",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "asset",
+                    "name": "borrower",
                     "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "baseAmount",
+                    "name": "basePaidOut",
                     "type": "uint256"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "collateralAmount",
+                    "name": "usdValue",
                     "type": "uint256"
                 }
             ],
-            "name": "BuyCollateral",
+            "name": "AbsorbDebt",
             "type": "event"
         },
         "contract_address": "0x4006ed4097ee51c09a04c3b0951d28ccf19e6dfe",
@@ -40,26 +40,26 @@
         "schema": [
             {
                 "description": "",
-                "name": "buyer",
+                "name": "absorber",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "asset",
+                "name": "borrower",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "baseAmount",
+                "name": "basePaidOut",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "collateralAmount",
+                "name": "usdValue",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_BuyCollateral"
+        "table_name": "cWETHv3_event_AbsorbDebt"
     }
 }
