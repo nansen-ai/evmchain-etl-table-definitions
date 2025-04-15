@@ -60,6 +60,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_BuyCollateral"
+        "table_name": "cWETHv3_event_BuyCollateral"
     }
 }

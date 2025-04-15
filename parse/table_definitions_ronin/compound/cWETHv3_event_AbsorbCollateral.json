@@ -6,13 +6,13 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "src",
+                    "name": "absorber",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "to",
+                    "name": "borrower",
                     "type": "address"
                 },
                 {
@@ -24,11 +24,17 @@
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "amount",
+                    "name": "collateralAbsorbed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "usdValue",
                     "type": "uint256"
                 }
             ],
-            "name": "WithdrawCollateral",
+            "name": "AbsorbCollateral",
             "type": "event"
         },
         "contract_address": "0x0e023713923fa9e471c30f23ae6308f58fb37371",
@@ -40,12 +46,12 @@
         "schema": [
             {
                 "description": "",
-                "name": "src",
+                "name": "absorber",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "to",
+                "name": "borrower",
                 "type": "STRING"
             },
             {
@@ -55,11 +61,16 @@
             },
             {
                 "description": "",
-                "name": "amount",
+                "name": "collateralAbsorbed",
+                "type": "STRING"
+            },
+            {
+                "description": "",
+                "name": "usdValue",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_WithdrawCollateral"
+        "table_name": "cWETHv3_event_AbsorbCollateral"
     }
 }

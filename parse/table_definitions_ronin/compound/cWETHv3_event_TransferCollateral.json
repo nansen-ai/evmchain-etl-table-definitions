@@ -12,7 +12,7 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "dst",
+                    "name": "to",
                     "type": "address"
                 },
                 {
@@ -28,7 +28,7 @@
                     "type": "uint256"
                 }
             ],
-            "name": "SupplyCollateral",
+            "name": "TransferCollateral",
             "type": "event"
         },
         "contract_address": "0x0e023713923fa9e471c30f23ae6308f58fb37371",
@@ -45,7 +45,7 @@
             },
             {
                 "description": "",
-                "name": "dst",
+                "name": "to",
                 "type": "STRING"
             },
             {
@@ -60,6 +60,6 @@
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_SupplyCollateral"
+        "table_name": "cWETHv3_event_TransferCollateral"
     }
 }

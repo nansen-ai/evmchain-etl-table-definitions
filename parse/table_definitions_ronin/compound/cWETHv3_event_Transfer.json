@@ -6,35 +6,23 @@
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "absorber",
+                    "name": "from",
                     "type": "address"
                 },
                 {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "borrower",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "asset",
+                    "name": "to",
                     "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "uint256",
-                    "name": "collateralAbsorbed",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "usdValue",
+                    "name": "amount",
                     "type": "uint256"
                 }
             ],
-            "name": "AbsorbCollateral",
+            "name": "Transfer",
             "type": "event"
         },
         "contract_address": "0x0e023713923fa9e471c30f23ae6308f58fb37371",
@@ -46,31 +34,21 @@
         "schema": [
             {
                 "description": "",
-                "name": "absorber",
+                "name": "from",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "borrower",
+                "name": "to",
                 "type": "STRING"
             },
             {
                 "description": "",
-                "name": "asset",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "collateralAbsorbed",
-                "type": "STRING"
-            },
-            {
-                "description": "",
-                "name": "usdValue",
+                "name": "amount",
                 "type": "STRING"
             }
         ],
         "table_description": "",
-        "table_name": "cUSDCv3_event_AbsorbCollateral"
+        "table_name": "cWETHv3_event_Transfer"
     }
 }
