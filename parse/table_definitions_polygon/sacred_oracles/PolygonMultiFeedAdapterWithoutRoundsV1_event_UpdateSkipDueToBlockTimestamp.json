@@ -18,7 +18,7 @@
         "type": "log"
     },
     "table": {
-        "dataset_name": "polygon_oracle_proxy",
+        "dataset_name": "sacred_oracles",
         "schema": [
             {
                 "description": "",
