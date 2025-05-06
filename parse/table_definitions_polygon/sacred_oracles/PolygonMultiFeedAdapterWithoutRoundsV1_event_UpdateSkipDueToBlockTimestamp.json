@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "dataFeedId",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "UpdateSkipDueToBlockTimestamp",
+            "type": "event"
+        },
+        "contract_address": "0xe93c6992d5cdaac2e052d1987425816369ac9e32",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "polygon_oracle_proxy",
+        "schema": [
+            {
+                "description": "",
+                "name": "dataFeedId",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PolygonMultiFeedAdapterWithoutRoundsV1_event_UpdateSkipDueToBlockTimestamp"
+    }
+}
