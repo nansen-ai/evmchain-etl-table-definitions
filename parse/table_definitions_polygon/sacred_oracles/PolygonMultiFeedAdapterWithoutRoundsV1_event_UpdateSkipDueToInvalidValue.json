@@ -13,7 +13,7 @@
             "name": "UpdateSkipDueToInvalidValue",
             "type": "event"
         },
-        "contract_address": "0xe93c6992d5cdaac2e052d1987425816369ac9e32",
+        "contract_address": "0xcdc943eb780b66d4fecb019b041413a5a5188791",
         "field_mapping": {},
         "type": "log"
     },
