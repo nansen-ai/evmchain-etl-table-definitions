@@ -1,0 +1,32 @@
+{
+    "parser": {
+        "abi": {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "dataFeedId",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "UpdateSkipDueToBlockTimestamp",
+            "type": "event"
+        },
+        "contract_address": "0xcdc943eb780b66d4fecb019b041413a5a5188791",
+        "field_mapping": {},
+        "type": "log"
+    },
+    "table": {
+        "dataset_name": "sacred_oracles",
+        "schema": [
+            {
+                "description": "",
+                "name": "dataFeedId",
+                "type": "STRING"
+            }
+        ],
+        "table_description": "",
+        "table_name": "PolygonMultiFeedAdapterWithoutRoundsV1_event_UpdateSkipDueToBlockTimestamp"
+    }
+}
